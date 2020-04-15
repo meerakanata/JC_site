@@ -1,0 +1,441 @@
+@font-face {
+  font-family: "IBMPlexSans";
+  src: url("./Fonts/IBMPlexSans-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("./Fonts/IBMPlexSans-Regular.eot?#iefix") format("embedded-opentype"), url("./Fonts/IBMPlexSans-Regular.otf") format("opentype"), url("./Fonts/IBMPlexSans-Regular.svg") format("svg"), url("./Fonts/IBMPlexSans-Regular.ttf") format("truetype"), url("./Fonts/IBMPlexSans-Regular.woff") format("woff"), url("./Fonts/IBMPlexSans-Regular.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sunflower-Medium";
+  src: url("./Fonts/Sunflower-Medium.eot");
+  /* IE9 Compat Modes */
+  src: url("./Fonts/Sunflower-Medium.eot?#iefix") format("embedded-opentype"), url("./Fonts/Sunflower-Medium.otf") format("opentype"), url("./Fonts/Sunflower-Medium.svg") format("svg"), url("./Fonts/Sunflower-Medium.ttf") format("truetype"), url("./Fonts/Sunflower-Medium.woff") format("woff"), url("./Fonts/Sunflower-Medium.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sunflower-Bold";
+  src: url("./Fonts/Sunflower-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("./Fonts/Sunflower-Bold.eot?#iefix") format("embedded-opentype"), url("./Fonts/Sunflower-Bold.otf") format("opentype"), url("./Fonts/Sunflower-Bold.svg") format("svg"), url("./Fonts/Sunflower-Bold.ttf") format("truetype"), url("./Fonts/Sunflower-Bold.woff") format("woff"), url("./Fonts/Sunflower-Bold.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sunflower-Light";
+  src: url("./Fonts/Sunflower-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("./Fonts/Sunflower-Light.eot?#iefix") format("embedded-opentype"), url("./Fonts/Sunflower-Light.otf") format("opentype"), url("./Fonts/Sunflower-Light.svg") format("svg"), url("./Fonts/Sunflower-Light.ttf") format("truetype"), url("./Fonts/Sunflower-Light.woff") format("woff"), url("./Fonts/Sunflower-Light.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+html .App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 994px;
+  height: auto;
+}
+
+html .App .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  height: 230px;
+  background-color: white;
+}
+
+html .App .header .branding {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 50%;
+  margin-bottom: 22px;
+  color: #010101;
+  font-family: 'Sunflower-Medium';
+}
+
+html .App .header .branding .name {
+  font-size: 48px;
+  margin: 150px 0px 0px 50px;
+}
+
+html .App .header .branding .industry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 20px;
+  margin: 160px 0px 0px 19px;
+  line-height: 20px;
+}
+
+html .App .header .branding .industry .line1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html .App .header .branding .industry .line2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html .App .header .NavBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 50%;
+  background-color: #010101;
+  font-family: 'IBMPlexSans';
+  font-size: 16px;
+  color: white;
+}
+
+html .App .header .NavBar__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 270px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 180px 50px 0px 0px;
+}
+
+html .App .header .NavBar__menu .activePage {
+  text-decoration: underline;
+  text-underline-position: under;
+  -webkit-text-decoration-color: #FB8B24;
+          text-decoration-color: #FB8B24;
+}
+
+html .App .body {
+  width: 100%;
+  height: auto;
+}
+
+html .App .body .homeGallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: auto;
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+}
+
+html .App .body .homeGallery .column1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: auto;
+  height: auto;
+}
+
+html .App .body .homeGallery .column1 .blockA {
+  width: 247px;
+  height: 288px;
+  background-color: #acacac;
+  margin-bottom: 2px;
+}
+
+html .App .body .homeGallery .column1 .blockB {
+  width: 247px;
+  height: 144px;
+  background-color: #acacac;
+  margin-bottom: 2px;
+}
+
+html .App .body .homeGallery .column1 .blockC {
+  width: 247px;
+  height: 288px;
+  background-color: #acacac;
+}
+
+html .App .body .homeGallery .column2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: auto;
+  height: auto;
+  margin: 0px 2px;
+}
+
+html .App .body .homeGallery .column2 .blockD {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 496px;
+  height: 143px;
+  background-color: #acacac;
+  margin-bottom: 2px;
+}
+
+html .App .body .homeGallery .column2 .blockE {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: auto;
+  height: auto;
+}
+
+html .App .body .homeGallery .column2 .blockE .blockE_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: auto;
+  height: auto;
+}
+
+html .App .body .homeGallery .column2 .blockE .blockE_left .blockE_leftTop {
+  width: 247px;
+  height: 288px;
+  background-color: #acacac;
+  margin-right: 2px;
+  margin-bottom: 2px;
+}
+
+html .App .body .homeGallery .column2 .blockE .blockE_left .blockE_leftBottom {
+  width: 247px;
+  height: 144px;
+  background-color: #acacac;
+}
+
+html .App .body .homeGallery .column2 .blockE .blockE_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: auto;
+  height: auto;
+}
+
+html .App .body .homeGallery .column2 .blockE .blockE_right .blockE_rightTop {
+  width: 247px;
+  height: 143px;
+  background-color: #acacac;
+  margin-bottom: 2px;
+}
+
+html .App .body .homeGallery .column2 .blockE .blockE_right .blockE_rightBottom {
+  width: 247px;
+  height: 288px;
+  background-color: #acacac;
+}
+
+html .App .body .homeGallery .column2 .blockF {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 496px;
+  height: 143px;
+  background-color: #010101;
+  margin-top: 2px;
+  color: white;
+  font-family: 'IBMPlexSans';
+  font-size: 16px;
+}
+
+html .App .body .homeGallery .column2 .blockF__loadMore {
+  padding-top: 10px;
+}
+
+html .App .body .homeGallery .column2 .blockF__downArrow {
+  padding-top: 10px;
+}
+
+html .App .body .homeGallery .column3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: auto;
+  height: auto;
+}
+
+html .App .body .homeGallery .column3 .blockG {
+  width: 247px;
+  height: 288px;
+  background-color: #acacac;
+  margin-bottom: 2px;
+}
+
+html .App .body .homeGallery .column3 .blockH {
+  width: 247px;
+  height: 144px;
+  background-color: #acacac;
+  margin-bottom: 2px;
+}
+
+html .App .body .homeGallery .column3 .blockI {
+  width: 247px;
+  height: 288px;
+  background-color: #acacac;
+}
+
+html .App .body .projectMain {
+  width: 100%;
+  height: 100%;
+  background-color: lightpink;
+}
+
+html .App .body .aboutPage {
+  width: 100%;
+  height: 100%;
+  background-color: lightsalmon;
+}
+
+html .App .body .contactPage {
+  width: 100%;
+  height: 100%;
+  background-color: lightsteelblue;
+}
+
+html .App .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  height: 66px;
+  background-color: #fafbfa;
+  color: #3A3A3A;
+  font-family: 'IBMPlexSans';
+  font-size: 12px;
+}
+
+html .App .footer__copyright {
+  margin: 38px 50px 0px 0px;
+}
+/*# sourceMappingURL=App.css.map */
