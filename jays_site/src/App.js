@@ -1,30 +1,38 @@
-import React, { Component } from 'react';
-import Home from './Home.js';
-import { BrowserRouter as Router, Route, Switch, Redirect,} from 'react-router-dom';
-
-
-
-
-import './App.css';
+import React, { Component } from "react";
+import { Route, NavLink, HashRouter, Redirect} from "react-router-dom";
+import Branding from "./Branding.js";
+import Work1 from "./Work1";
+import About1 from "./About1";
+import Contact1 from "./Contact1";
+import ProjectContainer from "./ProjectContainer.js";
+import Footer from "./Footer";
+import "./App.css";
 
 class App extends Component {
-
   render() {
-
     return (
-      <div className="App">
-        <Router>
-            <Switch>
-            <Route path="/work" exact render={ (props) => { return <Home />} } />
-            <Route path="/:pageID" exact render={ (props) => { return <Home homeId={props.match.params.pageID} />} } />
-            <Route exact path="/" render={() =><Redirect to='/work'/>} />
-            </Switch>
-        </Router>
-      </div>
+      <HashRouter>
+        <div className="app">
+          <div className="header">
+            <Branding />
+            <div className="navigation">
+              <NavLink to="/work" activeClassName="current" className="notCurrent">Work</NavLink> 
+              <NavLink exact to="/about" activeClassName="current" className="notCurrent">About</NavLink>
+              <NavLink exact to="/contact" activeClassName="current" className="notCurrent">Contact</NavLink>
+            </div>
+          </div>
+          <div className="content">
+            <Route exact path="/" render={() =><Redirect to='/work'/>}/>
+            <Route exact path="/work" component={Work1}/>
+            <Route path="/about" component={About1}/>
+            <Route path="/contact" component={Contact1}/>
+            <Route path="/work/:projectID" exact render={ (props) => { return <ProjectContainer projectId={props.match.params.projectID} />} }  />
+          </div>
+          <Footer />
+        </div>
+      </HashRouter>
     );
   }
 }
-
+ 
 export default App;
-
-                 
