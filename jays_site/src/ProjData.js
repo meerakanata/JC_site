@@ -1,8 +1,39 @@
-[
+module.exports = [
     {
-      "number": 0,
-      "name": "",
-      "heading": "",
+      "projID": "sittris",
+      "number": 1,
+      "name": "sittris",
+      "heading": "healthcare seating system",
+      "description": "",
+      "image": "https://i.imgur.com/3WPEmCJ.jpeg",
+      "carousel-img1": "",
+      "carousel-img2": "",
+      "carousel-img3": "",
+      "carousel-blurb1": "",
+      "carousel-blurb2": "",
+      "carousel-blurb3": "",
+      
+    },
+    {
+      "projID": "cuisipro",
+      "number": 2,
+      "name": "cuisipro",
+      "heading": "kitchen utensils",
+      "description": "",
+      "image": "https://i.imgur.com/3WPEmCJ.jpeg",
+      "carousel-img1": "",
+      "carousel-img2": "",
+      "carousel-img3": "",
+      "carousel-blurb1": "",
+      "carousel-blurb2": "",
+      "carousel-blurb3": "",
+      
+    },
+    {
+      "projID": "revo",
+      "number": 3,
+      "name": "revo",
+      "heading": "specialty eyewear",
       "description": "",
       "image": "https://i.imgur.com/3WPEmCJ.jpeg",
       "carousel-img1": "",

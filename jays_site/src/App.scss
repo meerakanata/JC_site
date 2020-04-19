@@ -334,6 +334,142 @@
                     }
                 }
             }
+            .projectContainer{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                width: 100%;
+                height: auto;
+                background-color: #FFFFFF;
+                .projMain{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    width: 100%;
+                    height: 435px;
+                    .projNav{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        width: 111px;
+                        height: 100%;
+                        background-color: #010101;
+                        // .projNext{
+
+                        // }
+                        // .projNum{
+
+                        // }
+                        // .projPrev{
+
+                        // }
+                    }
+                    .projInfo{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        width: 385px;
+                        height: 100%;
+                        background-color: #FAFBFA;
+                        .projName{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-start;
+                            color: #4EA9B9;
+                            font-family: 'Sunflower-Medium';
+                            font-size: 36px;
+                        }
+                        .projHeading{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-start;
+                            color: #010101;
+                            font-family: 'IBMPlexSans';
+                            font-size: 18px;
+                        }
+                        .projDescription{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-start;
+                            color: #010101;
+                            font-family: 'IBMPlexSans';
+                            font-size: 16px;
+                            line-height: 33px;
+                        }
+
+                    }
+                    .projImage{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        background-color: #FFFFFF;
+                        width: 497px;
+                        height: 100%;
+                        // img{}
+
+                    }
+                }
+                .projDetailTab{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    width: 100%;
+                    height: 72px;
+                    .tabRectangleLeft{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        width: 496px;
+                        height: auto;
+                        background-color: #FFFFFF;
+                        // .tabTitle{
+
+                        // }
+                        // .tabExpandClose{
+    
+                        // }
+                    }
+
+                    .tabRectangleRight{
+                        width: 498px;
+                        height: auto;
+                        background-color: #FAFBFA;
+                    }
+                }
+                .projDevInfo{
+                    .rectangle{
+
+                    }
+                    .projDevImage{
+                        //img{}
+                    }
+                    .blurbContainer{
+                        .blurb{
+
+                        }
+                    }
+                    .controlsContainer{
+
+                        .carouselControls{
+                            .prevSlide{
+
+                            }
+                            .slide1Box{
+
+                            }
+                            .slide2Box{
+
+                            }
+                            .slide3Box{
+
+                            }
+                            .nextSlide{
+
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 

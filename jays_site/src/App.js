@@ -7,6 +7,9 @@ import Contact1 from "./Contact1";
 import ProjectContainer from "./ProjectContainer.js";
 import Footer from "./Footer";
 import "./App.css";
+var Carousel = require('carousel');
+new Carousel('#slides');
+
 
 class App extends Component {
   render() {
