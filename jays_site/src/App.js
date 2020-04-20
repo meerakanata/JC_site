@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Route, NavLink, HashRouter, Redirect} from "react-router-dom";
+// import { Route, NavLink, HashRouter, Redirect, BrowserRouter} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Redirect, NavLink} from 'react-router-dom';
 import Branding from "./Branding.js";
 import Work1 from "./Work1";
 import About1 from "./About1";
@@ -14,7 +15,8 @@ new Carousel('#slides');
 class App extends Component {
   render() {
     return (
-      <HashRouter>
+
+      <Router>
         <div className="app">
           <div className="header">
             <Branding />
@@ -25,15 +27,18 @@ class App extends Component {
             </div>
           </div>
           <div className="content">
-            <Route exact path="/" render={() =><Redirect to='/work'/>}/>
-            <Route exact path="/work" component={Work1}/>
-            <Route path="/about" component={About1}/>
-            <Route path="/contact" component={Contact1}/>
-            <Route path="/work/:projectID" exact render={ (props) => { return <ProjectContainer projectId={props.match.params.projectID} />} }  />
+            <Switch>
+              <Route exact path="/" render={() =><Redirect to='/work'/>}/>
+              <Route exact path="/work" component={Work1}/>
+              <Route path="/about" component={About1}/>
+              <Route path="/contact" component={Contact1}/>
+              <Route path="/work/:projectID" exact render={ (props) => { return <ProjectContainer projectId={props.match.params.projectID} />} }  />
+            </Switch>
           </div>
           <Footer />
         </div>
-      </HashRouter>
+      </Router>
+
     );
   }
 }

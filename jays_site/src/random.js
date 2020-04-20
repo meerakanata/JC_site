@@ -1,27 +1,49 @@
 import React from "react";
 import {Link} from "react-router-dom";
 var projData = require('./ProjData.js');
-
+// const previousObjectID = this.backProjID(this.props.projectData.number);
+// const currentProjectNum = this.props.projectData.number;
 
 export default class Project extends React.Component {
 
+    state = {
+        projID: "",
+        number: "",
+        name: "",
+        heading: "",
+        description: "",
+        image: "",
+        carousel_img1: "",
+        carousel_img2: "",
+        carousel_img3: "",
+        carousel_blurb1: "",
+        carousel_blurb2: "",
+        carousel_blurb3: "",
+    };
 
+// componentDidMount () {
+//     console.log(this.props.projectData);
+// }
 componentDidUpdate () {
     // console.log(this.props.projectData);
     // console.log(this.backProjID(this.props.projectData.number));
 
-    // console.log(this.state.projID);
-    console.log(this.props.projectData.projID);
-    console.log(this.backProjID(this.props.projectData.number));
-
-    // if(this.backProjID(this.props.projectData.number) !== this.props.projectData.projID) {
-    //     let obj = projData.find(obj => obj.projID === this.backProjID(this.props.projectData.number));
-    //     console.log(obj);
-    //     this.setState(obj);
-    // }
-
 }
 
+// backProjNum = (currentProjNum) => {
+//     if (currentProjNum === 1){
+//         const prevProjNum = 11;
+//         return prevProjNum;
+//     }
+//     else if (currentProjNum >1 && currentProjNum < 12){
+//         const prevProjNum = currentProjNum-1;
+//         return prevProjNum;
+//     }
+//     else {
+//         console.log("Error with pageBack function declaration");
+//     }
+
+// }
 backProjID = (currentProjNum) => {
     if (currentProjNum === 1){
         const prevProjNum = 11;
@@ -36,27 +58,36 @@ backProjID = (currentProjNum) => {
 
 }
 
-goPrevProj = (e) => {
-    e.preventDefault();
 
-    let currentProjNum = this.props.projectData.number; //this is the current page's project number
-    if (currentProjNum === 1){ //if the project number equals 1 then 
-        const prevProjNum = 11; //create new variable and set the value to be the project before #1, which is #11
-        const prevObj = projData.find(obj => obj.number === prevProjNum); // finding the object with the matching number property, #11 and storing in new variable prevObj
-        //let newID = prevObj.projID; isolating the id from the new variable prevObj and storing in new variable called newID
-        this.props.submitHandler(prevObj); //passing the object as a parameter in the submitHandler function callback
-    }               //OR
-    else if (currentProjNum >1 && currentProjNum < 12){ //if the project number falls between 1 and 12
-        const prevProjNum = currentProjNum-1; //create new variable and set the value to be the project before the current one
-        const prevObj = projData.find(obj => obj.number === prevProjNum); // finding the object with the matching number property, and storing in new variable prevObj
-        //let newID = prevObj.projID; isolating the id from the new variable prevObj and storing in new variable called newID
-        this.props.submitHandler(prevObj); //passing the object as a parameter in the submitHandler function callback
-    }
-    else {
-        console.log("There's an error with the eventhandler");
-    }
 
-}
+// so if the current project number is 4
+//then i need to check to see if it falls between 1 to 12 (it does)
+// so i will have a new variable prevProjNum that i will set the value to be one less than the current project's
+//number. So in this instance it would be set to 3.
+//Next, I need to find the project object from props that has the same project number (3)
+//so I will need to use a function find() and isolate that object
+//once i have that object, then I will want to get the projID value from it and return it to where this function was 
+//first called in the render () below.
+
+//onClick={this.goPrevProj}
+
+// goPrevProj = () => {
+//     console.log("this function has called");
+//     console.log(this.props.projectData.number);
+//     const currentProjNum = this.props.projectData.number;
+//     if (currentProjNum === 1){
+//         const prevObj = projData.find(obj => obj.number === 11);
+//         this.setState(prevObj);
+//         console.log(prevObj);
+//     }
+//     else if (currentProjNum >1 && currentProjNum < 12){
+//         const prevProjNum = currentProjNum-1;
+//         const prevObj = projData.find(obj => obj.number === prevProjNum);
+//         this.setState(projData[prevObj.number]);
+//         console.log(prevObj);
+
+//     }
+// }
 
     render() {
 
@@ -66,8 +97,7 @@ goPrevProj = (e) => {
                     <div className="projNav">
                         <div className="projPrev">
                         {console.log(this.backProjID(this.props.projectData.number))};
-                            {/* <Link to={"/work/"+ this.backProjID(this.props.projectData.number)}><img src={"../Icon/Icon w Text/Previous.png"} alt="back arrow"/></Link> */}
-                            <Link to={"/work/"+ this.backProjID(this.props.projectData.number)} onClick={this.goPrevProj}><img src={"../Icon/Icon w Text/Previous.png"} alt="back arrow"/></Link>
+                            <Link to={"/work/"+ this.backProjID(this.props.projectData.number)}><img src={"../Icon/Icon w Text/Previous.png"} alt="back arrow"/></Link>
                         </div>
 
                         <div className="projNum">{this.props.projectData.number}</div>
