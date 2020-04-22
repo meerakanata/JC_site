@@ -1,6 +1,9 @@
+
 import React from "react";
 import {Link} from "react-router-dom";
+import Collapsible from "./Collapsible.js";
 var projData = require('./ProjData.js');
+
 
 export default class Project extends React.Component {
 
@@ -78,16 +81,21 @@ nextProjID = (currentProjID) => {
                     </div>
                 </div>
                 <div className="projDetailTab">
-                    <div className="tabRectangleLeft">
+                    <div className="sideRectangle"></div>
+                    <Collapsible trigger="Development and Production">
+                        <p>This is the collapsible content. It can be any element or React component you like.</p>
+                        <p>It can even be another Collapsible component. Check out the next section!</p>
+                    </Collapsible>
+                    {/* <div className="tabRectangleLeft">
                         <div className="tabTitle"></div>
                         <div className="tabExpandClose"></div>
                     </div>
-                    <div className="tabRectangleRight"></div>
+                    <div className="tabRectangleRight"></div> */}
                 </div>
+                <div className="testBottomRect"></div>
                 <div className="projDevInfo">
                     <div className="rectangle"></div>
-                    <div className="projDevImage">
-                        {/* insert the image tag here */}
+                    <div className="projDevImage">{/* insert the image tag here */}
                     </div>
                     <div className="blurbContainer">
                         <div className="blurb"></div>
