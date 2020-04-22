@@ -8,11 +8,31 @@ import Contact1 from "./Contact1";
 import ProjectContainer from "./ProjectContainer.js";
 import Footer from "./Footer";
 import "./App.css";
-var Carousel = require('carousel');
-new Carousel('#slides');
+// var projData = require('./ProjData.js');
 
 
 class App extends Component {
+
+    state = {
+      projID: "",
+      projNUM: "",
+      number: "",
+      name: "",
+      heading: "",
+      description: "",
+      image: "",
+      carousel_img1: "",
+      carousel_img2: "",
+      carousel_img3: "",
+      carousel_blurb1: "",
+      carousel_blurb2: "",
+      carousel_blurb3: "",
+  };
+
+  changeState = (obj) => {
+    this.setState(obj);
+  }
+
   render() {
     return (
 
@@ -32,7 +52,7 @@ class App extends Component {
               <Route exact path="/work" component={Work1}/>
               <Route path="/about" component={About1}/>
               <Route path="/contact" component={Contact1}/>
-              <Route path="/work/:projectID" exact render={ (props) => { return <ProjectContainer projectId={props.match.params.projectID} />} }  />
+              <Route path="/work/:projectID" exact render={ (props) => { return <ProjectContainer projectData={this.state} projectId={props.match.params.projectID} changeState={this.changeState}/>} }  />
             </Switch>
           </div>
           <Footer />

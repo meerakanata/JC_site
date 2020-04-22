@@ -1,7 +1,8 @@
 module.exports = [
     {
       "projID": "sittris",
-      "number": 1,
+      "projNUM": 1,
+      "number": "01",
       "name": "Sittris",
       "heading": "Healthcare Seating System",
       "description": "",
@@ -16,7 +17,8 @@ module.exports = [
     },
     {
       "projID": "cuisipro",
-      "number": 2,
+      "projNUM": 2,
+      "number": "02",
       "name": "Cuisipro",
       "heading": "Kitchen Collection",
       "description": "",
@@ -31,7 +33,8 @@ module.exports = [
     },
     {
       "projID": "revo",
-      "number": 3,
+      "projNUM": 3,
+      "number": "03",
       "name": "Revo",
       "heading": "Performance Sunglasses",
       "description": "",
@@ -46,7 +49,8 @@ module.exports = [
     },
     {
       "projID": "roka",
-      "number": 4,
+      "projNUM": 4,
+      "number": "04",
       "name": "Roka",
       "heading": "Performance Eyewear",
       "description": "",
@@ -61,7 +65,8 @@ module.exports = [
     },
     {
       "projID": "xdclaymore",
-      "number": 5,
+      "projNUM": 5,
+      "number": "05",
       "name": "xd claymore",
       "heading": "Angled Barbell Exercise Unit",
       "description": "",
@@ -76,7 +81,8 @@ module.exports = [
     },
     {
       "projID": "bangerz",
-      "number": 6,
+      "projNUM": 6,
+      "number": "06",
       "name": "Bangerz",
       "heading": "Women’s Field Sport Goggle",
       "description": "",
@@ -91,7 +97,8 @@ module.exports = [
     },
     {
       "projID": "gs",
-      "number": 7,
+      "projNUM": 7,
+      "number": "07",
       "name": "gs",
       "heading": "Flatware Collection",
       "description": "",
@@ -106,7 +113,8 @@ module.exports = [
     },
     {
       "projID": "switch-vision",
-      "number": 8,
+      "projNUM": 8,
+      "number": "08",
       "name": "Switch Vision",
       "heading": "Magnetic Interchange Lens System",
       "description": "",
@@ -121,7 +129,8 @@ module.exports = [
     },
     {
       "projID": "+1",
-      "number": 9,
+      "projNUM": 9,
+      "number": "09",
       "name": "+1",
       "heading": "Condom Case",
       "description": "",
@@ -136,7 +145,8 @@ module.exports = [
     },
     {
       "projID": "thermos",
-      "number": 10,
+      "projNUM": 10,
+      "number": "10",
       "name": "Thermos",
       "heading": "Cooler Bags",
       "description": "",
@@ -151,7 +161,8 @@ module.exports = [
     },
     {
       "projID": "foldinglawnchair",
-      "number": 11,
+      "projNUM": 11,
+      "number": "11",
       "name": "Folding Lawn Chair",
       "heading": "specialty eyewear",
       "description": "",

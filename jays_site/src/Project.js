@@ -2,84 +2,79 @@ import React from "react";
 import {Link} from "react-router-dom";
 var projData = require('./ProjData.js');
 
-
 export default class Project extends React.Component {
 
+    //isolate the current object using the id from params
+    //use this object to then populate the content in the render
 
+
+
+componentDidMount () {
+    // console.log(this.props.projectData); //object data from state via props from App > ProjectContainer > here
+    // console.log(this.props.currentId); //id from match.params via props from App > ProjectContainer > here
+}
 componentDidUpdate () {
-    // console.log(this.props.projectData);
-    // console.log(this.backProjID(this.props.projectData.number));
-
-    // console.log(this.state.projID);
-    console.log(this.props.projectData.projID);
-    console.log(this.backProjID(this.props.projectData.number));
-
-    // if(this.backProjID(this.props.projectData.number) !== this.props.projectData.projID) {
-    //     let obj = projData.find(obj => obj.projID === this.backProjID(this.props.projectData.number));
-    //     console.log(obj);
-    //     this.setState(obj);
-    // }
+    // console.log(this.props.projectData); //object data from state via props from App > ProjectContainer > here
 
 }
 
-backProjID = (currentProjNum) => {
-    if (currentProjNum === 1){
+currentProject = (currentProjID) => {
+    const currentObj = projData.find(obj => obj.projID === currentProjID);
+    return currentObj;
+}
+
+backProjID = (currentProjID) => {
+    //need to find the # object using the current ID
+    const currentObj = projData.find(obj => obj.projID === currentProjID);
+
+    if (currentObj.projNUM === 1){
         const prevProjNum = 11;
-        const prevObj = projData.find(obj => obj.number === prevProjNum);
+        const prevObj = projData.find(obj => obj.projNUM === prevProjNum);
         return prevObj.projID;
     }
-    else if (currentProjNum >1 && currentProjNum < 12){
-        const prevProjNum = currentProjNum-1;
-        const prevObj = projData.find(obj => obj.number === prevProjNum);
+    else if (currentObj.projNUM >1 && currentObj.projNUM < 12){
+        const prevProjNum = currentObj.projNUM-1;
+        const prevObj = projData.find(obj => obj.projNUM === prevProjNum);
         return prevObj.projID;
+    }
+}
+
+nextProjID = (currentProjID) => {
+    const currentObj = projData.find(obj => obj.projID === currentProjID);
+
+    if (currentObj.projNUM === 11){
+        const nextProjNum = 1;
+        const nextObj = projData.find(obj => obj.projNUM === nextProjNum);
+        return nextObj.projID;
+    }
+    else if (currentObj.projNUM >= 1 && currentObj.projNUM <= 10){
+        const nextProjNum = currentObj.projNUM+1;
+        const nextObj = projData.find(obj => obj.projNUM === nextProjNum);
+        return nextObj.projID;
     }
 
 }
-
-goPrevProj = (e) => {
-    e.preventDefault();
-
-    let currentProjNum = this.props.projectData.number; //this is the current page's project number
-    if (currentProjNum === 1){ //if the project number equals 1 then 
-        const prevProjNum = 11; //create new variable and set the value to be the project before #1, which is #11
-        const prevObj = projData.find(obj => obj.number === prevProjNum); // finding the object with the matching number property, #11 and storing in new variable prevObj
-        //let newID = prevObj.projID; isolating the id from the new variable prevObj and storing in new variable called newID
-        this.props.submitHandler(prevObj); //passing the object as a parameter in the submitHandler function callback
-    }               //OR
-    else if (currentProjNum >1 && currentProjNum < 12){ //if the project number falls between 1 and 12
-        const prevProjNum = currentProjNum-1; //create new variable and set the value to be the project before the current one
-        const prevObj = projData.find(obj => obj.number === prevProjNum); // finding the object with the matching number property, and storing in new variable prevObj
-        //let newID = prevObj.projID; isolating the id from the new variable prevObj and storing in new variable called newID
-        this.props.submitHandler(prevObj); //passing the object as a parameter in the submitHandler function callback
-    }
-    else {
-        console.log("There's an error with the eventhandler");
-    }
-
-}
-
     render() {
 
         return (
-            <div>
+            <div className="projectContainer">
                 <div className="projMain">
                     <div className="projNav">
                         <div className="projPrev">
-                        {console.log(this.backProjID(this.props.projectData.number))};
-                            {/* <Link to={"/work/"+ this.backProjID(this.props.projectData.number)}><img src={"../Icon/Icon w Text/Previous.png"} alt="back arrow"/></Link> */}
-                            <Link to={"/work/"+ this.backProjID(this.props.projectData.number)} onClick={this.goPrevProj}><img src={"../Icon/Icon w Text/Previous.png"} alt="back arrow"/></Link>
+                            <Link to={"/work/"+ this.backProjID(this.props.currentId)}><img src={"../Icon/Icon w Text/Previous.png"} alt="back arrow"/></Link>
                         </div>
-
-                        <div className="projNum">{this.props.projectData.number}</div>
-                        <div className="projNext"></div>
+                        <div className="projNum">{this.currentProject(this.props.currentId).number}</div>
+                        <div className="projNext">
+                            <Link to={"/work/"+ this.nextProjID(this.props.currentId)}><img src={"../Icon/Icon w Text/Next.png"} alt="forward arrow"/></Link>
+                        </div>
                     </div>
                     <div className="projInfo">
-                        <div className="projName">{this.props.projectData.name}</div>
-                        <div className="projHeading">{this.props.projectData.heading}</div>
-                        <div className="projDescription">{this.props.projectData.description}</div>
+                        <div className="projName">{this.currentProject(this.props.currentId).name}</div>
+                        <div className="projHeading">{this.currentProject(this.props.currentId).heading}</div>
+                        <div className="projDescription">{this.currentProject(this.props.currentId).description}</div>
                     </div>
                     <div className="projImage">
-                        <img src={this.props.projectData.image} alt="baseball players"/>
+                        <img src={this.currentProject(this.props.currentId).image} alt="baseball players"/>
                     </div>
                 </div>
                 <div className="projDetailTab">

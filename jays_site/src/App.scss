@@ -137,6 +137,8 @@
         .content {
             background-color: #FFFFFF;
             margin-top: 3px;
+            width: 100%;
+            height: auto;
             .homeGallery{
                 display: flex;
                 flex-direction: row;
@@ -347,6 +349,7 @@
                     justify-content: center;
                     width: 100%;
                     height: 435px;
+
                     .projNav{
                         display: flex;
                         flex-direction: column;
@@ -357,9 +360,17 @@
                         // .projPrev{
 
                         // }
-                        // .projNum{
-
-                        // }
+                        .projNum{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-end;
+                            width: auto;
+                            height: auto;
+                            color: #FFFFFF;
+                            font-size: 137px;
+                            font-family: 'IBMPlexSans';
+                            transform: rotate(90deg);
+                        }
                         // .projNext{
 
                         // }
