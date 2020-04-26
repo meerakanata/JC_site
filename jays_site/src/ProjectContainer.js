@@ -1,26 +1,23 @@
 import React from "react";
 import Project from "./Project.js";
-var projData = require('./ProjData.js');
+
 
 export default class ProjectContainer extends React.Component {
 
-//need to bring state in through props from parent
 
     componentDidMount () {
-       
-        // console.log(this.props.projectId); //id from match.params via props from App > here
+        // console.log(this.props.params);
+        // console.log(this.props.projectId);
+        const projectId = this.props.projectId;
+        const activeObj = this.props.activeObj;
+        const rawData = this.props.rawData;
 
-        //need to setState here with the current object based on params
-        // const currentObj = projData.find(obj => obj.projID === this.props.projectId);
-        // this.props.changeState(currentObj);
-        // console.log(this.props.projectData); //object data from state via props from App > here
-    }
-    componentDidUpdate (){
-        if(this.props.projectData.projID !== this.props.projectId) {
-            const currentObj = projData.find(obj => obj.projID === this.props.projectId);
+        if(activeObj.projID !== projectId){
+            const currentObj = rawData.find(obj => obj.projID === projectId);
             this.props.changeState(currentObj);
         }
-        // console.log(this.props.projectData); 
+    }
+    componentDidUpdate (){
 
     }
 
@@ -28,7 +25,7 @@ export default class ProjectContainer extends React.Component {
 
         return (
             <div className="projectContainer">
-                <Project projectData={this.props.projectData} currentId={this.props.projectId} submitHandler={this.submitHandler}/>
+                <Project activeObj={this.props.activeObj} rawData={this.props.rawData} currentId={this.props.projectId} slideId={this.props.slideId} prevSlide={this.props.prevSlide}/>
             </div>
         );
     }
