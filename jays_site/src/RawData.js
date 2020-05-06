@@ -5,23 +5,23 @@ module.exports = [
       "number": "01",
       "name": "Sittris",
       "heading": "Healthcare Seating System",
-      "description": "",
-      "image": "https://i.imgur.com/3WPEmCJ.jpeg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi tristique senectus et netus et malesuada fames ac turpis. Nulla pellentesque dignissim enim sit amet. Egestas congue quisque egestas diam in arcu cursus.",
+      "image": "../../Mock_FeatureImg.png",
       "displaySlide": {
         "slide": "../../slide1.png",
         "frameNum": "1",
       },
       "carousel": [{
         "slide": "../../slide1.png",
-        "blurb":"",
+        "blurb":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
         "slide": "../../slide2.png",
-        "blurb":"",
+        "blurb":"Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
         "slide": "../../slide3.png",
-        "blurb":"",
+        "blurb":"Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       }],
     },
     {
@@ -30,7 +30,7 @@ module.exports = [
       "number": "02",
       "name": "Cuisipro",
       "heading": "Kitchen Collection",
-      "description": "",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi tristique senectus et netus et malesuada fames ac turpis. Nulla pellentesque dignissim enim sit amet. Egestas congue quisque egestas diam in arcu cursus.",
       "image": "https://i.imgur.com/3WPEmCJ.jpeg",
       "displaySlide": {
         "slide": "../../slide1.png",
@@ -55,7 +55,7 @@ module.exports = [
       "number": "03",
       "name": "Revo",
       "heading": "Performance Sunglasses",
-      "description": "",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi tristique senectus et netus et malesuada fames ac turpis. Nulla pellentesque dignissim enim sit amet. Egestas congue quisque egestas diam in arcu cursus.",
       "image": "https://i.imgur.com/3WPEmCJ.jpeg",
       "displaySlide": {
         "slide": "../../slide1.png",
@@ -80,7 +80,7 @@ module.exports = [
       "number": "04",
       "name": "Roka",
       "heading": "Performance Eyewear",
-      "description": "",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi tristique senectus et netus et malesuada fames ac turpis. Nulla pellentesque dignissim enim sit amet. Egestas congue quisque egestas diam in arcu cursus.",
       "image": "https://i.imgur.com/3WPEmCJ.jpeg",
       "displaySlide": {
         "slide": "../../slide1.png",
@@ -105,7 +105,7 @@ module.exports = [
       "number": "05",
       "name": "xd claymore",
       "heading": "Angled Barbell Exercise Unit",
-      "description": "",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi tristique senectus et netus et malesuada fames ac turpis. Nulla pellentesque dignissim enim sit amet. Egestas congue quisque egestas diam in arcu cursus.",
       "image": "https://i.imgur.com/3WPEmCJ.jpeg",
       "displaySlide": {
         "slide": "../../slide1.png",
@@ -130,7 +130,7 @@ module.exports = [
       "number": "06",
       "name": "Bangerz",
       "heading": "Women’s Field Sport Goggle",
-      "description": "",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi tristique senectus et netus et malesuada fames ac turpis. Nulla pellentesque dignissim enim sit amet. Egestas congue quisque egestas diam in arcu cursus.",
       "image": "https://i.imgur.com/3WPEmCJ.jpeg",
       "displaySlide": {
         "slide": "../../slide1.png",
@@ -155,7 +155,7 @@ module.exports = [
       "number": "07",
       "name": "gs",
       "heading": "Flatware Collection",
-      "description": "",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi tristique senectus et netus et malesuada fames ac turpis. Nulla pellentesque dignissim enim sit amet. Egestas congue quisque egestas diam in arcu cursus.",
       "image": "https://i.imgur.com/3WPEmCJ.jpeg",
       "displaySlide": {
         "slide": "../../slide1.png",
@@ -180,7 +180,7 @@ module.exports = [
       "number": "08",
       "name": "Switch Vision",
       "heading": "Magnetic Interchange Lens System",
-      "description": "",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi tristique senectus et netus et malesuada fames ac turpis. Nulla pellentesque dignissim enim sit amet. Egestas congue quisque egestas diam in arcu cursus.",
       "image": "https://i.imgur.com/3WPEmCJ.jpeg",
       "displaySlide": {
         "slide": "../../slide1.png",
@@ -205,7 +205,7 @@ module.exports = [
       "number": "09",
       "name": "+1",
       "heading": "Condom Case",
-      "description": "",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi tristique senectus et netus et malesuada fames ac turpis. Nulla pellentesque dignissim enim sit amet. Egestas congue quisque egestas diam in arcu cursus.",
       "image": "https://i.imgur.com/3WPEmCJ.jpeg",
       "displaySlide": {
         "slide": "../../slide1.png",
@@ -230,7 +230,7 @@ module.exports = [
       "number": "10",
       "name": "Thermos",
       "heading": "Cooler Bags",
-      "description": "",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi tristique senectus et netus et malesuada fames ac turpis. Nulla pellentesque dignissim enim sit amet. Egestas congue quisque egestas diam in arcu cursus.",
       "image": "https://i.imgur.com/3WPEmCJ.jpeg",
       "displaySlide": {
         "slide": "../../slide1.png",
@@ -255,7 +255,7 @@ module.exports = [
       "number": "11",
       "name": "Folding Lawn Chair",
       "heading": "specialty eyewear",
-      "description": "",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi tristique senectus et netus et malesuada fames ac turpis. Nulla pellentesque dignissim enim sit amet. Egestas congue quisque egestas diam in arcu cursus.",
       "image": "https://i.imgur.com/3WPEmCJ.jpeg",
       "displaySlide": {
         "slide": "../../slide1.png",

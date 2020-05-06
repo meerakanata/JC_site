@@ -24,6 +24,19 @@ export default class MyCarousel extends React.Component {
         }
     }
 
+    setCurrentBlurb = (blurb) => {
+        //render based on the default slide to load
+        const currentObj = this.props.currentObj;
+        let id = Number(this.props.slideId);
+        if(id === 3 || id === 2){
+            const prevSlideIndex = id-1;
+            const prevBlurb = currentObj.carousel[prevSlideIndex].blurb;
+            return prevBlurb;
+        }
+        else if(id === 1){
+            return blurb;
+        }
+    }
 
     managePrevSlidePath = () =>{
         let id = Number(this.props.slideId);
@@ -72,7 +85,11 @@ export default class MyCarousel extends React.Component {
                     <img src={this.setCurrentSlide(this.props.currentObj.carousel[0].slide)} alt="slide"/>
                 </div>
                 <div className="carousel__blurb">
-                    <div className="carousel__blurb-top"></div>
+                    <div className="carousel__blurb-top">
+                        <div className="actualBlurb">
+                            {this.setCurrentBlurb(this.props.currentObj.carousel[0].blurb)}
+                        </div>
+                    </div>
                     <div className="carousel__blurb-bottom">
                         <div className="prevSlide">
                             <Link to={"/work/"+id+previous}><img src={"../../Icon/Icon w Text/Previous_Dark.png"} alt="back arrow"/></Link>

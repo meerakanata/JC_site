@@ -61,11 +61,11 @@ nextProjID = (currentProjID) => {
                 <div className="projMain">
                     <div className="projNav">
                         <div className="projPrev">
-                            <Link to={"/work/"+ this.backProjID(this.props.currentId)+"/1"}><img src={"../../Icon/Icon w Text/Previous.png"} alt="back arrow"/></Link>
+                            <Link to={"/work/"+ this.backProjID(this.props.currentId)+"/1"}><img src={"../../Icon/Icon w Text/Previous_White.png"} alt="back arrow"/></Link>
                         </div>
                         <div className="projNum">{this.currentProject(this.props.currentId).number}</div>
                         <div className="projNext">
-                            <Link to={"/work/"+ this.nextProjID(this.props.currentId)+"/1"}><img src={"../../Icon/Icon w Text/Next.png"} alt="forward arrow"/></Link>
+                            <Link to={"/work/"+ this.nextProjID(this.props.currentId)+"/1"}><img src={"../../Icon/Icon w Text/Next_White.png"} alt="forward arrow"/></Link>
                         </div>
                     </div>
                     <div className="projInfo">
