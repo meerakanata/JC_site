@@ -467,9 +467,39 @@
                                 height: 309px;
                             }
                             .carousel__blurb-bottom{
-                                background-color: darkslategray;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                align-items: center;
                                 width: 100%;
                                 height: 50px;
+
+                                .prevSlide {
+                                    display: flex;
+                                    margin-right: 40px;
+                                }
+                                .emptyDot{
+                                    width: 7px;
+                                    height: 7px;
+                                    border: 1px solid #010101;
+                                    background-color: white;
+                                    border-radius: 50%;
+
+                                }
+                                .filledDot{
+                                    width: 7px;
+                                    height: 7px;
+                                    background-color: #010101;
+                                    border: 1px solid #010101;
+                                    border-radius: 50%
+                                }
+                                .slideTwoDot{
+                                    margin: 0px 7px;
+                                }
+                                .nextSlide {
+                                    display: flex;
+                                    margin-left: 40px;
+                                }
                             }
                             span{
                                 display: flex;
@@ -492,8 +522,9 @@
                           
                           
                             &:after {
-                              font-family: 'FontAwesome';
-                              content: '\f107';
+                            //   font-family: 'FontAwesome';
+                            //   content: '\f107';
+                              content: url('./Icons/expand.png');
                               position: absolute;
                               right: 507px;
                               top: 28px;
@@ -503,7 +534,7 @@
                           
                             &.is-open {
                               &:after {
-                                transform: rotateZ(180deg);
+                                transform: rotateZ(45deg);
                               }
                             }
                           
