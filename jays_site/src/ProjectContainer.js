@@ -22,11 +22,8 @@ export default class ProjectContainer extends React.Component {
     }
 
     render() {
-
         return (
-            <div className="projectContainer">
-                <Project activeObj={this.props.activeObj} rawData={this.props.rawData} currentId={this.props.projectId} slideId={this.props.slideId} prevSlide={this.props.prevSlide}/>
-            </div>
+            <Project activeObj={this.props.activeObj} rawData={this.props.rawData} currentId={this.props.projectId} slideId={this.props.slideId} prevSlide={this.props.prevSlide}/>
         );
     }
 }

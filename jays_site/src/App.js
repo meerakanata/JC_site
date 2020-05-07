@@ -66,6 +66,7 @@ class App extends Component {
         <div className="app">
           <div className="header">
             <Branding />
+            <div className="burgerMenu"></div>
             <div className="navigation">
               <NavLink to="/work" activeClassName="current" className="notCurrent">Work</NavLink> 
               <NavLink exact to="/about" activeClassName="current" className="notCurrent">About</NavLink>
