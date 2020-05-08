@@ -12,36 +12,37 @@ var rawData = require('./RawData.js');
 
 class App extends Component {
 
-    state = {
-      activeObj: {
-        projID: "",
-        projNUM: "",
-        number: "",
-        name: "",
-        heading: "",
-        description: "",
-        image: "",
-        displaySlide: {
-          slide: "",
-          frameNum: "",
-        },
-        carousel: [{
-          position: "",
-          slide: "../slide1.png",
-          blurb:"",
-        },
-        {
-          position: "",
-          slide: "../slide2.png",
-          blurb:"",
-        },
-        {
-          position: "",
-          slide: "../slide3.png",
-          blurb:"",
-        }],
+  state = {
+    loadMore: false,
+    activeObj: {
+      projID: "",
+      projNUM: "",
+      number: "",
+      name: "",
+      heading: "",
+      description: "",
+      image: "",
+      displaySlide: {
+        slide: "",
+        frameNum: "",
       },
-      rawProjectData: rawData,
+      carousel: [{
+        position: "",
+        slide: "../slide1.png",
+        blurb:"",
+      },
+      {
+        position: "",
+        slide: "../slide2.png",
+        blurb:"",
+      },
+      {
+        position: "",
+        slide: "../slide3.png",
+        blurb:"",
+      }],
+    },
+    rawProjectData: rawData,
   };
 
   changeState = (obj) => {
@@ -49,13 +50,11 @@ class App extends Component {
       activeObj: obj,
     });
   };
-  prevSlide = (prevSlideObj) => {
-    console.log(prevSlideObj);
-    // this.setState({
-    //   activeObj: {
-    //     displaySlide: prevSlideObj,
-    //   }
-    // })
+
+  loadMoreHandler = (buttonClicked) => {
+    this.setState({
+      loadMore: buttonClicked,
+    });
   }
 
 
@@ -68,7 +67,8 @@ class App extends Component {
             <Branding />
             <div className="burgerMenu"></div>
             <div className="navigation">
-              <NavLink to="/work" activeClassName="current" className="notCurrent">Work</NavLink> 
+              <NavLink to="/work" activeClassName="current" className="notCurrent" 
+              onClick = {() => {this.setState({loadMore: false, });}}>Work</NavLink> 
               <NavLink exact to="/about" activeClassName="current" className="notCurrent">About</NavLink>
               <NavLink exact to="/contact" activeClassName="current" className="notCurrent">Contact</NavLink>
             </div>
@@ -76,12 +76,12 @@ class App extends Component {
           <div className="content">
             <Switch>
               <Route exact path="/" render={() =><Redirect to='/work'/>}/>
-              <Route exact path="/work" component={Work1}/>
+              <Route path="/work" exact render={ () => { return <Work1 resetLoadMoreValue={this.resetLoadMoreValue} loadMore={this.state.loadMore} loadMoreHandler={this.loadMoreHandler}/> }} />
               <Route path="/about" component={About1}/>
               <Route path="/contact" component={Contact1}/>
-              <Route path="/work/:projectID/:slideID?" exact render={ (props) => { return <ProjectContainer activeObj={this.state.activeObj} 
-              rawData={this.state.rawProjectData} projectId={props.match.params.projectID} slideId={props.match.params.slideID} changeState={this.changeState} prevSlide={this.prevSlide}/>} } />
-
+              <Route path="/work/:projectID?/:slideID?" exact render={ (props) => { return <ProjectContainer activeObj={this.state.activeObj}
+              rawData={this.state.rawProjectData} projectId={props.match.params.projectID} slideId={props.match.params.slideID} 
+              changeState={this.changeState} />} } />
             </Switch>
           </div>
           <Footer />
@@ -91,5 +91,5 @@ class App extends Component {
     );
   }
 }
- 
+
 export default App;

@@ -83,7 +83,7 @@ nextProjID = (currentProjID) => {
                         </div>
                     </div>
                     <Collapsible trigger="Development and Production">
-                        <MyCarousel activeObj={this.props.activeObj} rawData={this.props.rawData} currentObj={this.currentProject(this.props.currentId)} currentId={this.props.currentId} slideId={this.props.slideId} prevSlide={this.props.prevSlide} />
+                        <MyCarousel activeObj={this.props.activeObj} rawData={this.props.rawData} currentObj={this.currentProject(this.props.currentId)} currentId={this.props.currentId} slideId={this.props.slideId} />
                     </Collapsible>
                 </div>
             </div>

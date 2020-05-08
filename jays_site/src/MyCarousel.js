@@ -7,7 +7,6 @@ export default class MyCarousel extends React.Component {
         
     }
     componentDidUpdate () {
-        console.log(this.props.slideId);
     }
     
     setCurrentSlide = (slide) => {

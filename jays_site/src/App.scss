@@ -173,85 +173,29 @@ body {
             width: 100%;
             height: auto;
             .homeGallery{
-                @include fr;
+                @include fc;
                 justify-content: space-around;
                 height: auto;
                 width: 100%;
                 height: auto;
                 background-color:$color-06;
-                .column1{
-                    @include fc;
-                    justify-content: center;
-                    width: auto;
-                    height: auto;
-                }
-                .column1__A{
-                    width: 247px;
-                    height: 288px;
-                    background-color: rgb(172, 172, 172);
-                    margin-bottom: 2px;
-                    img{
-                        display: flex;
-                        width: 100%;
-                        height: 100%
-                    }
-                }
-                .column1__B{
-                    width: 247px;
-                    height: 144px;
-                    background-color: rgb(172, 172, 172);
-                    margin-bottom: 2px;
-                    img{
-                        display: flex;
-                        width: 100%;
-                        height: 100%
-                    }
-                }
-                .column1__C{
-                    width: 247px;
-                    height: 288px;
-                    background-color: rgb(172, 172, 172);
-                    img{
-                        display: flex;
-                        width: 100%;
-                        height: 100%
-                    }
-                }
-                .column2{
-                    @include fc;
-                    justify-content: center;
-                    width: auto;
-                    height: auto;
-                    margin: 0px 2px;
-                }
-                .column2__D{
-                    display: flex;
-                    width: 496px;
-                    height: 143px;
-                    background-color: #acacac;
-                    margin-bottom: 2px;
-                    img{
-                        display: flex;
-                        width: 100%;
-                        height: 100%
-                    }
-                }
-                .column2__E{
+                .homeGallery__Main{
                     @include fr;
-                    justify-content: center;
-                    width: auto;
+                    justify-content: space-around;
                     height: auto;
-                }
-                .column2__E-left{
-                    @include fc;
-                    justify-content: flex-start;
-                    width: auto;
+                    width: 100%;
                     height: auto;
-                    .leftTop{
+                    background-color:$color-06;
+                    .column1{
+                        @include fc;
+                        justify-content: center;
+                        width: auto;
+                        height: auto;
+                    }
+                    .column1__A{
                         width: 247px;
                         height: 288px;
                         background-color: rgb(172, 172, 172);
-                        margin-right: 2px;
                         margin-bottom: 2px;
                         img{
                             display: flex;
@@ -259,26 +203,9 @@ body {
                             height: 100%
                         }
                     }
-                    .leftBottom{
+                    .column1__B{
                         width: 247px;
-                        height: 144px;  
-                        background-color: rgb(172, 172, 172);
-                        img{
-                            display: flex;
-                            width: 100%;
-                            height: 100%
-                        }
-
-                    }
-                }
-                .column2__E-right{
-                    @include fc;
-                    justify-content: flex-start;
-                    width: auto;
-                    height: auto;
-                    .rightTop{
-                        width: 247px;
-                        height: 143px;  
+                        height: 144px;
                         background-color: rgb(172, 172, 172);
                         margin-bottom: 2px;
                         img{
@@ -287,74 +214,165 @@ body {
                             height: 100%
                         }
                     }
-                    .rightBottom{
+                    .column1__C{
                         width: 247px;
-                        height: 288px;  
+                        height: 288px;
                         background-color: rgb(172, 172, 172);
                         img{
                             display: flex;
                             width: 100%;
                             height: 100%
                         }
+                    }
+                    .column2{
+                        @include fc;
+                        justify-content: center;
+                        width: auto;
+                        height: auto;
+                        margin: 0px 2px;
+                    }
+                    .column2__D{
+                        display: flex;
+                        width: 496px;
+                        height: 143px;
+                        background-color: #acacac;
+                        margin-bottom: 2px;
+                        img{
+                            display: flex;
+                            width: 100%;
+                            height: 100%
+                        }
+                    }
+                    .column2__E{
+                        @include fr;
+                        justify-content: center;
+                        width: auto;
+                        height: auto;
+                    }
+                    .column2__E-left{
+                        @include fc;
+                        justify-content: flex-start;
+                        width: auto;
+                        height: auto;
+                        .leftTop{
+                            width: 247px;
+                            height: 288px;
+                            background-color: rgb(172, 172, 172);
+                            margin-right: 2px;
+                            margin-bottom: 2px;
+                            img{
+                                display: flex;
+                                width: 100%;
+                                height: 100%
+                            }
+                        }
+                        .leftBottom{
+                            width: 247px;
+                            height: 144px;  
+                            background-color: rgb(172, 172, 172);
+                            img{
+                                display: flex;
+                                width: 100%;
+                                height: 100%
+                            }
+
+                        }
+                    }
+                    .column2__E-right{
+                        @include fc;
+                        justify-content: flex-start;
+                        width: auto;
+                        height: auto;
+                        .rightTop{
+                            width: 247px;
+                            height: 143px;  
+                            background-color: rgb(172, 172, 172);
+                            margin-bottom: 2px;
+                            img{
+                                display: flex;
+                                width: 100%;
+                                height: 100%
+                            }
+                        }
+                        .rightBottom{
+                            width: 247px;
+                            height: 288px;  
+                            background-color: rgb(172, 172, 172);
+                            img{
+                                display: flex;
+                                width: 100%;
+                                height: 100%
+                            }
+
+                        }
+                    }
+                    .column2__F{
+                        @include fc;
+                        justify-content: center;
+                        align-items: center;
+                        width: 496px;
+                        height: 143px;
+                        background-color: $color-01;
+                        margin-top: 2px;
+                        color: $color-06;
+                        font-family: 'IBMPlexSans';
+                        font-size: 16px;
 
                     }
+                    .column2__F-loadMore{
+                        padding-top: 10px;
+                    }
+                    .column2__F-downArrow{
+                        padding-top: 10px;
+                    }
+                    .column3{
+                        @include fc;
+                        justify-content: center;
+                        width: auto;
+                        height: auto;
+                    }
+                    .column3__G{
+                        width: 247px;
+                        height: 288px;
+                        background-color: rgb(172, 172, 172);
+                        margin-bottom: 2px;
+                        img{
+                            display: flex;
+                            width: 100%;
+                            height: 100%
+                        }
+                    }
+                    .column3__H{
+                        width: 247px;
+                        height: 144px;
+                        background-color: rgb(172, 172, 172);
+                        margin-bottom: 2px;
+                        img{
+                            display: flex;
+                            width: 100%;
+                            height: 100%
+                        }
+                    }
+                    .column3__I{
+                        width: 247px;
+                        height: 288px;
+                        background-color: rgb(172, 172, 172);
+                        img{
+                            display: flex;
+                            width: 100%;
+                            height: 100%
+                        }
+                    }
                 }
-                .column2__F{
-                    @include fc;
+                .loadMoreContent{
+                    display: flex;
+                    flex-direction: row;
                     justify-content: center;
-                    align-items: center;
-                    width: 496px;
-                    height: 143px;
-                    background-color: $color-01;
-                    margin-top: 2px;
-                    color: $color-06;
-                    font-family: 'IBMPlexSans';
-                    font-size: 16px;
+                    width: 100%;
+                    height: 200px;
+                    background-color: blue;
+                    font-size: 30px;
 
-                }
-                .column2__F-loadMore{
-                    padding-top: 10px;
-                }
-                .column2__F-downArrow{
-                    padding-top: 10px;
-                }
-                .column3{
-                    @include fc;
-                    justify-content: center;
-                    width: auto;
-                    height: auto;
-                }
-                .column3__G{
-                    width: 247px;
-                    height: 288px;
-                    background-color: rgb(172, 172, 172);
-                    margin-bottom: 2px;
-                    img{
-                        display: flex;
-                        width: 100%;
-                        height: 100%
-                    }
-                }
-                .column3__H{
-                    width: 247px;
-                    height: 144px;
-                    background-color: rgb(172, 172, 172);
-                    margin-bottom: 2px;
-                    img{
-                        display: flex;
-                        width: 100%;
-                        height: 100%
-                    }
-                }
-                .column3__I{
-                    width: 247px;
-                    height: 288px;
-                    background-color: rgb(172, 172, 172);
-                    img{
-                        display: flex;
-                        width: 100%;
-                        height: 100%
-                    }
                 }
             }
             .projectContainer{
