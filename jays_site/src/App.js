@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch, Redirect, NavLink} from 'react-router-dom';
 import Branding from "./Branding.js";
-import Work1 from "./Work1";
+import Work2 from "./Work2";
 import About1 from "./About1";
 import Contact1 from "./Contact1";
 import ProjectContainer from "./ProjectContainer.js";
@@ -76,7 +76,7 @@ class App extends Component {
           <div className="content">
             <Switch>
               <Route exact path="/" render={() =><Redirect to='/work'/>}/>
-              <Route path="/work" exact render={ () => { return <Work1 resetLoadMoreValue={this.resetLoadMoreValue} loadMore={this.state.loadMore} loadMoreHandler={this.loadMoreHandler}/> }} />
+              <Route path="/work" exact render={ () => { return <Work2 rawData={this.state.rawProjectData} resetLoadMoreValue={this.resetLoadMoreValue} loadMore={this.state.loadMore} loadMoreHandler={this.loadMoreHandler}/> }} />
               <Route path="/about" component={About1}/>
               <Route path="/contact" component={Contact1}/>
               <Route path="/work/:projectID?/:slideID?" exact render={ (props) => { return <ProjectContainer activeObj={this.state.activeObj}

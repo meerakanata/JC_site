@@ -177,192 +177,269 @@ body {
                 justify-content: space-around;
                 height: auto;
                 width: 100%;
-                height: auto;
+                margin-top: 10px;
                 background-color:$color-06;
                 .homeGallery__Main{
                     @include fr;
-                    justify-content: space-around;
+                    justify-content: space-between;
                     height: auto;
                     width: 100%;
-                    height: auto;
-                    background-color:$color-06;
-                    .column1{
-                        @include fc;
-                        justify-content: center;
-                        width: auto;
-                        height: auto;
-                    }
-                    .column1__A{
-                        width: 247px;
-                        height: 288px;
-                        background-color: rgb(172, 172, 172);
-                        margin-bottom: 2px;
-                        img{
-                            display: flex;
-                            width: 100%;
-                            height: 100%
+                    flex-wrap: wrap;
+                    //background-color:$color-06;
+                    .homeGallery__Main-Card-a{
+                        margin-bottom: 10px;
+                        .cardFull{
+                            width: 240px;
+                            height: 335px;
+                            background-color: lightgray;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
                         }
                     }
-                    .column1__B{
-                        width: 247px;
-                        height: 144px;
-                        background-color: rgb(172, 172, 172);
-                        margin-bottom: 2px;
-                        img{
-                            display: flex;
-                            width: 100%;
-                            height: 100%
-                        }
-                    }
-                    .column1__C{
-                        width: 247px;
-                        height: 288px;
-                        background-color: rgb(172, 172, 172);
-                        img{
-                            display: flex;
-                            width: 100%;
-                            height: 100%
-                        }
-                    }
-                    .column2{
-                        @include fc;
-                        justify-content: center;
-                        width: auto;
-                        height: auto;
-                        margin: 0px 2px;
-                    }
-                    .column2__D{
+                    .homeGallery__Main-Card-b{
                         display: flex;
-                        width: 496px;
-                        height: 143px;
-                        background-color: #acacac;
-                        margin-bottom: 2px;
-                        img{
-                            display: flex;
-                            width: 100%;
-                            height: 100%
-                        }
-                    }
-                    .column2__E{
-                        @include fr;
-                        justify-content: center;
-                        width: auto;
-                        height: auto;
-                    }
-                    .column2__E-left{
-                        @include fc;
-                        justify-content: flex-start;
-                        width: auto;
-                        height: auto;
-                        .leftTop{
-                            width: 247px;
-                            height: 288px;
-                            background-color: rgb(172, 172, 172);
-                            margin-right: 2px;
-                            margin-bottom: 2px;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        margin-bottom: 10px;
+                        .cardThird{
+                            width: 240px;
+                            height: 105px;
+                            background-color: lightgray;
                             img{
-                                display: flex;
                                 width: 100%;
-                                height: 100%
+                                height: 100%;
                             }
                         }
-                        .leftBottom{
-                            width: 247px;
-                            height: 144px;  
-                            background-color: rgb(172, 172, 172);
+                    }
+                    .homeGallery__Main-Card-c{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        margin-bottom: 10px;
+                        .cardTwoThirds{
+                            width: 240px;
+                            height: 220px;
+                            background-color: lightgray;
                             img{
-                                display: flex;
                                 width: 100%;
-                                height: 100%
+                                height: 100%;
                             }
+                        }
+                        .cardThird{
+                            width: 240px;
+                            height: 105px;
+                            background-color: lightgray;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                    .homeGallery__Main-Card-d{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        margin-bottom: 10px;
+                        .cardTwoThirds{
+                            width: 240px;
+                            height: 220px;
+                            background-color: lightgray;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        .cardThird{
+                            width: 240px;
+                            height: 105px;
+                            background-color: lightgray;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
 
-                        }
-                    }
-                    .column2__E-right{
-                        @include fc;
-                        justify-content: flex-start;
-                        width: auto;
-                        height: auto;
-                        .rightTop{
-                            width: 247px;
-                            height: 143px;  
-                            background-color: rgb(172, 172, 172);
-                            margin-bottom: 2px;
-                            img{
-                                display: flex;
-                                width: 100%;
-                                height: 100%
-                            }
-                        }
-                        .rightBottom{
-                            width: 247px;
-                            height: 288px;  
-                            background-color: rgb(172, 172, 172);
-                            img{
-                                display: flex;
-                                width: 100%;
-                                height: 100%
-                            }
+                    
+                    // .column1{
+                    //     @include fc;
+                    //     justify-content: center;
+                    //     width: auto;
+                    //     height: auto;
+                    // }
+                    // .column1__A{
+                    //     width: 247px;
+                    //     height: 288px;
+                    //     background-color: rgb(172, 172, 172);
+                    //     margin-bottom: 2px;
+                    //     img{
+                    //         display: flex;
+                    //         width: 100%;
+                    //         height: 100%
+                    //     }
+                    // }
+                    // .column1__B{
+                    //     width: 247px;
+                    //     height: 144px;
+                    //     background-color: rgb(172, 172, 172);
+                    //     margin-bottom: 2px;
+                    //     img{
+                    //         display: flex;
+                    //         width: 100%;
+                    //         height: 100%
+                    //     }
+                    // }
+                    // .column1__C{
+                    //     width: 247px;
+                    //     height: 288px;
+                    //     background-color: rgb(172, 172, 172);
+                    //     img{
+                    //         display: flex;
+                    //         width: 100%;
+                    //         height: 100%
+                    //     }
+                    // }
+                    // .column2{
+                    //     @include fc;
+                    //     justify-content: center;
+                    //     width: auto;
+                    //     height: auto;
+                    //     margin: 0px 2px;
+                    // }
+                    // .column2__D{
+                    //     display: flex;
+                    //     width: 496px;
+                    //     height: 143px;
+                    //     background-color: #acacac;
+                    //     margin-bottom: 2px;
+                    //     img{
+                    //         display: flex;
+                    //         width: 100%;
+                    //         height: 100%
+                    //     }
+                    // }
+                    // .column2__E{
+                    //     @include fr;
+                    //     justify-content: center;
+                    //     width: auto;
+                    //     height: auto;
+                    // }
+                    // .column2__E-left{
+                    //     @include fc;
+                    //     justify-content: flex-start;
+                    //     width: auto;
+                    //     height: auto;
+                    //     .leftTop{
+                    //         width: 247px;
+                    //         height: 288px;
+                    //         background-color: rgb(172, 172, 172);
+                    //         margin-right: 2px;
+                    //         margin-bottom: 2px;
+                    //         img{
+                    //             display: flex;
+                    //             width: 100%;
+                    //             height: 100%
+                    //         }
+                    //     }
+                    //     .leftBottom{
+                    //         width: 247px;
+                    //         height: 144px;  
+                    //         background-color: rgb(172, 172, 172);
+                    //         img{
+                    //             display: flex;
+                    //             width: 100%;
+                    //             height: 100%
+                    //         }
 
-                        }
-                    }
-                    .column2__F{
-                        @include fc;
-                        justify-content: center;
-                        align-items: center;
-                        width: 496px;
-                        height: 143px;
-                        background-color: $color-01;
-                        margin-top: 2px;
-                        color: $color-06;
-                        font-family: 'IBMPlexSans';
-                        font-size: 16px;
+                    //     }
+                    // }
+                    // .column2__E-right{
+                    //     @include fc;
+                    //     justify-content: flex-start;
+                    //     width: auto;
+                    //     height: auto;
+                    //     .rightTop{
+                    //         width: 247px;
+                    //         height: 143px;  
+                    //         background-color: rgb(172, 172, 172);
+                    //         margin-bottom: 2px;
+                    //         img{
+                    //             display: flex;
+                    //             width: 100%;
+                    //             height: 100%
+                    //         }
+                    //     }
+                    //     .rightBottom{
+                    //         width: 247px;
+                    //         height: 288px;  
+                    //         background-color: rgb(172, 172, 172);
+                    //         img{
+                    //             display: flex;
+                    //             width: 100%;
+                    //             height: 100%
+                    //         }
 
-                    }
-                    .column2__F-loadMore{
-                        padding-top: 10px;
-                    }
-                    .column2__F-downArrow{
-                        padding-top: 10px;
-                    }
-                    .column3{
-                        @include fc;
-                        justify-content: center;
-                        width: auto;
-                        height: auto;
-                    }
-                    .column3__G{
-                        width: 247px;
-                        height: 288px;
-                        background-color: rgb(172, 172, 172);
-                        margin-bottom: 2px;
-                        img{
-                            display: flex;
-                            width: 100%;
-                            height: 100%
-                        }
-                    }
-                    .column3__H{
-                        width: 247px;
-                        height: 144px;
-                        background-color: rgb(172, 172, 172);
-                        margin-bottom: 2px;
-                        img{
-                            display: flex;
-                            width: 100%;
-                            height: 100%
-                        }
-                    }
-                    .column3__I{
-                        width: 247px;
-                        height: 288px;
-                        background-color: rgb(172, 172, 172);
-                        img{
-                            display: flex;
-                            width: 100%;
-                            height: 100%
-                        }
-                    }
+                    //     }
+                    // }
+                    // .column2__F{
+                    //     @include fc;
+                    //     justify-content: center;
+                    //     align-items: center;
+                    //     width: 496px;
+                    //     height: 143px;
+                    //     background-color: $color-01;
+                    //     margin-top: 2px;
+                    //     color: $color-06;
+                    //     font-family: 'IBMPlexSans';
+                    //     font-size: 16px;
+
+                    // }
+                    // .column2__F-loadMore{
+                    //     padding-top: 10px;
+                    // }
+                    // .column2__F-downArrow{
+                    //     padding-top: 10px;
+                    // }
+                    // .column3{
+                    //     @include fc;
+                    //     justify-content: center;
+                    //     width: auto;
+                    //     height: auto;
+                    // }
+                    // .column3__G{
+                    //     width: 247px;
+                    //     height: 288px;
+                    //     background-color: rgb(172, 172, 172);
+                    //     margin-bottom: 2px;
+                    //     img{
+                    //         display: flex;
+                    //         width: 100%;
+                    //         height: 100%
+                    //     }
+                    // }
+                    // .column3__H{
+                    //     width: 247px;
+                    //     height: 144px;
+                    //     background-color: rgb(172, 172, 172);
+                    //     margin-bottom: 2px;
+                    //     img{
+                    //         display: flex;
+                    //         width: 100%;
+                    //         height: 100%
+                    //     }
+                    // }
+                    // .column3__I{
+                    //     width: 247px;
+                    //     height: 288px;
+                    //     background-color: rgb(172, 172, 172);
+                    //     img{
+                    //         display: flex;
+                    //         width: 100%;
+                    //         height: 100%
+                    //     }
+                    // }
                 }
                 .loadMoreContent{
                     display: flex;
@@ -374,6 +451,24 @@ body {
                     font-size: 30px;
 
                 }
+                .loadMoreButton{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 120px;
+                    background-color: $color-01;
+                    color: $color-06;
+                    font-family: 'IBMPlexSans';
+                    font-size: 16px;
+                }
+                // .loadMoreButton__text{
+                    
+                // }
+                // .loadMoreButton__button{
+
+                // }
             }
             .projectContainer{
                 @include fc;
