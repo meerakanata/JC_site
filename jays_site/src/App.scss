@@ -83,6 +83,7 @@ $color-08: #4EA9B9;
 //********** MAIN STYLING STARTS **********
 
 
+
 body {
     @include fr;
     justify-content: center;
@@ -96,6 +97,7 @@ body {
         align-items: center;
         width: 994px;
         height: auto;
+        
         .header{
             @include fr;
             justify-content: flex-start;
@@ -108,6 +110,7 @@ body {
                // margin-bottom: 22px;
                 color: $color-01;
                 font-family: 'Sunflower-Medium';
+                animation: transitionIn 1s;
                 .name{
                     font-size: 48px;
                     margin: 162px 0px 0px 50px;
@@ -135,6 +138,7 @@ body {
                 width: 25%;
                 background-color: $color-01;
                 padding: 192px 50px 0px 199px;
+                animation: transitionIn 2s;
 
                 .notCurrent{
                     color: $color-06;
@@ -163,6 +167,7 @@ body {
             color: $color-01;
             font-family: 'IBMPlexSans';
             font-size: 12px;
+            animation: transitionIn 2s
         }
         .footer__copyright{
             margin: 38px 50px 0px 0px;
@@ -172,6 +177,7 @@ body {
             margin-top: 3px;
             width: 100%;
             height: auto;
+            
             .homeGallery{
                 @include fc;
                 justify-content: space-around;
@@ -179,14 +185,15 @@ body {
                 width: 100%;
                 margin-top: 10px;
                 background-color:$color-06;
+                animation: transitionIn 2s;
                 .homeGallery__Main{
                     @include fr;
                     justify-content: space-between;
                     height: auto;
                     width: 100%;
                     flex-wrap: wrap;
-                    //background-color:$color-06;
-                    .homeGallery__Main-Card-a{
+                    
+                    .homeGallery__MainCard-a{
                         margin-bottom: 10px;
                         .cardFull{
                             width: 240px;
@@ -198,22 +205,7 @@ body {
                             }
                         }
                     }
-                    .homeGallery__Main-Card-b{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-                        margin-bottom: 10px;
-                        .cardThird{
-                            width: 240px;
-                            height: 105px;
-                            background-color: lightgray;
-                            img{
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-                    }
-                    .homeGallery__Main-Card-c{
+                    .homeGallery__MainCard-b{
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
@@ -237,7 +229,7 @@ body {
                             }
                         }
                     }
-                    .homeGallery__Main-Card-d{
+                    .homeGallery__MainCard-c{
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
@@ -261,196 +253,199 @@ body {
                             }
                         }
                     }
-
-                    
-                    // .column1{
-                    //     @include fc;
-                    //     justify-content: center;
-                    //     width: auto;
-                    //     height: auto;
-                    // }
-                    // .column1__A{
-                    //     width: 247px;
-                    //     height: 288px;
-                    //     background-color: rgb(172, 172, 172);
-                    //     margin-bottom: 2px;
-                    //     img{
-                    //         display: flex;
-                    //         width: 100%;
-                    //         height: 100%
-                    //     }
-                    // }
-                    // .column1__B{
-                    //     width: 247px;
-                    //     height: 144px;
-                    //     background-color: rgb(172, 172, 172);
-                    //     margin-bottom: 2px;
-                    //     img{
-                    //         display: flex;
-                    //         width: 100%;
-                    //         height: 100%
-                    //     }
-                    // }
-                    // .column1__C{
-                    //     width: 247px;
-                    //     height: 288px;
-                    //     background-color: rgb(172, 172, 172);
-                    //     img{
-                    //         display: flex;
-                    //         width: 100%;
-                    //         height: 100%
-                    //     }
-                    // }
-                    // .column2{
-                    //     @include fc;
-                    //     justify-content: center;
-                    //     width: auto;
-                    //     height: auto;
-                    //     margin: 0px 2px;
-                    // }
-                    // .column2__D{
-                    //     display: flex;
-                    //     width: 496px;
-                    //     height: 143px;
-                    //     background-color: #acacac;
-                    //     margin-bottom: 2px;
-                    //     img{
-                    //         display: flex;
-                    //         width: 100%;
-                    //         height: 100%
-                    //     }
-                    // }
-                    // .column2__E{
-                    //     @include fr;
-                    //     justify-content: center;
-                    //     width: auto;
-                    //     height: auto;
-                    // }
-                    // .column2__E-left{
-                    //     @include fc;
-                    //     justify-content: flex-start;
-                    //     width: auto;
-                    //     height: auto;
-                    //     .leftTop{
-                    //         width: 247px;
-                    //         height: 288px;
-                    //         background-color: rgb(172, 172, 172);
-                    //         margin-right: 2px;
-                    //         margin-bottom: 2px;
-                    //         img{
-                    //             display: flex;
-                    //             width: 100%;
-                    //             height: 100%
-                    //         }
-                    //     }
-                    //     .leftBottom{
-                    //         width: 247px;
-                    //         height: 144px;  
-                    //         background-color: rgb(172, 172, 172);
-                    //         img{
-                    //             display: flex;
-                    //             width: 100%;
-                    //             height: 100%
-                    //         }
-
-                    //     }
-                    // }
-                    // .column2__E-right{
-                    //     @include fc;
-                    //     justify-content: flex-start;
-                    //     width: auto;
-                    //     height: auto;
-                    //     .rightTop{
-                    //         width: 247px;
-                    //         height: 143px;  
-                    //         background-color: rgb(172, 172, 172);
-                    //         margin-bottom: 2px;
-                    //         img{
-                    //             display: flex;
-                    //             width: 100%;
-                    //             height: 100%
-                    //         }
-                    //     }
-                    //     .rightBottom{
-                    //         width: 247px;
-                    //         height: 288px;  
-                    //         background-color: rgb(172, 172, 172);
-                    //         img{
-                    //             display: flex;
-                    //             width: 100%;
-                    //             height: 100%
-                    //         }
-
-                    //     }
-                    // }
-                    // .column2__F{
-                    //     @include fc;
-                    //     justify-content: center;
-                    //     align-items: center;
-                    //     width: 496px;
-                    //     height: 143px;
-                    //     background-color: $color-01;
-                    //     margin-top: 2px;
-                    //     color: $color-06;
-                    //     font-family: 'IBMPlexSans';
-                    //     font-size: 16px;
-
-                    // }
-                    // .column2__F-loadMore{
-                    //     padding-top: 10px;
-                    // }
-                    // .column2__F-downArrow{
-                    //     padding-top: 10px;
-                    // }
-                    // .column3{
-                    //     @include fc;
-                    //     justify-content: center;
-                    //     width: auto;
-                    //     height: auto;
-                    // }
-                    // .column3__G{
-                    //     width: 247px;
-                    //     height: 288px;
-                    //     background-color: rgb(172, 172, 172);
-                    //     margin-bottom: 2px;
-                    //     img{
-                    //         display: flex;
-                    //         width: 100%;
-                    //         height: 100%
-                    //     }
-                    // }
-                    // .column3__H{
-                    //     width: 247px;
-                    //     height: 144px;
-                    //     background-color: rgb(172, 172, 172);
-                    //     margin-bottom: 2px;
-                    //     img{
-                    //         display: flex;
-                    //         width: 100%;
-                    //         height: 100%
-                    //     }
-                    // }
-                    // .column3__I{
-                    //     width: 247px;
-                    //     height: 288px;
-                    //     background-color: rgb(172, 172, 172);
-                    //     img{
-                    //         display: flex;
-                    //         width: 100%;
-                    //         height: 100%
-                    //     }
-                    // }
+                    .homeGallery__MainCard-d{
+                        margin-bottom: 10px;
+                        .cardFull{
+                            width: 240px;
+                            height: 335px;
+                            background-color: lightgray;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                    .homeGallery__MainCard-e{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        margin-bottom: 10px;
+                        .cardTwoThirds{
+                            width: 240px;
+                            height: 220px;
+                            background-color: lightgray;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        .cardThird{
+                            width: 240px;
+                            height: 105px;
+                            background-color: lightgray;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                    .homeGallery__MainCard-f{
+                        margin-bottom: 10px;
+                        .cardFull{
+                            width: 240px;
+                            height: 335px;
+                            background-color: lightgray;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                    .homeGallery__MainCard-g{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        margin-bottom: 10px;
+                        .cardTwoThirds{
+                            width: 240px;
+                            height: 220px;
+                            background-color: lightgray;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        .cardThird{
+                            width: 240px;
+                            height: 105px;
+                            background-color: lightgray;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                    .homeGallery__MainCard-h{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        margin-bottom: 10px;
+                        .cardTwoThirds{
+                            width: 240px;
+                            height: 220px;
+                            background-color: lightgray;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        .cardThird{
+                            width: 240px;
+                            height: 105px;
+                            background-color: lightgray;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
                 }
-                .loadMoreContent{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    width: 100%;
-                    height: 200px;
-                    background-color: blue;
-                    font-size: 30px;
-
+                .homeGallery__More {
+                    .loadMoreContent{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        width: 100%;
+                        height: auto;
+                        animation: transitionIn 1.5s;
+                        flex-wrap: wrap;
+                        .cardI{
+                            display: flex;
+                            margin-bottom: 10px;
+                            .cardFull{
+                                width: 240px;
+                                height: 335px;
+                                background-color: lightgray;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                        .cardJ{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            margin-bottom: 10px;
+                            .cardTwoThirds{
+                                width: 240px;
+                                height: 220px;
+                                background-color: lightgray;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                            .cardThird{
+                                width: 240px;
+                                height: 105px;
+                                background-color: lightgray;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                        .cardK{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            margin-bottom: 10px;
+                            .cardTwoThirds{
+                                width: 240px;
+                                height: 220px;
+                                background-color: lightgray;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                            .cardThird{
+                                width: 240px;
+                                height: 105px;
+                                background-color: lightgray;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                        .cardL{
+                            display: flex;
+                            margin-bottom: 10px;
+                            .cardFull{
+                                width: 240px;
+                                height: 335px;
+                                background-color: lightgray;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
                 }
+                @keyframes transitionIn {
+                    from {
+                        opacity: 0;
+                        transform: rotateX(-10deg);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: rotateX(0);
+                    }
+                }
+                
                 .loadMoreButton{
                     display: flex;
                     flex-direction: column;
@@ -476,11 +471,13 @@ body {
                 width: 100%;
                 height: auto;
                 background-color: $color-06;
+                animation: transitionIn 2s;
                 .projMain{
                     @include fr;
                     justify-content: center;
                     width: 100%;
                     height: 435px;
+                    
                 }
                 .projMain__Nav{
                     @include fc;
@@ -645,7 +642,7 @@ body {
                             right: 507px;
                             top: 28px;
                             display: block;
-                            transition: transform 300ms;
+                            transition: transform 2000ms;
                         }
                         
                         &.is-open {
@@ -672,6 +669,76 @@ body {
                     background-color: $color-06;
                     height: 72px;
                 }
+
+            }
+            .contactPage{
+                animation: transitionIn 2s;
+                .contactMain{
+                    @include fr;
+                    justify-content: center;
+                    width: 100%;
+                    height: 435px;
+                    .contactImage{
+                        @include fr;
+                        justify-content: flex-start;
+                        background-color: $color-06;
+                        width: 497px;
+                        height: 100%;
+                    }
+                }
+                .contactMain__Side{
+                    @include fc;
+                    justify-content: flex-start;
+                    width: 111px;
+                    height: 100%;
+                    background-color: $color-01;
+                }
+                .contactMain__Info{
+                    @include fc;
+                    justify-content: flex-start;
+                    width: 385px;
+                    height: 100%;
+                    background-color: $color-04;
+                }
+                .contactMain__Info-Heading{
+                    @include fr;
+                    justify-content: flex-start;
+                    color: $color-08;
+                    font-family: 'Sunflower-Medium';
+                    font-size: 36px;
+                    padding: 48px 0px 0px 29px;
+                }
+                .contactMain__Info-Intro{
+                    @include fr;
+                    justify-content: flex-start;
+                    color: $color-01;
+                    font-family: 'IBMPlexSans';
+                    font-size: 16px;
+                    line-height: 33px;
+                    padding: 15px 50px 0px 29px;
+                }
+                .form{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    color: $color-01;
+                    font-family: 'IBMPlexSans';
+                    font-size: 16px;
+                    line-height: 33px;
+                    padding: 15px 50px 0px 29px;
+                    textarea{
+                        height: 100px;
+                    }
+                }
+                .submit{
+                    width: 100px;
+                    height: 40px;
+                    margin-top: 20px;
+                    background-color: $color-01;
+                    color: $color-06;
+                    font-family: 'IBMPlexSans';
+                    font-size: 16px;
+                }
             }
         }
     }
@@ -682,140 +749,49 @@ body {
 
 
     @media (min-width: 800px)
-    and (max-width: 1100px){}
-    @media  (min-width: 660px)
-    and (max-width: 799px) {}
-    @media (min-width: 400px)
-    and (max-width: 659px){}
-    @media (min-width: 319px)
-    and (max-width: 321px){
-        .app{
-
-            width: 100vw;
-            .header{
-                justify-content: flex-end;;
-                height: auto;
-                
-                .branding{
-                    width: 65%;
-                    @include fc;
-                    justify-content: flex-end;
-                    align-items: flex-end;
-                    padding-right: 9%;
-                    .name{
-                        margin: 0;
-                        font-size: 36px;
-                    }
-
-                    .industry{
-                        margin: -6px 0 0 0;
-                        @include fr;
-                        font-size: 18px;
-                        .line1{
-                            padding-right: 4px;
-                        }
-                    }
-                }
-                .burgerMenu{
-                    display: flex;
-                    background-color: $color-01;
-                    width: 22%;
-                    height: 107px;
-                }
-                .navigation{
-                    display: none;
-                }
-            }
-            .content{
-                width: 100%;
-                .homeGallery{
-                    width: 100%;
-                    flex-wrap: wrap;
-                    .column1{
-                        width: 100%;
-                    }
-                    .column1__A {
-                        width: 100%;
-                        height: auto;
-                    }
-                    .column1__B {
-                        width: 100%;
-                        height: auto;
-                    }
-                    .column1__C {
-                        width: 100%;
-                        height: auto;
-                    }
-                    .column2{
-                        width: 100%;
-                    }
-                    .column2__D {
-                        width: 100%;
-                        height: auto;
-                        margin-top: 2px;
-                    }
-                    .column2__E {
-                        width: 100%;
-                        height: auto;
-                        flex-direction: column;
-                        .leftTop{
-                        width: 100%;
-                        height: auto;
-                        }
-                        .leftBottom{
-                        width: 100%;
-                        height: auto;
-                        }
-                    }
-                    .column2__E-right{
-                        margin-top: 2px;
-                        width: 100%;
-                        height: auto;
-                        .rightTop{
-                            width: 100%;
-                            height: auto;
-                        }
-                        .rightBottom{
-                            width: 100%;
-                            height: auto;
-                        }
-                    }
-                    .column2__F{
-                        width: 100%;
-                        height: 120px;
-                    }
-                    
-                    .column3{
-                        display: none;
-                        width: 100%;
-                        margin-top: 2px;
-                    }
-                    .column3__G{
-                        width: 100%;
-                        height: auto;
-                    }
-                    .column3__H{
-                        width: 100%;
-                        height: auto;
-                    }
-                    .column3__I{
-                        width: 100%;
-                        height: auto;
-                    }
-                }
-            }
-            
-            .footer__copyright{
-                margin: 32px 26px 0px 0px;
-                padding-left: 80px;
-                font-size: 10px;
-            }
-
-        }
+    and (max-width: 1099px){
         
+        .app{
+            width: 750px;
+            .content{
+                .homeGallery{
+                    .homeGallery__Main{
+                        .homeGallery__MainCard-h {
+                            display: none;
+                        }
+                        .homeGallery__MainCard-d {
+                            display: none;
+                        }
+                    }
+                
+                    .homeGallery__More {
+                        .loadMoreContent{
+                            // .cardI{
+                            //     display: flex;
+                            // }
+                            .cardJ{
+                                display: none;
+                            }
+                            // .cardK{
+                            //     display: flex;
+                            // }
+                            // .cardL{
+                            //     display: flex;
+                            // }
+                        }
+                    }
+                }
+            }
+        }
     }
-    @media (min-width: 0px)
-    and (max-width: 327px){}
+    // @media  (min-width: 660px)
+    // and (max-width: 799px) {}
+    // @media (min-width: 400px)
+    // and (max-width: 659px){}
+    // @media (min-width: 328px)
+    // and (max-width: 399px){}
+    // @media (min-width: 0px)
+    // and (max-width: 327px){}
 
 
     //************** MEDIA QUERIES ENDS **************

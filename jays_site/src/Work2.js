@@ -23,7 +23,10 @@ export default class Work1 extends React.Component {
         
         const loadMore = this.props.loadMore;
         if(loadMore === true){
-            return <MoreContent />
+            return <MoreContent rawData={this.props.rawData}/>
+        }
+        else{
+            return <div className="loadMoreButton"><div className="loadMoreButton__text">Load more products</div><div className="loadMoreButton__button" onClick={this.loadMore}>+</div></div>
         }
     }
 
@@ -32,42 +35,38 @@ export default class Work1 extends React.Component {
         return (
             <div className="homeGallery">
                 <div className="homeGallery__Main">
-                    <div className="homeGallery__Main-Card-a">
+                    <div className="homeGallery__MainCard-a">
                         <Link to="/work/sittris/1"><CardFull rawDataImg={this.props.rawData[0].image}/></Link>
                     </div>
-                    <div className="homeGallery__Main-Card-d">
+                    <div className="homeGallery__MainCard-b">
                         <Link to="/work/cuisipro/1"><CardThird rawDataImg={this.props.rawData[1].image}/></Link>
                         <Link to="/work/revo/1"><CardTwoThirds rawDataImg={this.props.rawData[2].image}/></Link>
                     </div>
-                    <div className="homeGallery__Main-Card-c">
+                    <div className="homeGallery__MainCard-c">
                         <Link to="/work/roka/1"><CardTwoThirds rawDataImg={this.props.rawData[3].image}/></Link>
                         <Link to="/work/xdclaymore/1"><CardThird rawDataImg={this.props.rawData[4].image}/></Link>
                     </div>
-                    <div className="homeGallery__Main-Card-a">
+                    <div className="homeGallery__MainCard-d">
                         <Link to="/work/bangerz/1"><CardFull rawDataImg={this.props.rawData[5].image}/></Link>
                     </div>
-                    <div className="homeGallery__Main-Card-d">
+                    <div className="homeGallery__MainCard-e">
                         <Link to="/work/gs/1"><CardThird rawDataImg={this.props.rawData[6].image}/></Link>
                         <Link to="/work/switch-vision/1"><CardTwoThirds rawDataImg={this.props.rawData[7].image}/></Link>
                     </div>
-                    <div className="homeGallery__Main-Card-a">
+                    <div className="homeGallery__MainCard-f">
                         <Link to="/work/+1/1"><CardFull rawDataImg={this.props.rawData[8].image}/></Link>
                     </div>
-                    <div className="homeGallery__Main-Card-d">
+                    <div className="homeGallery__MainCard-g">
                         <Link to="/work/thermos/1"><CardThird rawDataImg={this.props.rawData[9].image}/></Link>
                         <Link to="/work/foldinglawnchair/1"><CardTwoThirds rawDataImg={this.props.rawData[10].image}/></Link>
                     </div>
-                    <div className="homeGallery__Main-Card-c">
+                    <div className="homeGallery__MainCard-h">
                         <Link to="/work/sittris/1"><CardTwoThirds rawDataImg={this.props.rawData[0].image}/></Link>
                         <Link to="/work/sittris/1"><CardThird rawDataImg={this.props.rawData[0].image}/></Link>
                     </div>
                 </div>
-                <div>
+                <div className="homeGallery__More">
                     {this.moreProjects()}
-                </div>
-                <div className="loadMoreButton">
-                    <div className="loadMoreButton__text">Load more products</div>
-                    <button className="loadMoreButton__button" onClick={this.loadMore}>LOAD MORE</button>
                 </div>
             </div>
         );
