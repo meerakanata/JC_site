@@ -62,14 +62,14 @@ body .app {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 994px;
-  height: auto;
+  height: 107vh;
 }
 
 body .app .header {
@@ -164,7 +164,7 @@ body .app .header .navigation .notCurrent {
   color: #FFFFFF;
   text-decoration: none;
   font-family: 'IBMPlexSans';
-  font-size: 16px;
+  font-size: 1em;
 }
 
 body .app .header .navigation .current {
@@ -174,7 +174,7 @@ body .app .header .navigation .current {
           text-decoration-color: #FB8B24;
   color: #FFFFFF;
   font-family: 'IBMPlexSans';
-  font-size: 16px;
+  font-size: 1em;
 }
 
 body .app .footer {
@@ -674,7 +674,7 @@ body .app .content .projectContainer .projMain {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  height: 435px;
+  height: auto;
 }
 
 body .app .content .projectContainer .projMain__Nav {
@@ -688,8 +688,8 @@ body .app .content .projectContainer .projMain__Nav {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 111px;
-  height: 100%;
+  width: 11%;
+  height: auto;
   background-color: #010101;
 }
 
@@ -712,11 +712,11 @@ body .app .content .projectContainer .projMain__Nav-Num {
   width: auto;
   height: auto;
   color: #FFFFFF;
-  font-size: 137px;
+  font-size: 8.1em;
   font-family: 'IBMPlexSans';
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  margin: 5px 0 0 -9px;
+  margin: 6% 17% 0 0;
 }
 
 body .app .content .projectContainer .projMain__Nav-Next {
@@ -735,8 +735,8 @@ body .app .content .projectContainer .projMain__Info {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 385px;
-  height: 100%;
+  width: 39%;
+  height: auto;
   background-color: #FAFBFA;
 }
 
@@ -804,8 +804,8 @@ body .app .content .projectContainer .projMain__Image {
       -ms-flex-pack: start;
           justify-content: flex-start;
   background-color: #FFFFFF;
-  width: 497px;
-  height: 100%;
+  width: 50%;
+  height: auto;
 }
 
 body .app .content .projectContainer .projMain__Image img {
@@ -813,7 +813,7 @@ body .app .content .projectContainer .projMain__Image img {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 body .app .content .projectContainer .projDetailTab {
@@ -831,7 +831,7 @@ body .app .content .projectContainer .projDetailTab {
 }
 
 body .app .content .projectContainer .projDetailTab .Collapsible {
-  width: 882px;
+  width: 89%;
 }
 
 body .app .content .projectContainer .projDetailTab .Collapsible .carousel {
@@ -845,24 +845,28 @@ body .app .content .projectContainer .projDetailTab .Collapsible .carousel {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  height: 439px;
+  height: auto;
 }
 
 body .app .content .projectContainer .projDetailTab .Collapsible .carousel__image {
-  width: 637px;
-  height: 439px;
-  background-color: red;
+  width: 72%;
+  height: 100%;
+}
+
+body .app .content .projectContainer .projDetailTab .Collapsible .carousel__image img {
+  width: 100%;
+  height: auto;
 }
 
 body .app .content .projectContainer .projDetailTab .Collapsible .carousel__blurb {
-  width: 247px;
-  height: 439px;
+  width: 28%;
+  height: auto;
 }
 
 body .app .content .projectContainer .projDetailTab .Collapsible .carousel__blurb-top {
   background-color: #010101;
   width: 100%;
-  height: 309px;
+  height: 70%;
   font-family: 'IBMPlexSans';
   font-size: 16px;
   color: #FFFFFF;
@@ -887,7 +891,7 @@ body .app .content .projectContainer .projDetailTab .Collapsible .carousel__blur
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 50px;
+  height: 30%;
 }
 
 body .app .content .projectContainer .projDetailTab .Collapsible .carousel__blurb-bottom .prevSlide {
@@ -951,8 +955,8 @@ body .app .content .projectContainer .projDetailTab .Collapsible__trigger {
 body .app .content .projectContainer .projDetailTab .Collapsible__trigger:after {
   content: url("./Icons/expand.png");
   position: absolute;
-  right: 507px;
-  top: 28px;
+  right: 58%;
+  top: 40%;
   display: block;
   -webkit-transition: -webkit-transform 2000ms;
   transition: -webkit-transform 2000ms;
@@ -981,7 +985,7 @@ body .app .content .projectContainer .projDetailTab__sideRect {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 111px;
+  width: 11%;
   background-color: #FAFBFA;
   height: auto;
 }
@@ -1131,6 +1135,9 @@ body .app .content .contactPage .submit {
   body .app {
     width: 750px;
   }
+  body .app .header .navigation {
+    width: 17%;
+  }
   body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-h {
     display: none;
   }
@@ -1139,6 +1146,15 @@ body .app .content .contactPage .submit {
   }
   body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardJ {
     display: none;
+  }
+  body .app .content .projectContainer .projMain .projMain__Nav .projMain__Nav-Num {
+    font-size: 6.1em;
+  }
+  body .app .content .projectContainer .projMain .projMain__Nav-Prev {
+    padding: 38px 14px 0 14px;
+  }
+  body .app .content .projectContainer .projMain .projMain__Nav-Next {
+    padding: 0px 14px 0 14px;
   }
 }
 /*# sourceMappingURL=App.css.map */

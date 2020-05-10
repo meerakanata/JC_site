@@ -93,10 +93,10 @@ body {
 
     .app{
         @include fc;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         width: 994px;
-        height: auto;
+        height: 107vh;
         
         .header{
             @include fr;
@@ -144,7 +144,7 @@ body {
                     color: $color-06;
                     text-decoration: none;
                     font-family: 'IBMPlexSans';
-                    font-size: 16px;
+                    font-size: 1em;
                 }
                 .current{
                     text-decoration: underline;
@@ -152,7 +152,7 @@ body {
                     text-decoration-color: $color-07;
                     color: $color-06;
                     font-family: 'IBMPlexSans';
-                    font-size: 16px;
+                    font-size: 1em;
                 }
             }
         
@@ -476,14 +476,15 @@ body {
                     @include fr;
                     justify-content: center;
                     width: 100%;
-                    height: 435px;
+                    height: auto;
+                    //height: 44.39vh;
                     
                 }
                 .projMain__Nav{
                     @include fc;
                     justify-content: flex-start;
-                    width: 111px;
-                    height: 100%;
+                    width: 11%;
+                    height: auto;
                     background-color: $color-01;
                 }
                 .projMain__Nav-Prev{
@@ -495,11 +496,11 @@ body {
                     justify-content: center;
                     width: auto;
                     height: auto;
-                    color: $color-06;
-                    font-size: 137px;
+                    color: #FFFFFF;
+                    font-size: 8.1em;
                     font-family: 'IBMPlexSans';
                     transform: rotate(90deg);
-                    margin: 5px 0 0 -9px;
+                    margin: 6% 17% 0 0;
                 }
                 .projMain__Nav-Next{
                     padding: 0px 25px 0 25px;
@@ -508,8 +509,8 @@ body {
                 .projMain__Info{
                     @include fc;
                     justify-content: flex-start;
-                    width: 385px;
-                    height: 100%;
+                    width: 39%;
+                    height: auto;
                     background-color: $color-04;
                 }
                 .projMain__Info-Name{
@@ -541,12 +542,12 @@ body {
                     @include fr;
                     justify-content: flex-start;
                     background-color: $color-06;
-                    width: 497px;
-                    height: 100%;
+                    width: 50%;
+                    height: auto;
                     img{
                         display: flex;
                         width: 100%;
-                        height: 100%;
+                        height: auto;
                     }
                 }
                 .projDetailTab{
@@ -555,25 +556,28 @@ body {
                     width: 100%;
                     // height: auto;
                     .Collapsible {
-                        width: 882px;
+                        width: 89%;
                         .carousel{
                             @include fr;
                             justify-content: flex-start;
-                            height: 439px;
+                            height: auto;
                         }
                         .carousel__image{
-                            width: 637px;
-                            height: 439px;
-                            background-color: red;
+                            width: 72%;
+                            height: 100%;
+                            img {
+                                width: 100%;
+                                height: auto;
+                            }
                         }
                         .carousel__blurb{
-                            width: 247px;
-                            height: 439px;
+                            width: 28%;
+                            height: auto;
                         }
                         .carousel__blurb-top{
                             background-color: $color-01;
                             width: 100%;
-                            height: 309px;
+                            height: 70%;
                             font-family: 'IBMPlexSans';
                             font-size: 16px;
                             color: $color-06;
@@ -586,7 +590,7 @@ body {
                             justify-content: center;
                             align-items: center;
                             width: 100%;
-                            height: 50px;
+                            height: 30%;
 
                             .prevSlide {
                                 display: flex;
@@ -639,8 +643,8 @@ body {
                         //   content: '\f107';
                             content: url('./Icons/expand.png');
                             position: absolute;
-                            right: 507px;
-                            top: 28px;
+                            right: 58%;
+                            top: 40%;
                             display: block;
                             transition: transform 2000ms;
                         }
@@ -660,7 +664,7 @@ body {
                 .projDetailTab__sideRect{
                     @include fc;
                     justify-content: flex-start;
-                    width: 111px;
+                    width: 11%;
                     background-color: $color-04;
                     height: auto;
                 }
@@ -753,6 +757,30 @@ body {
         
         .app{
             width: 750px;
+            .header{
+
+                .branding{
+
+                    .name{
+
+                    }
+                    .industry{
+
+                        .line1{
+
+                        }
+                        .line2{
+
+                        }
+                    }
+                }
+                .burgerMenu{
+
+                }
+                .navigation{
+                    width: 17%;
+                }
+            }
             .content{
                 .homeGallery{
                     .homeGallery__Main{
@@ -778,6 +806,21 @@ body {
                             // .cardL{
                             //     display: flex;
                             // }
+                        }
+                    }
+                }
+                .projectContainer{
+                    .projMain{
+                        .projMain__Nav{
+                            .projMain__Nav-Num{
+                                font-size: 6.1em;
+                            }
+                        }
+                        .projMain__Nav-Prev{
+                            padding: 38px 14px 0 14px;
+                        }
+                        .projMain__Nav-Next{
+                            padding: 0px 14px 0 14px;
                         }
                     }
                 }
