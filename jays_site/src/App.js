@@ -67,10 +67,12 @@ class App extends Component {
             <Branding />
             <div className="burgerMenu"></div>
             <div className="navigation">
-              <NavLink to="/work" activeClassName="current" className="notCurrent" 
-              onClick = {() => {this.setState({loadMore: false, });}}>Work</NavLink> 
-              <NavLink exact to="/about" activeClassName="current" className="notCurrent">About</NavLink>
-              <NavLink exact to="/contact" activeClassName="current" className="notCurrent">Contact</NavLink>
+              <div className="navigation__menu">
+                <NavLink to="/work" activeClassName="current" className="notCurrent" 
+                onClick = {() => {this.setState({loadMore: false, });}}>Work</NavLink> 
+                <NavLink exact to="/about" activeClassName="current" className="notCurrent">About</NavLink>
+                <NavLink exact to="/contact" activeClassName="current" className="notCurrent">Contact</NavLink>
+              </div>
             </div>
           </div>
           <div className="content">

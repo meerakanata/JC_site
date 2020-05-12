@@ -106,20 +106,22 @@ body {
             .branding{
                 @include fr;
                 justify-content: flex-start;
+                align-items: flex-end;
                 width: 50%;
+                height: 100%;
                // margin-bottom: 22px;
                 color: $color-01;
                 font-family: 'Sunflower-Medium';
                 animation: transitionIn 1s;
                 .name{
                     font-size: 48px;
-                    margin: 162px 0px 0px 50px;
+                    margin: 0px 0 13.5px 50px;
                 }
                 .industry{
                     @include fc;
                     justify-content: flex-start;
                     font-size: 20px;
-                    margin: 171px 0px 0px 20px;
+                    margin: 0px 0 25px 19px;
                     line-height: 20px;
                     .line1{
                         display: flex;
@@ -133,13 +135,21 @@ body {
                 display: none;
             }
             .navigation{
-                @include fr;
-                justify-content: space-between;
-                width: 25%;
+                @include fc;
+                justify-content: flex-end;
+                align-items: flex-end;
+                width: 50%;
                 background-color: $color-01;
-                padding: 192px 50px 0px 199px;
+                //padding: 192px 50px 0px 199px;
                 animation: transitionIn 2s;
 
+            }
+            .navigation__menu{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 52%;
+                padding: 0 50px 23.5px 0;
                 .notCurrent{
                     color: $color-06;
                     text-decoration: none;
@@ -478,65 +488,70 @@ body {
                     width: 100%;
                     height: auto;
                     //height: 44.39vh;
-                    
-                }
-                .projMain__Nav{
-                    @include fc;
-                    justify-content: flex-start;
-                    width: 11%;
-                    height: auto;
-                    background-color: $color-01;
-                }
-                .projMain__Nav-Prev{
-                    padding: 38px 25px 0 25px;
-                    margin-bottom: -20px;
-                }
-                .projMain__Nav-Num{
-                    @include fr;
-                    justify-content: center;
-                    width: auto;
-                    height: auto;
-                    color: #FFFFFF;
-                    font-size: 8.1em;
-                    font-family: 'IBMPlexSans';
-                    transform: rotate(90deg);
-                    margin: 6% 17% 0 0;
-                }
-                .projMain__Nav-Next{
-                    padding: 0px 25px 0 25px;
-                    margin-top: -11px;
-                }
-                .projMain__Info{
-                    @include fc;
-                    justify-content: flex-start;
-                    width: 39%;
-                    height: auto;
-                    background-color: $color-04;
-                }
-                .projMain__Info-Name{
-                    @include fr;
-                    justify-content: flex-start;
-                    color: $color-08;
-                    font-family: 'Sunflower-Medium';
-                    font-size: 36px;
-                    padding: 48px 0px 0px 29px;
-                }
-                .projMain__Info-Heading{
-                    @include fr;
-                    justify-content: flex-start;
-                    color: $color-01;
-                    font-family: 'IBMPlexSans';
-                    font-size: 18px;
-                    padding: 13px 0px 0px 29px;
-                }
-                .projMain__Info-Description{
-                    @include fr;
-                    justify-content: flex-start;
-                    color: $color-01;
-                    font-family: 'IBMPlexSans';
-                    font-size: 16px;
-                    line-height: 33px;
-                    padding: 15px 50px 0px 29px;
+                    .projMain__Left{
+                        @include fr;
+                        justify-content: center;
+                        width: 50%;
+                        height: auto;
+                    }
+                    .projMain__Left-Nav{
+                        @include fc;
+                        justify-content: flex-start;
+                        width: 22%;
+                        height: auto;
+                        background-color: $color-01;
+                        .Prev{
+                            padding: 38px 25px 0 25px;
+                            margin-bottom: -20px;
+                        }
+                        .Num{
+                            @include fr;
+                            justify-content: center;
+                            width: auto;
+                            height: auto;
+                            color: #FFFFFF;
+                            font-size: 8.1em;
+                            font-family: 'IBMPlexSans';
+                            transform: rotate(90deg);
+                            margin: 6% 17% 0 0;
+                        }
+                        .Next{
+                            padding: 0px 25px 0 25px;
+                            margin-top: -11px;
+                        }
+                    }
+                    .projMain__Left-Info{
+                        @include fc;
+                        justify-content: flex-start;
+                        width: 78%;
+                        height: auto;
+                        background-color: $color-04;
+                        .Name{
+                            @include fr;
+                            justify-content: flex-start;
+                            color: $color-08;
+                            font-family: 'Sunflower-Medium';
+                            font-size: 36px;
+                            padding: 48px 0px 0px 29px;
+                        }
+                        .Heading{
+                            @include fr;
+                            justify-content: flex-start;
+                            color: $color-01;
+                            font-family: 'IBMPlexSans';
+                            font-size: 18px;
+                            padding: 13px 0px 0px 29px;
+                        }
+                        .Description{
+                            @include fr;
+                            justify-content: flex-start;
+                            color: $color-01;
+                            font-family: 'IBMPlexSans';
+                            font-size: 16px;
+                            line-height: 33px;
+                            padding: 15px 50px 0px 29px;
+                        }
+                    }
                 }
                 .projMain__Image{
                     @include fr;
@@ -563,7 +578,7 @@ body {
                             height: auto;
                         }
                         .carousel__image{
-                            width: 72%;
+                            width: 71%;
                             height: 100%;
                             img {
                                 width: 100%;
@@ -571,7 +586,7 @@ body {
                             }
                         }
                         .carousel__blurb{
-                            width: 28%;
+                            width: 29%;
                             height: auto;
                         }
                         .carousel__blurb-top{
@@ -590,7 +605,7 @@ body {
                             justify-content: center;
                             align-items: center;
                             width: 100%;
-                            height: 30%;
+                            height: auto;
 
                             .prevSlide {
                                 display: flex;
@@ -637,7 +652,7 @@ body {
                         background: $color-06;
                         color: $color-01;
                         
-                        
+                    
                         &:after {
                         //   font-family: 'FontAwesome';
                         //   content: '\f107';
@@ -752,33 +767,36 @@ body {
     //************** MEDIA QUERIES STARTS **************
 
 
-    @media (min-width: 800px)
+    @media (min-width: 760px)
     and (max-width: 1099px){
         
         .app{
             width: 750px;
             .header{
-
                 .branding{
-
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: flex-start;
+                    
                     .name{
-
+                        margin: 0px 0px 0px 50px;
                     }
                     .industry{
-
+                        flex-direction: row;
+                        margin: -8px 0px 25px 127px;
                         .line1{
-
-                        }
-                        .line2{
-
+                            margin-right: 5px;
                         }
                     }
                 }
-                .burgerMenu{
+                // .burgerMenu{
 
-                }
+                // }
                 .navigation{
-                    width: 17%;
+                    .navigation__menu{
+                        padding-right: 50px
+                    }
                 }
             }
             .content{
@@ -811,28 +829,393 @@ body {
                 }
                 .projectContainer{
                     .projMain{
-                        .projMain__Nav{
-                            .projMain__Nav-Num{
-                                font-size: 6.1em;
+                        .projMain__Left{
+
+                            .projMain__Left-Nav{
+                                .Num{
+                                    font-size: 6.1em;
+                                }
+                                .Prev{
+                                    padding: 38px 14px 0 14px;
+                                }
+                                .Next{
+                                    padding: 0px 14px 0 14px;
+                                }
                             }
                         }
-                        .projMain__Nav-Prev{
-                            padding: 38px 14px 0 14px;
-                        }
-                        .projMain__Nav-Next{
-                            padding: 0px 14px 0 14px;
+                    }
+                    .projDetailTab{
+                        .Collapsible {
+                            width: 89%;
+                            .carousel{
+                                .carousel__blurb-bottom{
+                                    .prevSlide {
+                                        margin-right: 15px;
+                                    }
+                                    .nextSlide {
+                                        margin-left: 15px;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
             }
         }
     }
-    // @media  (min-width: 660px)
-    // and (max-width: 799px) {}
-    // @media (min-width: 400px)
-    // and (max-width: 659px){}
-    // @media (min-width: 328px)
-    // and (max-width: 399px){}
+    @media  (min-width: 660px)
+    and (max-width: 759px) {
+        .app{
+            width: 650px;
+            .header{
+                .branding{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: flex-start;
+                    
+                    .name{
+                        margin: 0px 0px 0px 30px;
+                    }
+                    .industry{
+                        flex-direction: row;
+                        margin: -8px 0px 25px 107px;
+                        .line1{
+                            margin-right: 5px;
+                        }
+                    }
+                }
+                // .burgerMenu{
+
+                // }
+                .navigation{
+                    .navigation__menu{
+                        padding-right: 30px;
+                        width: 64%;
+                    }
+                }
+            }
+            .content{
+                .homeGallery{
+                    .homeGallery__Main{
+                        .homeGallery__MainCard-h {
+                            display: none;
+                        }
+                        .homeGallery__MainCard-d {
+                            display: none;
+                        }
+                    }
+                
+                    .homeGallery__More {
+                        .loadMoreContent{
+                            // .cardI{
+                            //     display: flex;
+                            // }
+                            .cardJ{
+                                display: none;
+                            }
+                            // .cardK{
+                            //     display: flex;
+                            // }
+                            // .cardL{
+                            //     display: flex;
+                            // }
+                        }
+                    }
+                }
+                .projectContainer{
+                    .projMain{
+                        .projMain__Left{
+                            
+                            .projMain__Left-Nav{
+                                .Num{
+                                    font-size: 5.4em;
+                                    margin: 6% 12% 0 0;
+                                }
+                                .Prev{
+                                    padding: 38px 8px 0 8px;
+                                }
+                                .Next{
+                                    padding: 0px 8px 0 8px;
+                                }
+                            }
+                        }
+                    }
+                    .projDetailTab{
+                        .Collapsible {
+                            width: 89%;
+                            .carousel{
+                                .carousel__blurb-bottom{
+                                    .prevSlide {
+                                        margin-right: 15px;
+                                    }
+                                    .nextSlide {
+                                        margin-left: 15px;
+                                    }
+                                }
+                            }
+                            span{
+                                padding-right: 65%;
+                            }
+                        }
+                    }
+                }
+            }
+        
+            .footer__copyright {
+                margin: 38px 30px 0px 0px;
+            }
+        }
+    }
+    @media (min-width: 400px)
+    and (max-width: 659px){
+        .app{
+            width: 650px;
+            .header{
+                .branding{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: flex-start;
+                    
+                    .name{
+                        margin: 0px 0px 0px 30px;
+                    }
+                    .industry{
+                        flex-direction: row;
+                        margin: -8px 0px 25px 107px;
+                        .line1{
+                            margin-right: 5px;
+                        }
+                    }
+                }
+                // .burgerMenu{
+
+                // }
+                .navigation{
+                    .navigation__menu{
+                        padding-right: 30px;
+                        width: 64%;
+                    }
+                }
+            }
+            .content{
+                .homeGallery{
+                    .homeGallery__Main{
+                        .homeGallery__MainCard-h {
+                            display: none;
+                        }
+                        .homeGallery__MainCard-d {
+                            display: none;
+                        }
+                    }
+                
+                    .homeGallery__More {
+                        .loadMoreContent{
+                            // .cardI{
+                            //     display: flex;
+                            // }
+                            .cardJ{
+                                display: none;
+                            }
+                            // .cardK{
+                            //     display: flex;
+                            // }
+                            // .cardL{
+                            //     display: flex;
+                            // }
+                        }
+                    }
+                }
+                .projectContainer{
+                    .projMain{
+                        .projMain__Left{
+                            
+                            .projMain__Left-Nav{
+                                .Num{
+                                    font-size: 5.4em;
+                                    margin: 6% 12% 0 0;
+                                }
+                                .Prev{
+                                    padding: 38px 8px 0 8px;
+                                }
+                                .Next{
+                                    padding: 0px 8px 0 8px;
+                                }
+                            }
+                        }
+                    }
+                    .projDetailTab{
+                        .Collapsible {
+                            width: 89%;
+                            .carousel{
+                                .carousel__blurb-bottom{
+                                    .prevSlide {
+                                        margin-right: 15px;
+                                    }
+                                    .nextSlide {
+                                        margin-left: 15px;
+                                    }
+                                }
+                            }
+                            span{
+                                padding-right: 65%;
+                            }
+                        }
+                    }
+                }
+            }
+        
+            .footer__copyright {
+                margin: 38px 30px 0px 0px;
+            }
+        }
+    }
+    @media (min-width: 328px)
+    and (max-width: 399px){
+        .app{
+            width: 100%;
+            .header{
+                justify-content: flex-end;
+                height: 125.39px;
+                .branding{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                    width: auto;
+                    margin-right: 7%;
+                    
+                    .name{
+                        font-size: 42px;
+                        margin: 0px 0px 0px 0px
+                    }
+                    .industry{
+                        flex-direction: row;
+                        margin: -7px 0px 13px 0px;
+                        font-size: 21px;
+                        .line1{
+                            margin-right: 5px;
+                        }
+                    }
+                }
+                .burgerMenu{
+                    display: flex;
+                    width: 84.38px;
+                    height: 100%;
+                    background-color: $color-01;
+                }
+                .navigation{
+                    display: none;
+                }
+            }
+            .content{
+                .homeGallery{
+                    .homeGallery__Main{
+                        .homeGallery__MainCard-h {
+                            display: none;
+                        }
+                        .homeGallery__MainCard-d {
+                            display: none;
+                        }
+                    }
+                
+                    .homeGallery__More {
+                        .loadMoreContent{
+                            // .cardI{
+                            //     display: flex;
+                            // }
+                            .cardJ{
+                                display: none;
+                            }
+                            // .cardK{
+                            //     display: flex;
+                            // }
+                            // .cardL{
+                            //     display: flex;
+                            // }
+                        }
+                    }
+                }
+                .projectContainer{
+                    .projMain{
+                        flex-direction: column-reverse;
+                        .projMain__Left{
+                            flex-direction: row-reverse;
+                            width: 100%;
+                            .projMain__Left-Nav{
+                                width: 22.8%;
+                                .Num{
+                                    font-size: 5.4em;
+                                    margin: 10% 0% 0% 38%;
+                                }
+                                .Prev{
+                                    padding: 38px 13px 0 13px;
+                                }
+                                .Next{
+                                    padding: 6px 13px 0px 13px;
+                                }
+                            }
+                            .projMain__Left-Info{
+                                width: 90%;
+                            }
+                        }
+                        .projMain__Image{
+                            width: 100%;
+                        }
+                    }
+                    .projDetailTab{
+                        .Collapsible {
+                            width: 100%;
+                            .carousel{
+                                flex-direction: column;
+                                .carousel__blurb-bottom{
+                                    .prevSlide {
+                                        margin-right: 15px;
+                                    }
+                                    .nextSlide {
+                                        margin-left: 15px;
+                                    }
+                                }
+                            }
+                            .carousel__image{
+                                width: 100%;
+                            }
+                            .carousel__blurb {
+                                display: flex;
+                                flex-direction: column-reverse;
+                                width: 100%;
+                            }
+                        }
+                        .Collapsible__trigger {
+
+                            &:after {
+                                right: 8%;
+                            }
+                            
+                            &.is-open {
+                                &:after {
+                                transform: rotateZ(45deg);
+                                }
+                            }
+                            
+                            &.is-disabled {
+                                opacity: 0.5;
+                                background-color: grey;
+                            }
+                        }
+                        .projDetailTab__sideRect{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        
+            .footer__copyright {
+                margin: 38px 30px 0px 0px;
+            }
+        }
+    }
     // @media (min-width: 0px)
     // and (max-width: 327px){}
 

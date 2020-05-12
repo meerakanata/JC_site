@@ -6,7 +6,7 @@ export default class Footer extends React.Component {
         return (
             <div className="footer">
                 <div className="footer__copyright">
-                Site Design and Development by Meera Shah | Copyright © 2020 Jason Clerk
+                Site Design &amp; Development by Meera Shah | Copyright © 2020 Jason Clerk
                 </div>
             </div>
         );

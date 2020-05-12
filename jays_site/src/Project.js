@@ -59,19 +59,21 @@ nextProjID = (currentProjID) => {
         return (
             <div className="projectContainer">
                 <div className="projMain">
-                    <div className="projMain__Nav">
-                        <div className="projMain__Nav-Prev">
-                            <Link to={"/work/"+ this.backProjID(this.props.currentId)+"/1"}><img src={"../../Icon/Icon w Text/Previous_White.png"} alt="back arrow"/></Link>
+                    <div className="projMain__Left">
+                        <div className="projMain__Left-Nav">
+                            <div className="Prev">
+                                <Link to={"/work/"+ this.backProjID(this.props.currentId)+"/1"}><img src={"../../Icon/Icon w Text/Previous_White.png"} alt="back arrow"/></Link>
+                            </div>
+                            <div className="Num">{this.currentProject(this.props.currentId).number}</div>
+                            <div className="Next">
+                                <Link to={"/work/"+ this.nextProjID(this.props.currentId)+"/1"}><img src={"../../Icon/Icon w Text/Next_White.png"} alt="forward arrow"/></Link>
+                            </div>
                         </div>
-                        <div className="projMain__Nav-Num">{this.currentProject(this.props.currentId).number}</div>
-                        <div className="projMain__Nav-Next">
-                            <Link to={"/work/"+ this.nextProjID(this.props.currentId)+"/1"}><img src={"../../Icon/Icon w Text/Next_White.png"} alt="forward arrow"/></Link>
+                        <div className="projMain__Left-Info">
+                            <div className="Name">{this.currentProject(this.props.currentId).name}</div>
+                            <div className="Heading">{this.currentProject(this.props.currentId).heading}</div>
+                            <div className="Description">{this.currentProject(this.props.currentId).description}</div>
                         </div>
-                    </div>
-                    <div className="projMain__Info">
-                        <div className="projMain__Info-Name">{this.currentProject(this.props.currentId).name}</div>
-                        <div className="projMain__Info-Heading">{this.currentProject(this.props.currentId).heading}</div>
-                        <div className="projMain__Info-Description">{this.currentProject(this.props.currentId).description}</div>
                     </div>
                     <div className="projMain__Image">
                         <img src={this.currentProject(this.props.currentId).image} alt="baseball players"/>
@@ -82,7 +84,7 @@ nextProjID = (currentProjID) => {
                         <div className="projDetailTab__sideRect-Top">
                         </div>
                     </div>
-                    <Collapsible trigger="Development and Production">
+                    <Collapsible trigger="Development &amp; Production">
                         <MyCarousel activeObj={this.props.activeObj} rawData={this.props.rawData} currentObj={this.currentProject(this.props.currentId)} currentId={this.props.currentId} slideId={this.props.slideId} />
                     </Collapsible>
                 </div>
