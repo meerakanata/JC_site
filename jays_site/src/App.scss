@@ -90,6 +90,8 @@ body {
     background-color: $color-06;
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
 
     .app{
         @include fc;
@@ -500,12 +502,14 @@ body {
                         width: 22%;
                         height: auto;
                         background-color: $color-01;
+                        white-space: nowrap;
+                        overflow: hidden;
                         .Prev{
-                            padding: 38px 25px 0 25px;
-                            margin-bottom: -20px;
+                            padding: 36% 17% 12% 17%;
                         }
                         .Num{
-                            @include fr;
+                            display: flex;
+                            flex-direction: row;
                             justify-content: center;
                             width: auto;
                             height: auto;
@@ -513,11 +517,12 @@ body {
                             font-size: 8.1em;
                             font-family: 'IBMPlexSans';
                             transform: rotate(90deg);
-                            margin: 6% 17% 0 0;
+                            padding: 12% 0% 0% 0%;
+                            line-height: 75%;
+                        
                         }
                         .Next{
-                            padding: 0px 25px 0 25px;
-                            margin-top: -11px;
+                            padding: 16% 17% 0% 17%;
                         }
                     }
                     .projMain__Left-Info{
@@ -574,39 +579,25 @@ body {
                         width: 89%;
                         .carousel{
                             @include fr;
-                            justify-content: flex-start;
-                            height: auto;
-                        }
-                        .carousel__image{
-                            width: 71%;
-                            height: 100%;
-                            img {
-                                width: 100%;
-                                height: auto;
-                            }
-                        }
-                        .carousel__blurb{
-                            width: 29%;
-                            height: auto;
-                        }
-                        .carousel__blurb-top{
-                            background-color: $color-01;
-                            width: 100%;
-                            height: 70%;
-                            font-family: 'IBMPlexSans';
-                            font-size: 16px;
-                            color: $color-06;
-                            .actualBlurb{
-                                padding: 51px 50px 45px 24px;
-                            }
-                        }
-                        .carousel__blurb-bottom{
-                            @include fr;
                             justify-content: center;
                             align-items: center;
-                            width: 100%;
                             height: auto;
-
+                            position: relative;
+                        }
+                        .carousel:hover .carousel__controls{
+                            display: flex;
+                        }
+                        .carousel__controls{
+                            display: none;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            position: absolute;
+                            background-color: rgba(255,255,255,0.7);
+                            padding: 0.5%;
+                            top: 84%;
+                            left: 45%;
+                            animation: transitionIn 1s;
                             .prevSlide {
                                 display: flex;
                                 margin-right: 40px;
@@ -633,6 +624,21 @@ body {
                                 display: flex;
                                 margin-left: 40px;
                             }
+                        }
+                        .carousel__image{
+                            width: 71%;
+                            height: 100%;
+                            img {
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                        .carousel__blurb{
+                            width: 29%;
+                            height: auto;
+                        }
+                        .carousel__blurb-text{
+                            padding: 0% 10% 0% 10%;
                         }
                         span{
                             @include fr;
@@ -830,17 +836,17 @@ body {
                 .projectContainer{
                     .projMain{
                         .projMain__Left{
-
                             .projMain__Left-Nav{
+
                                 .Num{
-                                    font-size: 6.1em;
+                                    font-size: 5.4em;   
                                 }
-                                .Prev{
-                                    padding: 38px 14px 0 14px;
-                                }
-                                .Next{
-                                    padding: 0px 14px 0 14px;
-                                }
+                                // .Prev{
+                                    
+                                // }
+                                // .Next{
+                                    
+                                // }
                             }
                         }
                     }
@@ -926,18 +932,17 @@ body {
                 .projectContainer{
                     .projMain{
                         .projMain__Left{
-                            
                             .projMain__Left-Nav{
+
                                 .Num{
-                                    font-size: 5.4em;
-                                    margin: 6% 12% 0 0;
+                                    font-size: 5.4em;   
                                 }
-                                .Prev{
-                                    padding: 38px 8px 0 8px;
-                                }
-                                .Next{
-                                    padding: 0px 8px 0 8px;
-                                }
+                                // .Prev{
+                                    
+                                // }
+                                // .Next{
+                                    
+                                // }
                             }
                         }
                     }
@@ -1030,18 +1035,17 @@ body {
                 .projectContainer{
                     .projMain{
                         .projMain__Left{
-                            
                             .projMain__Left-Nav{
+
                                 .Num{
-                                    font-size: 5.4em;
-                                    margin: 6% 12% 0 0;
+                                    font-size: 5.4em;   
                                 }
-                                .Prev{
-                                    padding: 38px 8px 0 8px;
-                                }
-                                .Next{
-                                    padding: 0px 8px 0 8px;
-                                }
+                                // .Prev{
+                                    
+                                // }
+                                // .Next{
+                                    
+                                // }
                             }
                         }
                     }
@@ -1145,15 +1149,17 @@ body {
                             width: 100%;
                             .projMain__Left-Nav{
                                 width: 22.8%;
+                                white-space: nowrap;
+                                overflow: hidden;
                                 .Num{
                                     font-size: 5.4em;
-                                    margin: 10% 0% 0% 38%;
+                                    margin: 0% 0% 0% 0%;
                                 }
                                 .Prev{
-                                    padding: 38px 13px 0 13px;
+                                    padding: 0% 0% 0% 0%;
                                 }
                                 .Next{
-                                    padding: 6px 13px 0px 13px;
+                                    padding: 0% 0% 0% 0%;
                                 }
                             }
                             .projMain__Left-Info{
@@ -1167,24 +1173,25 @@ body {
                     .projDetailTab{
                         .Collapsible {
                             width: 100%;
+                            .carousel__controls{
+                                display: flex;
+                                width: 100%;
+                                top: 65%;
+                                left: 0%;
+                                animation: none;
+                            }
                             .carousel{
                                 flex-direction: column;
-                                .carousel__blurb-bottom{
-                                    .prevSlide {
-                                        margin-right: 15px;
-                                    }
-                                    .nextSlide {
-                                        margin-left: 15px;
-                                    }
-                                }
                             }
+
                             .carousel__image{
                                 width: 100%;
                             }
-                            .carousel__blurb {
-                                display: flex;
-                                flex-direction: column-reverse;
+                            .carousel__blurb{
                                 width: 100%;
+                                height: auto;
+                                margin: 15% 0 6% 0;
+
                             }
                         }
                         .Collapsible__trigger {

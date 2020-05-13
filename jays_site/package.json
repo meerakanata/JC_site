@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.2.1",
     "browserify": "^16.5.1",
     "carousel": "0.0.3",
+    "lodash": "^4.17.15",
     "react": "^16.13.1",
     "react-collapse": "^5.0.1",
     "react-collapsible": "^2.7.0",
@@ -17,6 +18,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
     "react-slick": "^0.25.2",
+    "react-touch": "^0.4.4",
     "react-transition-group": "^4.4.1",
     "slick-carousel": "^1.8.1"
   },

@@ -1,7 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import Collapsible from "./Collapsible.js";
-import MyCarousel from "./MyCarousel.js";
+import MyCarousel2 from "./MyCarousel2.js";
 
 
 
@@ -64,7 +64,9 @@ nextProjID = (currentProjID) => {
                             <div className="Prev">
                                 <Link to={"/work/"+ this.backProjID(this.props.currentId)+"/1"}><img src={"../../Icon/Icon w Text/Previous_White.png"} alt="back arrow"/></Link>
                             </div>
-                            <div className="Num">{this.currentProject(this.props.currentId).number}</div>
+                            <div className="Num">
+                                {this.currentProject(this.props.currentId).number}
+                            </div>
                             <div className="Next">
                                 <Link to={"/work/"+ this.nextProjID(this.props.currentId)+"/1"}><img src={"../../Icon/Icon w Text/Next_White.png"} alt="forward arrow"/></Link>
                             </div>
@@ -85,7 +87,7 @@ nextProjID = (currentProjID) => {
                         </div>
                     </div>
                     <Collapsible trigger="Development &amp; Production">
-                        <MyCarousel activeObj={this.props.activeObj} rawData={this.props.rawData} currentObj={this.currentProject(this.props.currentId)} currentId={this.props.currentId} slideId={this.props.slideId} />
+                        <MyCarousel2 activeObj={this.props.activeObj} rawData={this.props.rawData} currentObj={this.currentProject(this.props.currentId)} currentId={this.props.currentId} slideId={this.props.slideId} />
                     </Collapsible>
                 </div>
             </div>

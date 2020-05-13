@@ -52,6 +52,8 @@ body {
   background-color: #FFFFFF;
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 body .app {
@@ -727,11 +729,12 @@ body .app .content .projectContainer .projMain .projMain__Left-Nav {
   width: 22%;
   height: auto;
   background-color: #010101;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 body .app .content .projectContainer .projMain .projMain__Left-Nav .Prev {
-  padding: 38px 25px 0 25px;
-  margin-bottom: -20px;
+  padding: 36% 17% 12% 17%;
 }
 
 body .app .content .projectContainer .projMain .projMain__Left-Nav .Num {
@@ -752,12 +755,12 @@ body .app .content .projectContainer .projMain .projMain__Left-Nav .Num {
   font-family: 'IBMPlexSans';
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  margin: 6% 17% 0 0;
+  padding: 12% 0% 0% 0%;
+  line-height: 75%;
 }
 
 body .app .content .projectContainer .projMain .projMain__Left-Nav .Next {
-  padding: 0px 25px 0 25px;
-  margin-top: -11px;
+  padding: 16% 17% 0% 17%;
 }
 
 body .app .content .projectContainer .projMain .projMain__Left-Info {
@@ -878,10 +881,73 @@ body .app .content .projectContainer .projDetailTab .Collapsible .carousel {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: auto;
+  position: relative;
+}
+
+body .app .content .projectContainer .projDetailTab .Collapsible .carousel:hover .carousel__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .app .content .projectContainer .projDetailTab .Collapsible .carousel__controls {
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0.5%;
+  top: 84%;
+  left: 45%;
+  -webkit-animation: transitionIn 1s;
+          animation: transitionIn 1s;
+}
+
+body .app .content .projectContainer .projDetailTab .Collapsible .carousel__controls .prevSlide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 40px;
+}
+
+body .app .content .projectContainer .projDetailTab .Collapsible .carousel__controls .emptyDot {
+  width: 7px;
+  height: 7px;
+  border: 1px solid #010101;
+  background-color: #FFFFFF;
+}
+
+body .app .content .projectContainer .projDetailTab .Collapsible .carousel__controls .filledDot {
+  width: 7px;
+  height: 7px;
+  background-color: #010101;
+  border: 1px solid #010101;
+}
+
+body .app .content .projectContainer .projDetailTab .Collapsible .carousel__controls .slideTwoDot {
+  margin: 0px 7px;
+}
+
+body .app .content .projectContainer .projDetailTab .Collapsible .carousel__controls .nextSlide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 40px;
 }
 
 body .app .content .projectContainer .projDetailTab .Collapsible .carousel__image {
@@ -899,67 +965,8 @@ body .app .content .projectContainer .projDetailTab .Collapsible .carousel__blur
   height: auto;
 }
 
-body .app .content .projectContainer .projDetailTab .Collapsible .carousel__blurb-top {
-  background-color: #010101;
-  width: 100%;
-  height: 70%;
-  font-family: 'IBMPlexSans';
-  font-size: 16px;
-  color: #FFFFFF;
-}
-
-body .app .content .projectContainer .projDetailTab .Collapsible .carousel__blurb-top .actualBlurb {
-  padding: 51px 50px 45px 24px;
-}
-
-body .app .content .projectContainer .projDetailTab .Collapsible .carousel__blurb-bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: auto;
-}
-
-body .app .content .projectContainer .projDetailTab .Collapsible .carousel__blurb-bottom .prevSlide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 40px;
-}
-
-body .app .content .projectContainer .projDetailTab .Collapsible .carousel__blurb-bottom .emptyDot {
-  width: 7px;
-  height: 7px;
-  border: 1px solid #010101;
-  background-color: #FFFFFF;
-}
-
-body .app .content .projectContainer .projDetailTab .Collapsible .carousel__blurb-bottom .filledDot {
-  width: 7px;
-  height: 7px;
-  background-color: #010101;
-  border: 1px solid #010101;
-}
-
-body .app .content .projectContainer .projDetailTab .Collapsible .carousel__blurb-bottom .slideTwoDot {
-  margin: 0px 7px;
-}
-
-body .app .content .projectContainer .projDetailTab .Collapsible .carousel__blurb-bottom .nextSlide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 40px;
+body .app .content .projectContainer .projDetailTab .Collapsible .carousel__blurb-text {
+  padding: 0% 10% 0% 10%;
 }
 
 body .app .content .projectContainer .projDetailTab .Collapsible span {
@@ -1212,13 +1219,7 @@ body .app .content .contactPage .submit {
     display: none;
   }
   body .app .content .projectContainer .projMain .projMain__Left .projMain__Left-Nav .Num {
-    font-size: 6.1em;
-  }
-  body .app .content .projectContainer .projMain .projMain__Left .projMain__Left-Nav .Prev {
-    padding: 38px 14px 0 14px;
-  }
-  body .app .content .projectContainer .projMain .projMain__Left .projMain__Left-Nav .Next {
-    padding: 0px 14px 0 14px;
+    font-size: 5.4em;
   }
   body .app .content .projectContainer .projDetailTab .Collapsible {
     width: 89%;
@@ -1278,13 +1279,6 @@ body .app .content .contactPage .submit {
   }
   body .app .content .projectContainer .projMain .projMain__Left .projMain__Left-Nav .Num {
     font-size: 5.4em;
-    margin: 6% 12% 0 0;
-  }
-  body .app .content .projectContainer .projMain .projMain__Left .projMain__Left-Nav .Prev {
-    padding: 38px 8px 0 8px;
-  }
-  body .app .content .projectContainer .projMain .projMain__Left .projMain__Left-Nav .Next {
-    padding: 0px 8px 0 8px;
   }
   body .app .content .projectContainer .projDetailTab .Collapsible {
     width: 89%;
@@ -1350,13 +1344,6 @@ body .app .content .contactPage .submit {
   }
   body .app .content .projectContainer .projMain .projMain__Left .projMain__Left-Nav .Num {
     font-size: 5.4em;
-    margin: 6% 12% 0 0;
-  }
-  body .app .content .projectContainer .projMain .projMain__Left .projMain__Left-Nav .Prev {
-    padding: 38px 8px 0 8px;
-  }
-  body .app .content .projectContainer .projMain .projMain__Left .projMain__Left-Nav .Next {
-    padding: 0px 8px 0 8px;
   }
   body .app .content .projectContainer .projDetailTab .Collapsible {
     width: 89%;
@@ -1452,16 +1439,18 @@ body .app .content .contactPage .submit {
   }
   body .app .content .projectContainer .projMain .projMain__Left .projMain__Left-Nav {
     width: 22.8%;
+    white-space: nowrap;
+    overflow: hidden;
   }
   body .app .content .projectContainer .projMain .projMain__Left .projMain__Left-Nav .Num {
     font-size: 5.4em;
-    margin: 10% 0% 0% 38%;
+    margin: 0% 0% 0% 0%;
   }
   body .app .content .projectContainer .projMain .projMain__Left .projMain__Left-Nav .Prev {
-    padding: 38px 13px 0 13px;
+    padding: 0% 0% 0% 0%;
   }
   body .app .content .projectContainer .projMain .projMain__Left .projMain__Left-Nav .Next {
-    padding: 6px 13px 0px 13px;
+    padding: 0% 0% 0% 0%;
   }
   body .app .content .projectContainer .projMain .projMain__Left .projMain__Left-Info {
     width: 90%;
@@ -1472,30 +1461,29 @@ body .app .content .contactPage .submit {
   body .app .content .projectContainer .projDetailTab .Collapsible {
     width: 100%;
   }
+  body .app .content .projectContainer .projDetailTab .Collapsible .carousel__controls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    top: 65%;
+    left: 0%;
+    -webkit-animation: none;
+            animation: none;
+  }
   body .app .content .projectContainer .projDetailTab .Collapsible .carousel {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  body .app .content .projectContainer .projDetailTab .Collapsible .carousel .carousel__blurb-bottom .prevSlide {
-    margin-right: 15px;
-  }
-  body .app .content .projectContainer .projDetailTab .Collapsible .carousel .carousel__blurb-bottom .nextSlide {
-    margin-left: 15px;
-  }
   body .app .content .projectContainer .projDetailTab .Collapsible .carousel__image {
     width: 100%;
   }
   body .app .content .projectContainer .projDetailTab .Collapsible .carousel__blurb {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
     width: 100%;
+    height: auto;
+    margin: 15% 0 6% 0;
   }
   body .app .content .projectContainer .projDetailTab .Collapsible__trigger:after {
     right: 8%;
