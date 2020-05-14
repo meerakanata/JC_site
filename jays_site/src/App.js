@@ -6,6 +6,7 @@ import About1 from "./About1";
 import Contact1 from "./Contact1";
 import ProjectContainer from "./ProjectContainer.js";
 import Footer from "./Footer";
+import MobileMenu from './MobileMenu.js';
 import "./App.css";
 var rawData = require('./RawData.js');
 
@@ -14,6 +15,7 @@ class App extends Component {
 
   state = {
     mobileMenuOpen: false,
+    mobileMenuPage: "",
     clickCounter: 0,
     loadMore: false,
     activeObj: {
@@ -89,7 +91,17 @@ class App extends Component {
 
   showOpenMenu = () => {
     if(this.state.mobileMenuOpen === true){
-      return <div className="content">Need to put in a component here for the menu.</div>
+        return <div className="content"><MobileMenu mobilePageHandler={this.mobilePageHandler}/></div>
+    }
+    else if(this.state.mobileMenuPage === "about"){
+      return <div className="content">
+              <About1 />
+            </div>;
+    }
+    else if(this.state.mobileMenuPage === "contact"){
+      return <div className="content">
+              <Contact1 />
+            </div>;
     }
     else{
       return <div className="content">
@@ -104,6 +116,18 @@ class App extends Component {
               </Switch>
             </div>;
     }
+  }
+  mobilePageHandler = (page) =>{
+    //and set the value of mobileMenuOpen to false
+    this.setState({
+      mobileMenuOpen: false,
+      clickCounter: 0,
+      mobileMenuPage: page,
+      loadMore: false,
+    });
+    //set state to the page value
+    //may need to then adjust the showOpenMenu function to evaluate 
+    //the mobile page value and load the 
   }
 
   render() {
