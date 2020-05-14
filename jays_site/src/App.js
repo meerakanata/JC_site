@@ -13,6 +13,8 @@ var rawData = require('./RawData.js');
 class App extends Component {
 
   state = {
+    mobileMenuOpen: false,
+    clickCounter: 0,
     loadMore: false,
     activeObj: {
       projID: "",
@@ -57,6 +59,52 @@ class App extends Component {
     });
   }
 
+  burgerMenuClick = () =>{
+    
+    let clickCounter = this.state.clickCounter;
+    clickCounter = clickCounter+1;
+    console.log(clickCounter);
+    if (clickCounter%2 === 0){
+      this.setState({
+        mobileMenuOpen: false,
+        clickCounter: 0,
+      });
+    }
+    else{
+      this.setState({
+        mobileMenuOpen: true,
+        clickCounter: clickCounter,
+      });
+    }
+
+    //if the value of the number of clicks is odd then the
+    //value of mobileMenuOpen in state should be set to true
+    //if the value of the number of clicks is even then the
+    //value of mobileMenuOpen in state should be set to false
+
+    // this.setState({
+    //   mobileMenuOpen: menuOpen,
+    // });
+  }
+
+  showOpenMenu = () => {
+    if(this.state.mobileMenuOpen === true){
+      return <div className="content">Need to put in a component here for the menu.</div>
+    }
+    else{
+      return <div className="content">
+              <Switch>
+                <Route exact path="/" render={() =><Redirect to='/work'/>}/>
+                <Route path="/work" exact render={ () => { return <Work2 rawData={this.state.rawProjectData} resetLoadMoreValue={this.resetLoadMoreValue} loadMore={this.state.loadMore} loadMoreHandler={this.loadMoreHandler}/> }} />
+                <Route path="/about" component={About1}/>
+                <Route path="/contact" component={Contact1}/>
+                <Route path="/work/:projectID?/:slideID?" exact render={ (props) => { return <ProjectContainer activeObj={this.state.activeObj}
+                rawData={this.state.rawProjectData} projectId={props.match.params.projectID} slideId={props.match.params.slideID} 
+                changeState={this.changeState} />} } />
+              </Switch>
+            </div>;
+    }
+  }
 
   render() {
     return (
@@ -65,7 +113,9 @@ class App extends Component {
         <div className="app">
           <div className="header">
             <Branding />
-            <div className="burgerMenu"></div>
+            <div className="burgerMenu">
+                <img src="../../burgerMenu.png" alt="burger-icon" onClick={this.burgerMenuClick}/>
+            </div>
             <div className="navigation">
               <div className="navigation__menu">
                 <NavLink to="/work" activeClassName="current" className="notCurrent" 
@@ -75,7 +125,8 @@ class App extends Component {
               </div>
             </div>
           </div>
-          <div className="content">
+          {this.showOpenMenu()}
+          {/* <div className="content">
             <Switch>
               <Route exact path="/" render={() =><Redirect to='/work'/>}/>
               <Route path="/work" exact render={ () => { return <Work2 rawData={this.state.rawProjectData} resetLoadMoreValue={this.resetLoadMoreValue} loadMore={this.state.loadMore} loadMoreHandler={this.loadMoreHandler}/> }} />
@@ -85,7 +136,7 @@ class App extends Component {
               rawData={this.state.rawProjectData} projectId={props.match.params.projectID} slideId={props.match.params.slideID} 
               changeState={this.changeState} />} } />
             </Switch>
-          </div>
+          </div> */}
           <Footer />
         </div>
       </Router>

@@ -79,6 +79,9 @@ export default class MyCarousel2 extends React.Component {
         let next = this.manageNextSlidePath();
         return (
             <div className="carousel">
+                <div className="carousel__image">
+                    <img src={this.setCurrentSlide(this.props.currentObj.carousel[0].slide)} alt="slide"/>
+                </div>
                 <div className="carousel__controls">
                     <div className="prevSlide">
                         <Link to={"/work/"+id+previous}><img src={"../../Icon/Icon w Text/Previous_Dark.png"} alt="back arrow"/></Link>
@@ -95,9 +98,6 @@ export default class MyCarousel2 extends React.Component {
                     <div className="nextSlide">
                         <Link to={"/work/"+id+next}><img src={"../../Icon/Icon w Text/Next_Dark.png"} alt="forward arrow"/></Link>
                     </div>
-                </div>
-                <div className="carousel__image">
-                    <img src={this.setCurrentSlide(this.props.currentObj.carousel[0].slide)} alt="slide"/>
                 </div>
                 <div className="carousel__blurb">
                     <div className="carousel__blurb-text">
