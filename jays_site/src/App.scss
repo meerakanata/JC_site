@@ -1,3 +1,17 @@
+$hamburger-padding-x           : 15px !default;
+$hamburger-padding-y           : 15px !default;
+$hamburger-layer-width         : 27px !default;
+$hamburger-layer-height        : 3px !default;
+$hamburger-layer-spacing       : 5px !default;
+// $hamburger-layer-color         : #000 !default;
+$hamburger-layer-color         : #FFF !default;
+$hamburger-layer-border-radius : 0px !default;
+$hamburger-hover-opacity       : 0.7 !default;
+$hamburger-active-layer-color  : $hamburger-layer-color !default;
+$hamburger-active-hover-opacity: $hamburger-hover-opacity !default;
+
+@import "../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+
 //*********** SASS VARIABLES STARTS ***************
 
 
@@ -1079,9 +1093,14 @@ body {
     and (max-width: 399px){
         .app{
             width: 100%;
+            //position: relative;
             .header{
+                //position: fixed;
                 justify-content: flex-end;
                 height: 125.39px;
+                //background-color: $color-06;
+                //z-index: 1;
+                
                 .branding{
                     display: flex;
                     flex-direction: column;
@@ -1089,6 +1108,7 @@ body {
                     align-items: flex-end;
                     width: auto;
                     margin-right: 7%;
+                    
                     
                     .name{
                         font-size: 42px;
@@ -1108,13 +1128,9 @@ body {
                     flex-direction: row;
                     justify-content: center;
                     align-items: flex-end;
-                    padding-bottom: 40.25px; 
+                    padding: 0 0 20.25px 0; 
                     width: 84.38px;
                     background-color: $color-01;
-                    img{
-                        width: 27px;
-                        height: 16px;
-                    }
                     
                 }
                 .navigation{
@@ -1122,6 +1138,7 @@ body {
                 }
             }
             .content{
+                //margin-top: 125.39px;
                 .homeGallery{
                     .homeGallery__Main{
                         .homeGallery__MainCard-h {

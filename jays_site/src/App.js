@@ -14,6 +14,7 @@ var rawData = require('./RawData.js');
 class App extends Component {
 
   state = {
+    burgerMenuSelector: "hamburger hamburger--collapse",
     mobileMenuOpen: false,
     mobileMenuPage: "",
     clickCounter: 0,
@@ -70,15 +71,17 @@ class App extends Component {
       this.setState({
         mobileMenuOpen: false,
         clickCounter: 0,
+        burgerMenuSelector: "hamburger hamburger--collapse",
       });
     }
     else{
       this.setState({
         mobileMenuOpen: true,
         clickCounter: clickCounter,
+        burgerMenuSelector: "hamburger hamburger--collapse is-active",
       });
     }
-
+  
     //if the value of the number of clicks is odd then the
     //value of mobileMenuOpen in state should be set to true
     //if the value of the number of clicks is even then the
@@ -123,12 +126,14 @@ class App extends Component {
       mobileMenuOpen: false,
       clickCounter: 0,
       mobileMenuPage: page,
+      burgerMenuSelector: "hamburger hamburger--collapse",
       loadMore: false,
     });
     //set state to the page value
     //may need to then adjust the showOpenMenu function to evaluate 
     //the mobile page value and load the 
   }
+
 
   render() {
     return (
@@ -138,7 +143,12 @@ class App extends Component {
           <div className="header">
             <Branding />
             <div className="burgerMenu">
-                <img src="../../burgerMenu.png" alt="burger-icon" onClick={this.burgerMenuClick}/>
+                {/* <img src="../../burgerMenu.png" alt="burger-icon" onClick={this.burgerMenuClick}/> */}
+                  <button className={this.state.burgerMenuSelector} type="button" onClick={this.burgerMenuClick}>
+                    <span className="hamburger-box">
+                      <span className="hamburger-inner"></span>
+                    </span>
+                  </button>
             </div>
             <div className="navigation">
               <div className="navigation__menu">
