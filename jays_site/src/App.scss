@@ -198,588 +198,569 @@ body {
         .footer__copyright{
             margin: 38px 50px 0px 0px;
         }
-        .content {
-            background-color: $color-06;
-            margin-top: 3px;
+        .contentContainer{
+            display: flex;
             width: 100%;
             height: auto;
-            
-            .homeGallery{
-                @include fc;
-                justify-content: space-around;
-                height: auto;
-                width: 100%;
-                margin-top: 10px;
-                background-color:$color-06;
-                animation: transitionIn 2s;
-                .homeGallery__Main{
-                    @include fr;
-                    justify-content: space-between;
-                    height: auto;
-                    width: 100%;
-                    flex-wrap: wrap;
-                    
-                    .homeGallery__MainCard-a{
-                        margin-bottom: 10px;
-                        .cardFull{
-                            width: 240px;
-                            height: 335px;
-                            background-color: lightgray;
-                            img{
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-                    }
-                    .homeGallery__MainCard-b{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-                        margin-bottom: 10px;
-                        .cardTwoThirds{
-                            width: 240px;
-                            height: 220px;
-                            background-color: lightgray;
-                            img{
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-                        .cardThird{
-                            width: 240px;
-                            height: 105px;
-                            background-color: lightgray;
-                            img{
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-                    }
-                    .homeGallery__MainCard-c{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-                        margin-bottom: 10px;
-                        .cardTwoThirds{
-                            width: 240px;
-                            height: 220px;
-                            background-color: lightgray;
-                            img{
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-                        .cardThird{
-                            width: 240px;
-                            height: 105px;
-                            background-color: lightgray;
-                            img{
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-                    }
-                    .homeGallery__MainCard-d{
-                        margin-bottom: 10px;
-                        .cardFull{
-                            width: 240px;
-                            height: 335px;
-                            background-color: lightgray;
-                            img{
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-                    }
-                    .homeGallery__MainCard-e{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-                        margin-bottom: 10px;
-                        .cardTwoThirds{
-                            width: 240px;
-                            height: 220px;
-                            background-color: lightgray;
-                            img{
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-                        .cardThird{
-                            width: 240px;
-                            height: 105px;
-                            background-color: lightgray;
-                            img{
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-                    }
-                    .homeGallery__MainCard-f{
-                        margin-bottom: 10px;
-                        .cardFull{
-                            width: 240px;
-                            height: 335px;
-                            background-color: lightgray;
-                            img{
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-                    }
-                    .homeGallery__MainCard-g{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-                        margin-bottom: 10px;
-                        .cardTwoThirds{
-                            width: 240px;
-                            height: 220px;
-                            background-color: lightgray;
-                            img{
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-                        .cardThird{
-                            width: 240px;
-                            height: 105px;
-                            background-color: lightgray;
-                            img{
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-                    }
-                    .homeGallery__MainCard-h{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-                        margin-bottom: 10px;
-                        .cardTwoThirds{
-                            width: 240px;
-                            height: 220px;
-                            background-color: lightgray;
-                            img{
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-                        .cardThird{
-                            width: 240px;
-                            height: 105px;
-                            background-color: lightgray;
-                            img{
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-                    }
-                }
-                .homeGallery__More {
-                    .loadMoreContent{
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
-                        width: 100%;
-                        height: auto;
-                        animation: transitionIn 1.5s;
-                        flex-wrap: wrap;
-                        .cardI{
-                            display: flex;
-                            margin-bottom: 10px;
-                            .cardFull{
-                                width: 240px;
-                                height: 335px;
-                                background-color: lightgray;
-                                img{
-                                    width: 100%;
-                                    height: 100%;
-                                }
-                            }
-                        }
-                        .cardJ{
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: space-between;
-                            margin-bottom: 10px;
-                            .cardTwoThirds{
-                                width: 240px;
-                                height: 220px;
-                                background-color: lightgray;
-                                img{
-                                    width: 100%;
-                                    height: 100%;
-                                }
-                            }
-                            .cardThird{
-                                width: 240px;
-                                height: 105px;
-                                background-color: lightgray;
-                                img{
-                                    width: 100%;
-                                    height: 100%;
-                                }
-                            }
-                        }
-                        .cardK{
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: space-between;
-                            margin-bottom: 10px;
-                            .cardTwoThirds{
-                                width: 240px;
-                                height: 220px;
-                                background-color: lightgray;
-                                img{
-                                    width: 100%;
-                                    height: 100%;
-                                }
-                            }
-                            .cardThird{
-                                width: 240px;
-                                height: 105px;
-                                background-color: lightgray;
-                                img{
-                                    width: 100%;
-                                    height: 100%;
-                                }
-                            }
-                        }
-                        .cardL{
-                            display: flex;
-                            margin-bottom: 10px;
-                            .cardFull{
-                                width: 240px;
-                                height: 335px;
-                                background-color: lightgray;
-                                img{
-                                    width: 100%;
-                                    height: 100%;
-                                }
-                            }
-                        }
-                    }
-                }
-                @keyframes transitionIn {
-                    from {
-                        opacity: 0;
-                        transform: rotateX(-10deg);
-                    }
-                    to {
-                        opacity: 1;
-                        transform: rotateX(0);
-                    }
-                }
-                
-                .loadMoreButton{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    width: 100%;
-                    height: 120px;
-                    background-color: $color-01;
-                    color: $color-06;
-                    font-family: 'IBMPlexSans';
-                    font-size: 16px;
-                }
-                // .loadMoreButton__text{
-                    
-                // }
-                // .loadMoreButton__button{
-
-                // }
-            }
-            .projectContainer{
-                @include fc;
-                justify-content: flex-start;
-                width: 100%;
-                height: auto;
+            .content {
+                display: flex;
                 background-color: $color-06;
-                animation: transitionIn 2s;
-                .projMain{
-                    @include fr;
-                    justify-content: center;
-                    width: 100%;
+                margin-top: 3px;
+                width: 100%;
+                height: auto;
+                
+                .homeGallery{
+                    @include fc;
+                    justify-content: space-around;
                     height: auto;
-                    //height: 44.39vh;
-                    .projMain__Left{
+                    width: 100%;
+                    margin-top: 10px;
+                    background-color:$color-06;
+                    animation: transitionIn 2s;
+                    .homeGallery__Main{
                         @include fr;
-                        justify-content: center;
-                        width: 50%;
+                        justify-content: space-between;
                         height: auto;
-                    }
-                    .projMain__Left-Nav{
-                        @include fc;
-                        justify-content: flex-start;
-                        width: 22%;
-                        height: auto;
-                        background-color: $color-01;
-                        white-space: nowrap;
-                        overflow: hidden;
-                        .Prev{
-                            padding: 36% 17% 12% 17%;
-                        }
-                        .Num{
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: center;
-                            width: auto;
-                            height: auto;
-                            color: #FFFFFF;
-                            font-size: 8.1em;
-                            font-family: 'IBMPlexSans';
-                            transform: rotate(90deg);
-                            padding: 12% 0% 0% 0%;
-                            line-height: 75%;
-                        
-                        }
-                        .Next{
-                            padding: 16% 17% 0% 17%;
-                        }
-                    }
-                    .projMain__Left-Info{
-                        @include fc;
-                        justify-content: flex-start;
-                        width: 78%;
-                        height: auto;
-                        background-color: $color-04;
-                        .Name{
-                            @include fr;
-                            justify-content: flex-start;
-                            color: $color-08;
-                            font-family: 'Sunflower-Medium';
-                            font-size: 36px;
-                            padding: 48px 0px 0px 29px;
-                        }
-                        .Heading{
-                            @include fr;
-                            justify-content: flex-start;
-                            color: $color-01;
-                            font-family: 'IBMPlexSans';
-                            font-size: 18px;
-                            padding: 13px 0px 0px 29px;
-                        }
-                        .Description{
-                            @include fr;
-                            justify-content: flex-start;
-                            color: $color-01;
-                            font-family: 'IBMPlexSans';
-                            font-size: 16px;
-                            line-height: 33px;
-                            padding: 15px 50px 0px 29px;
-                        }
-                    }
-                }
-                .projMain__Image{
-                    @include fr;
-                    justify-content: flex-start;
-                    background-color: $color-06;
-                    width: 50%;
-                    height: auto;
-                    img{
-                        display: flex;
                         width: 100%;
-                        height: auto;
-                    }
-                }
-                .projDetailTab{
-                    @include fr;
-                    justify-content: flex-start;
-                    width: 100%;
-                    // height: auto;
-                    .Collapsible {
-                        width: 89%;
-                        .carousel{
-                            @include fr;
-                            justify-content: center;
-                            align-items: center;
-                            height: auto;
-                            position: relative;
+                        flex-wrap: wrap;
+                        
+                        .homeGallery__MainCard-a{
+                            margin-bottom: 10px;
+                            .cardFull{
+                                width: 240px;
+                                height: 335px;
+                                background-color: lightgray;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
                         }
-                        .carousel:hover .carousel__controls{
+                        .homeGallery__MainCard-b{
                             display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            margin-bottom: 10px;
+                            .cardTwoThirds{
+                                width: 240px;
+                                height: 220px;
+                                background-color: lightgray;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                            .cardThird{
+                                width: 240px;
+                                height: 105px;
+                                background-color: lightgray;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
                         }
-                        .carousel__controls{
-                            display: none;
+                        .homeGallery__MainCard-c{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            margin-bottom: 10px;
+                            .cardHalf{
+                                width: 240px;
+                                height: 162.5px;
+                                background-color: lightgray;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                        .homeGallery__MainCard-d{
+                            margin-bottom: 10px;
+                            .cardFull{
+                                width: 240px;
+                                height: 335px;
+                                background-color: lightgray;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                        .homeGallery__MainCard-e{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            margin-bottom: 10px;
+                            .cardHalf{
+                                width: 240px;
+                                height: 162.5px;
+                                background-color: lightgray;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+    
+                        }
+                        .homeGallery__MainCard-f{
+                            margin-bottom: 10px;
+                            .cardFull{
+                                width: 240px;
+                                height: 335px;
+                                background-color: lightgray;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                        .homeGallery__MainCard-g{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            margin-bottom: 10px;
+                            .cardTwoThirds{
+                                width: 240px;
+                                height: 220px;
+                                background-color: lightgray;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                            .cardThird{
+                                width: 240px;
+                                height: 105px;
+                                background-color: lightgray;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                        .homeGallery__MainCard-h{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            margin-bottom: 10px;
+                            .cardTwoThirds{
+                                width: 240px;
+                                height: 220px;
+                                background-color: lightgray;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                            .cardThird{
+                                width: 240px;
+                                height: 105px;
+                                background-color: lightgray;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+                    .homeGallery__More {
+                        .loadMoreContent{
+                            display: flex;
                             flex-direction: row;
-                            justify-content: center;
-                            align-items: center;
-                            position: absolute;
-                            background-color: rgba(255,255,255,0.7);
-                            padding: 0.5%;
-                            top: 84%;
-                            left: 45%;
-                            animation: transitionIn 1s;
-                            .prevSlide {
-                                display: flex;
-                                margin-right: 40px;
-                            }
-                            .emptyDot{
-                                width: 7px;
-                                height: 7px;
-                                border: 1px solid $color-01;
-                                background-color: $color-06;
-                                //border-radius: 50%;
-
-                            }
-                            .filledDot{
-                                width: 7px;
-                                height: 7px;
-                                background-color: $color-01;
-                                border: 1px solid $color-01;
-                                //border-radius: 50%
-                            }
-                            .slideTwoDot{
-                                margin: 0px 7px;
-                            }
-                            .nextSlide {
-                                display: flex;
-                                margin-left: 40px;
-                            }
-                        }
-                        .carousel__image{
-                            width: 71%;
-                            height: 100%;
-                            img {
-                                width: 100%;
-                                height: auto;
-                            }
-                        }
-                        .carousel__blurb{
-                            width: 29%;
+                            justify-content: space-between;
+                            width: 100%;
                             height: auto;
-                        }
-                        .carousel__blurb-text{
-                            padding: 0% 10% 0% 10%;
-                        }
-                        span{
-                            @include fr;
-                            align-items: center;
-                            height: 50px;
-                            
-                        }
-                    }
-                    .Collapsible__trigger {
-                        display: block;
-                        font-weight: 400;
-                        text-decoration: none;
-                        color: orange;
-                        position: relative;
-                        border: 1px solid $color-06;
-                        padding: 10px 10px 10px 29px;
-                        background: $color-06;
-                        color: $color-01;
-                        
-                    
-                        &:after {
-                        //   font-family: 'FontAwesome';
-                        //   content: '\f107';
-                            content: url('./Icons/expand.png');
-                            position: absolute;
-                            right: 58%;
-                            top: 40%;
-                            display: block;
-                            transition: transform 2000ms;
-                        }
-                        
-                        &.is-open {
-                            &:after {
-                            transform: rotateZ(45deg);
+                            animation: transitionIn 1.5s;
+                            flex-wrap: wrap;
+                            .cardI{
+                                display: flex;
+                                margin-bottom: 10px;
+                                .cardFull{
+                                    width: 240px;
+                                    height: 335px;
+                                    background-color: lightgray;
+                                    img{
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                            .cardJ{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                margin-bottom: 10px;
+                                .cardHalf{
+                                    width: 240px;
+                                    height: 162.5px;
+                                    background-color: lightgray;
+                                    img{
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                            .cardK{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                margin-bottom: 10px;
+                                .cardTwoThirds{
+                                    width: 240px;
+                                    height: 220px;
+                                    background-color: lightgray;
+                                    img{
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                                .cardThird{
+                                    width: 240px;
+                                    height: 105px;
+                                    background-color: lightgray;
+                                    img{
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                            .cardL{
+                                display: flex;
+                                margin-bottom: 10px;
+                                .cardFull{
+                                    width: 240px;
+                                    height: 335px;
+                                    background-color: lightgray;
+                                    img{
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
                             }
                         }
-                        
-                        &.is-disabled {
-                            opacity: 0.5;
-                            background-color: grey;
+                    }
+                    @keyframes transitionIn {
+                        from {
+                            opacity: 0;
+                            transform: rotateX(-10deg);
+                        }
+                        to {
+                            opacity: 1;
+                            transform: rotateX(0);
                         }
                     }
+                    
+                    .loadMoreButton{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 120px;
+                        background-color: $color-01;
+                        color: $color-06;
+                        font-family: 'IBMPlexSans';
+                        font-size: 16px;
+                    }
+                    // .loadMoreButton__text{
+                        
+                    // }
+                    // .loadMoreButton__button{
+    
+                    // }
                 }
-                .projDetailTab__sideRect{
+                .projectContainer{
                     @include fc;
                     justify-content: flex-start;
-                    width: 11%;
-                    background-color: $color-04;
+                    width: 100%;
                     height: auto;
-                }
-                .projDetailTab__sideRect-Top{
-                    width: 100%;
                     background-color: $color-06;
-                    height: 72px;
-                }
-
-            }
-            .contactPage{
-                animation: transitionIn 2s;
-                .contactMain{
-                    @include fr;
-                    justify-content: center;
-                    width: 100%;
-                    height: 435px;
-                    .contactImage{
+                    animation: transitionIn 2s;
+                    .projMain{
+                        @include fr;
+                        justify-content: center;
+                        width: 100%;
+                        height: auto;
+                        //height: 44.39vh;
+                        .projMain__Left{
+                            @include fr;
+                            justify-content: center;
+                            width: 50%;
+                            height: auto;
+                        }
+                        .projMain__Left-Nav{
+                            @include fc;
+                            justify-content: flex-start;
+                            width: 22%;
+                            height: auto;
+                            background-color: $color-01;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            .Prev{
+                                padding: 36% 17% 12% 17%;
+                            }
+                            .Num{
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                width: auto;
+                                height: auto;
+                                color: #FFFFFF;
+                                font-size: 8.1em;
+                                font-family: 'IBMPlexSans';
+                                transform: rotate(90deg);
+                                padding: 12% 0% 0% 0%;
+                                line-height: 75%;
+                            
+                            }
+                            .Next{
+                                padding: 16% 17% 0% 17%;
+                            }
+                        }
+                        .projMain__Left-Info{
+                            @include fc;
+                            justify-content: flex-start;
+                            width: 78%;
+                            height: auto;
+                            background-color: $color-04;
+                            .Name{
+                                @include fr;
+                                justify-content: flex-start;
+                                color: $color-08;
+                                font-family: 'Sunflower-Medium';
+                                font-size: 36px;
+                                padding: 48px 0px 0px 29px;
+                            }
+                            .Heading{
+                                @include fr;
+                                justify-content: flex-start;
+                                color: $color-01;
+                                font-family: 'IBMPlexSans';
+                                font-size: 18px;
+                                padding: 13px 0px 0px 29px;
+                            }
+                            .Description{
+                                @include fr;
+                                justify-content: flex-start;
+                                color: $color-01;
+                                font-family: 'IBMPlexSans';
+                                font-size: 16px;
+                                line-height: 33px;
+                                padding: 15px 50px 0px 29px;
+                            }
+                        }
+                    }
+                    .projMain__Image{
                         @include fr;
                         justify-content: flex-start;
                         background-color: $color-06;
-                        width: 497px;
+                        width: 50%;
+                        height: auto;
+                        img{
+                            display: flex;
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                    .projDetailTab{
+                        @include fr;
+                        justify-content: flex-start;
+                        width: 100%;
+                        // height: auto;
+                        .Collapsible {
+                            width: 89%;
+                            .carousel{
+                                @include fr;
+                                justify-content: center;
+                                align-items: center;
+                                height: auto;
+                                position: relative;
+                            }
+                            .carousel:hover .carousel__controls{
+                                display: flex;
+                            }
+                            .carousel__controls{
+                                display: none;
+                                flex-direction: row;
+                                justify-content: center;
+                                align-items: center;
+                                position: absolute;
+                                background-color: rgba(255,255,255,0.7);
+                                padding: 0.5%;
+                                top: 84%;
+                                left: 45%;
+                                animation: transitionIn 1s;
+                                .prevSlide {
+                                    display: flex;
+                                    margin-right: 40px;
+                                }
+                                .emptyDot{
+                                    width: 7px;
+                                    height: 7px;
+                                    border: 1px solid $color-01;
+                                    background-color: $color-06;
+                                    //border-radius: 50%;
+    
+                                }
+                                .filledDot{
+                                    width: 7px;
+                                    height: 7px;
+                                    background-color: $color-01;
+                                    border: 1px solid $color-01;
+                                    //border-radius: 50%
+                                }
+                                .slideTwoDot{
+                                    margin: 0px 7px;
+                                }
+                                .nextSlide {
+                                    display: flex;
+                                    margin-left: 40px;
+                                }
+                            }
+                            .carousel__image{
+                                width: 71%;
+                                height: 100%;
+                                img {
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+                            .carousel__blurb{
+                                width: 29%;
+                                height: auto;
+                            }
+                            .carousel__blurb-text{
+                                padding: 0% 10% 0% 10%;
+                            }
+                            span{
+                                @include fr;
+                                align-items: center;
+                                height: 50px;
+                                
+                            }
+                        }
+                        .Collapsible__trigger {
+                            display: block;
+                            font-weight: 400;
+                            text-decoration: none;
+                            color: orange;
+                            position: relative;
+                            border: 1px solid $color-06;
+                            padding: 10px 10px 10px 29px;
+                            background: $color-06;
+                            color: $color-01;
+                            
+                        
+                            &:after {
+                            //   font-family: 'FontAwesome';
+                            //   content: '\f107';
+                                content: url('./Icons/expand.png');
+                                position: absolute;
+                                right: 58%;
+                                top: 40%;
+                                display: block;
+                                transition: transform 2000ms;
+                            }
+                            
+                            &.is-open {
+                                &:after {
+                                transform: rotateZ(45deg);
+                                }
+                            }
+                            
+                            &.is-disabled {
+                                opacity: 0.5;
+                                background-color: grey;
+                            }
+                        }
+                    }
+                    .projDetailTab__sideRect{
+                        @include fc;
+                        justify-content: flex-start;
+                        width: 11%;
+                        background-color: $color-04;
+                        height: auto;
+                    }
+                    .projDetailTab__sideRect-Top{
+                        width: 100%;
+                        background-color: $color-06;
+                        height: 72px;
+                    }
+    
+                }
+                .contactPage{
+                    animation: transitionIn 2s;
+                    .contactMain{
+                        @include fr;
+                        justify-content: center;
+                        width: 100%;
+                        height: 435px;
+                        .contactImage{
+                            @include fr;
+                            justify-content: flex-start;
+                            background-color: $color-06;
+                            width: 497px;
+                            height: 100%;
+                        }
+                    }
+                    .contactMain__Side{
+                        @include fc;
+                        justify-content: flex-start;
+                        width: 111px;
                         height: 100%;
+                        background-color: $color-01;
                     }
-                }
-                .contactMain__Side{
-                    @include fc;
-                    justify-content: flex-start;
-                    width: 111px;
-                    height: 100%;
-                    background-color: $color-01;
-                }
-                .contactMain__Info{
-                    @include fc;
-                    justify-content: flex-start;
-                    width: 385px;
-                    height: 100%;
-                    background-color: $color-04;
-                }
-                .contactMain__Info-Heading{
-                    @include fr;
-                    justify-content: flex-start;
-                    color: $color-08;
-                    font-family: 'Sunflower-Medium';
-                    font-size: 36px;
-                    padding: 48px 0px 0px 29px;
-                }
-                .contactMain__Info-Intro{
-                    @include fr;
-                    justify-content: flex-start;
-                    color: $color-01;
-                    font-family: 'IBMPlexSans';
-                    font-size: 16px;
-                    line-height: 33px;
-                    padding: 15px 50px 0px 29px;
-                }
-                .form{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-start;
-                    color: $color-01;
-                    font-family: 'IBMPlexSans';
-                    font-size: 16px;
-                    line-height: 33px;
-                    padding: 15px 50px 0px 29px;
-                    textarea{
-                        height: 100px;
+                    .contactMain__Info{
+                        @include fc;
+                        justify-content: flex-start;
+                        width: 385px;
+                        height: 100%;
+                        background-color: $color-04;
                     }
-                }
-                .submit{
-                    width: 100px;
-                    height: 40px;
-                    margin-top: 20px;
-                    background-color: $color-01;
-                    color: $color-06;
-                    font-family: 'IBMPlexSans';
-                    font-size: 16px;
+                    .contactMain__Info-Heading{
+                        @include fr;
+                        justify-content: flex-start;
+                        color: $color-08;
+                        font-family: 'Sunflower-Medium';
+                        font-size: 36px;
+                        padding: 48px 0px 0px 29px;
+                    }
+                    .contactMain__Info-Intro{
+                        @include fr;
+                        justify-content: flex-start;
+                        color: $color-01;
+                        font-family: 'IBMPlexSans';
+                        font-size: 16px;
+                        line-height: 33px;
+                        padding: 15px 50px 0px 29px;
+                    }
+                    .form{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        color: $color-01;
+                        font-family: 'IBMPlexSans';
+                        font-size: 16px;
+                        line-height: 33px;
+                        padding: 15px 50px 0px 29px;
+                        textarea{
+                            height: 100px;
+                        }
+                    }
+                    .submit{
+                        width: 100px;
+                        height: 40px;
+                        margin-top: 20px;
+                        background-color: $color-01;
+                        color: $color-06;
+                        font-family: 'IBMPlexSans';
+                        font-size: 16px;
+                    }
                 }
             }
         }
+
     }
 
 
@@ -819,61 +800,63 @@ body {
                     }
                 }
             }
-            .content{
-                .homeGallery{
-                    .homeGallery__Main{
-                        .homeGallery__MainCard-h {
-                            display: none;
-                        }
-                        .homeGallery__MainCard-d {
-                            display: none;
-                        }
-                    }
-                
-                    .homeGallery__More {
-                        .loadMoreContent{
-                            // .cardI{
-                            //     display: flex;
-                            // }
-                            .cardJ{
+            .contentContainer{
+                .content{
+                    .homeGallery{
+                        .homeGallery__Main{
+                            .homeGallery__MainCard-h {
                                 display: none;
                             }
-                            // .cardK{
-                            //     display: flex;
-                            // }
-                            // .cardL{
-                            //     display: flex;
-                            // }
+                            .homeGallery__MainCard-d {
+                                display: none;
+                            }
                         }
-                    }
-                }
-                .projectContainer{
-                    .projMain{
-                        .projMain__Left{
-                            .projMain__Left-Nav{
-
-                                .Num{
-                                    font-size: 5.4em;   
-                                }
-                                // .Prev{
-                                    
+                    
+                        .homeGallery__More {
+                            .loadMoreContent{
+                                // .cardI{
+                                //     display: flex;
                                 // }
-                                // .Next{
-                                    
+                                .cardJ{
+                                    display: none;
+                                }
+                                // .cardK{
+                                //     display: flex;
+                                // }
+                                // .cardL{
+                                //     display: flex;
                                 // }
                             }
                         }
                     }
-                    .projDetailTab{
-                        .Collapsible {
-                            width: 89%;
-                            .carousel{
-                                .carousel__blurb-bottom{
-                                    .prevSlide {
-                                        margin-right: 15px;
+                    .projectContainer{
+                        .projMain{
+                            .projMain__Left{
+                                .projMain__Left-Nav{
+    
+                                    .Num{
+                                        font-size: 5.4em;   
                                     }
-                                    .nextSlide {
-                                        margin-left: 15px;
+                                    // .Prev{
+                                        
+                                    // }
+                                    // .Next{
+                                        
+                                    // }
+                                }
+                            }
+                        }
+                        .projDetailTab{
+                            .Collapsible {
+                                width: 89%;
+                                .carousel{
+                                    .carousel__blurb-bottom{
+                                        .prevSlide {
+                                            margin-right: 15px;
+                                        }
+                                        .nextSlide {
+                                            margin-left: 15px;
+                                        }
                                     }
                                 }
                             }
@@ -881,6 +864,7 @@ body {
                     }
                 }
             }
+
         }
     }
     @media  (min-width: 660px)
@@ -915,72 +899,73 @@ body {
                     }
                 }
             }
-            .content{
-                .homeGallery{
-                    .homeGallery__Main{
-                        .homeGallery__MainCard-h {
-                            display: none;
-                        }
-                        .homeGallery__MainCard-d {
-                            display: none;
-                        }
-                    }
-                
-                    .homeGallery__More {
-                        .loadMoreContent{
-                            // .cardI{
-                            //     display: flex;
-                            // }
-                            .cardJ{
+            .contentContainer{
+                .content{
+                    .homeGallery{
+                        .homeGallery__Main{
+                            .homeGallery__MainCard-h {
                                 display: none;
                             }
-                            // .cardK{
-                            //     display: flex;
-                            // }
-                            // .cardL{
-                            //     display: flex;
-                            // }
+                            .homeGallery__MainCard-d {
+                                display: none;
+                            }
                         }
-                    }
-                }
-                .projectContainer{
-                    .projMain{
-                        .projMain__Left{
-                            .projMain__Left-Nav{
-
-                                .Num{
-                                    font-size: 5.4em;   
-                                }
-                                // .Prev{
-                                    
+                    
+                        .homeGallery__More {
+                            .loadMoreContent{
+                                // .cardI{
+                                //     display: flex;
                                 // }
-                                // .Next{
-                                    
+                                .cardJ{
+                                    display: none;
+                                }
+                                // .cardK{
+                                //     display: flex;
+                                // }
+                                // .cardL{
+                                //     display: flex;
                                 // }
                             }
                         }
                     }
-                    .projDetailTab{
-                        .Collapsible {
-                            width: 89%;
-                            .carousel{
-                                .carousel__blurb-bottom{
-                                    .prevSlide {
-                                        margin-right: 15px;
+                    .projectContainer{
+                        .projMain{
+                            .projMain__Left{
+                                .projMain__Left-Nav{
+    
+                                    .Num{
+                                        font-size: 5.4em;   
                                     }
-                                    .nextSlide {
-                                        margin-left: 15px;
-                                    }
+                                    // .Prev{
+                                        
+                                    // }
+                                    // .Next{
+                                        
+                                    // }
                                 }
                             }
-                            span{
-                                padding-right: 65%;
+                        }
+                        .projDetailTab{
+                            .Collapsible {
+                                width: 89%;
+                                .carousel{
+                                    .carousel__blurb-bottom{
+                                        .prevSlide {
+                                            margin-right: 15px;
+                                        }
+                                        .nextSlide {
+                                            margin-left: 15px;
+                                        }
+                                    }
+                                }
+                                span{
+                                    padding-right: 65%;
+                                }
                             }
                         }
                     }
                 }
             }
-        
             .footer__copyright {
                 margin: 38px 30px 0px 0px;
             }
@@ -1018,71 +1003,74 @@ body {
                     }
                 }
             }
-            .content{
-                .homeGallery{
-                    .homeGallery__Main{
-                        .homeGallery__MainCard-h {
-                            display: none;
-                        }
-                        .homeGallery__MainCard-d {
-                            display: none;
-                        }
-                    }
-                
-                    .homeGallery__More {
-                        .loadMoreContent{
-                            // .cardI{
-                            //     display: flex;
-                            // }
-                            .cardJ{
+            .contentContainer{
+                .content{
+                    .homeGallery{
+                        .homeGallery__Main{
+                            .homeGallery__MainCard-h {
                                 display: none;
                             }
-                            // .cardK{
-                            //     display: flex;
-                            // }
-                            // .cardL{
-                            //     display: flex;
-                            // }
+                            .homeGallery__MainCard-d {
+                                display: none;
+                            }
                         }
-                    }
-                }
-                .projectContainer{
-                    .projMain{
-                        .projMain__Left{
-                            .projMain__Left-Nav{
-
-                                .Num{
-                                    font-size: 5.4em;   
-                                }
-                                // .Prev{
-                                    
+                    
+                        .homeGallery__More {
+                            .loadMoreContent{
+                                // .cardI{
+                                //     display: flex;
                                 // }
-                                // .Next{
-                                    
+                                .cardJ{
+                                    display: none;
+                                }
+                                // .cardK{
+                                //     display: flex;
+                                // }
+                                // .cardL{
+                                //     display: flex;
                                 // }
                             }
                         }
                     }
-                    .projDetailTab{
-                        .Collapsible {
-                            width: 89%;
-                            .carousel{
-                                .carousel__blurb-bottom{
-                                    .prevSlide {
-                                        margin-right: 15px;
+                    .projectContainer{
+                        .projMain{
+                            .projMain__Left{
+                                .projMain__Left-Nav{
+    
+                                    .Num{
+                                        font-size: 5.4em;   
                                     }
-                                    .nextSlide {
-                                        margin-left: 15px;
-                                    }
+                                    // .Prev{
+                                        
+                                    // }
+                                    // .Next{
+                                        
+                                    // }
                                 }
                             }
-                            span{
-                                padding-right: 65%;
+                        }
+                        .projDetailTab{
+                            .Collapsible {
+                                width: 89%;
+                                .carousel{
+                                    .carousel__blurb-bottom{
+                                        .prevSlide {
+                                            margin-right: 15px;
+                                        }
+                                        .nextSlide {
+                                            margin-left: 15px;
+                                        }
+                                    }
+                                }
+                                span{
+                                    padding-right: 65%;
+                                }
                             }
                         }
                     }
                 }
             }
+
         
             .footer__copyright {
                 margin: 38px 30px 0px 0px;
@@ -1137,115 +1125,272 @@ body {
                     display: none;
                 }
             }
-            .content{
-                //margin-top: 125.39px;
-                .homeGallery{
-                    .homeGallery__Main{
-                        .homeGallery__MainCard-h {
-                            display: none;
+            .contentContainer{
+                .content{
+                    //margin-top: 125.39px;
+                    .homeGallery{
+                        .homeGallery__Main{
+                            .homeGallery__MainCard-a{
+                                margin-bottom: 10px;
+                                .cardFull{
+                                    width: 100%;
+                                    height: 139.583%;
+                                    background-color: lightgray;
+                                    img{
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                            .homeGallery__MainCard-b{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                margin-bottom: 10px;
+                                .cardTwoThirds{
+                                    width: 100%;
+                                    height: auto;
+                                    background-color: lightgray;
+                                    img{
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                                .cardThird{
+                                    width: 100%;
+                                    height: auto;
+                                    background-color: lightgray;
+                                    img{
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                            .homeGallery__MainCard-c{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                margin-bottom: 10px;
+                                .cardHalf{
+                                    width: 100%;
+                                    height: auto;
+                                    background-color: lightgray;
+                                    img{
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                            .homeGallery__MainCard-d{
+                                margin-bottom: 10px;
+                                .cardFull{
+                                    width: 100%;
+                                    height: auto;
+                                    background-color: lightgray;
+                                    img{
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                            .homeGallery__MainCard-e{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                margin-bottom: 10px;
+                                .cardHalf{
+                                    width: 100%;
+                                    height: auto;
+                                    background-color: lightgray;
+                                    img{
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+        
+                            }
+                            .homeGallery__MainCard-f{
+                                margin-bottom: 10px;
+                                .cardFull{
+                                    width: 100%;
+                                    height: auto;
+                                    background-color: lightgray;
+                                    img{
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                            .homeGallery__MainCard-g{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                margin-bottom: 10px;
+                                .cardTwoThirds{
+                                    width: 100%;
+                                    height: auto;
+                                    background-color: lightgray;
+                                    img{
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                                .cardThird{
+                                    width: 100%;
+                                    height: auto;
+                                    background-color: lightgray;
+                                    img{
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                            .homeGallery__MainCard-h{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                margin-bottom: 10px;
+                                .cardTwoThirds{
+                                    width: 100%;
+                                    height: auto;
+                                    background-color: lightgray;
+                                    img{
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                                .cardThird{
+                                    width: 100%;
+                                    height: auto;
+                                    background-color: lightgray;
+                                    img{
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
                         }
-                        .homeGallery__MainCard-d {
-                            display: none;
+                    
+                        .homeGallery__More {
+                            .loadMoreContent{
+                                .cardI{
+                                    display: flex;
+                                    .cardFull{
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                                .cardJ{
+                                    display: none;
+                                }
+                                .cardK{
+                                    display: flex;
+                                    .cardTwoThirds{
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                    .cardThird{
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                                .cardL{
+                                    display: flex;
+                                    .cardFull{
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                            }
                         }
                     }
-                
-                    .homeGallery__More {
-                        .loadMoreContent{
-                            // .cardI{
-                            //     display: flex;
-                            // }
-                            .cardJ{
+                    .projectContainer{
+                        .projMain{
+                            flex-direction: column-reverse;
+                            .projMain__Left{
+                                flex-direction: row-reverse;
+                                width: 100%;
+                                .projMain__Left-Nav{
+                                    width: 22.8%;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    .Num{
+                                        font-size: 5.4em;
+                                        margin: 0% 0% 0% 0%;
+                                    }
+                                    .Prev{
+                                        padding: 0% 0% 0% 0%;
+                                    }
+                                    .Next{
+                                        padding: 0% 0% 0% 0%;
+                                    }
+                                }
+                                .projMain__Left-Info{
+                                    width: 90%;
+                                }
+                            }
+                            .projMain__Image{
+                                width: 100%;
+                            }
+                        }
+                        .projDetailTab{
+                            .Collapsible {
+                                width: 100%;
+                                .carousel__controls{
+                                    display: flex;
+                                    width: 100%;
+                                    position: initial;
+                                    // top: 65%;
+                                    // left: 0%;
+                                    animation: none;
+                                }
+                                .carousel{
+                                    flex-direction: column;
+                                }
+    
+                                .carousel__image{
+                                    width: 100%;
+                                }
+                                .carousel__blurb{
+                                    width: 100%;
+                                    height: auto;
+                                    margin: 0% 0% 0% 0%;
+                                    .carousel__blurb-text{
+                                        padding: 0% 10% 8% 10%;
+                                    }
+                                }
+                            }
+                            .Collapsible__trigger {
+    
+                                &:after {
+                                    right: 8%;
+                                }
+                                
+                                &.is-open {
+                                    &:after {
+                                    transform: rotateZ(45deg);
+                                    }
+                                }
+                                
+                                &.is-disabled {
+                                    opacity: 0.5;
+                                    background-color: grey;
+                                }
+                            }
+                            .projDetailTab__sideRect{
                                 display: none;
                             }
-                            // .cardK{
-                            //     display: flex;
-                            // }
-                            // .cardL{
-                            //     display: flex;
-                            // }
                         }
                     }
-                }
-                .projectContainer{
-                    .projMain{
-                        flex-direction: column-reverse;
-                        .projMain__Left{
-                            flex-direction: row-reverse;
-                            width: 100%;
-                            .projMain__Left-Nav{
-                                width: 22.8%;
-                                white-space: nowrap;
-                                overflow: hidden;
-                                .Num{
-                                    font-size: 5.4em;
-                                    margin: 0% 0% 0% 0%;
-                                }
-                                .Prev{
-                                    padding: 0% 0% 0% 0%;
-                                }
-                                .Next{
-                                    padding: 0% 0% 0% 0%;
-                                }
-                            }
-                            .projMain__Left-Info{
-                                width: 90%;
-                            }
-                        }
-                        .projMain__Image{
-                            width: 100%;
-                        }
-                    }
-                    .projDetailTab{
-                        .Collapsible {
-                            width: 100%;
-                            .carousel__controls{
-                                display: flex;
-                                width: 100%;
-                                position: initial;
-                                // top: 65%;
-                                // left: 0%;
-                                animation: none;
-                            }
-                            .carousel{
-                                flex-direction: column;
-                            }
-
-                            .carousel__image{
-                                width: 100%;
-                            }
-                            .carousel__blurb{
-                                width: 100%;
-                                height: auto;
-                                margin: 0% 0% 0% 0%;
-                                .carousel__blurb-text{
-                                    padding: 0% 10% 8% 10%;
-                                }
-                            }
-                        }
-                        .Collapsible__trigger {
-
-                            &:after {
-                                right: 8%;
-                            }
-                            
-                            &.is-open {
-                                &:after {
-                                transform: rotateZ(45deg);
-                                }
-                            }
-                            
-                            &.is-disabled {
-                                opacity: 0.5;
-                                background-color: grey;
-                            }
-                        }
-                        .projDetailTab__sideRect{
-                            display: none;
-                        }
+                    .contactPage{
+                        animation: transitionIn 2s;
+                        // .contactMain{
+    
+                        // }
+    
                     }
                 }
             }
-        
             .footer__copyright {
                 margin: 7% 11% 3% 18%;
                 text-align: end;

@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch, Redirect, NavLink} from 'react-router-dom';
+import { BrowserRouter as Router, NavLink} from 'react-router-dom';
 import Branding from "./Branding.js";
-import Work2 from "./Work2";
+//import Work2 from "./Work2";
 import About1 from "./About1";
 import Contact1 from "./Contact1";
-import ProjectContainer from "./ProjectContainer.js";
+//import ProjectContainer from "./ProjectContainer.js";
+import WorkRoutes from "./WorkRoutes";
 import Footer from "./Footer";
 import MobileMenu from './MobileMenu.js';
 import "./App.css";
@@ -16,7 +17,7 @@ class App extends Component {
   state = {
     burgerMenuSelector: "hamburger hamburger--collapse",
     mobileMenuOpen: false,
-    mobileMenuPage: "",
+    menuPage: "work",
     clickCounter: 0,
     loadMore: false,
     activeObj: {
@@ -27,6 +28,7 @@ class App extends Component {
       heading: "",
       description: "",
       image: "",
+      featureImage: "",
       displaySlide: {
         slide: "",
         frameNum: "",
@@ -50,6 +52,10 @@ class App extends Component {
     rawProjectData: rawData,
   };
 
+  componentDidUpdate () {
+    console.log(this.state.mobileMenuPage);
+  }
+
   changeState = (obj) => {
     this.setState({
       activeObj: obj,
@@ -61,6 +67,7 @@ class App extends Component {
       loadMore: buttonClicked,
     });
   }
+
 
   burgerMenuClick = () =>{
     
@@ -86,53 +93,58 @@ class App extends Component {
     //value of mobileMenuOpen in state should be set to true
     //if the value of the number of clicks is even then the
     //value of mobileMenuOpen in state should be set to false
-
-    // this.setState({
-    //   mobileMenuOpen: menuOpen,
-    // });
   }
 
   showOpenMenu = () => {
+    console.log(this.state.activeObj.projID);
+
     if(this.state.mobileMenuOpen === true){
-        return <div className="content"><MobileMenu mobilePageHandler={this.mobilePageHandler}/></div>
+        return <div className="content"><MobileMenu pageHandler={this.pageHandler}/></div>
     }
-    else if(this.state.mobileMenuPage === "about"){
-      return <div className="content">
-              <About1 />
-            </div>;
-    }
-    else if(this.state.mobileMenuPage === "contact"){
-      return <div className="content">
-              <Contact1 />
-            </div>;
-    }
-    else{
-      return <div className="content">
-              <Switch>
-                <Route exact path="/" render={() =><Redirect to='/work'/>}/>
-                <Route path="/work" exact render={ () => { return <Work2 rawData={this.state.rawProjectData} resetLoadMoreValue={this.resetLoadMoreValue} loadMore={this.state.loadMore} loadMoreHandler={this.loadMoreHandler}/> }} />
-                <Route path="/about" component={About1}/>
-                <Route path="/contact" component={Contact1}/>
-                <Route path="/work/:projectID?/:slideID?" exact render={ (props) => { return <ProjectContainer activeObj={this.state.activeObj}
-                rawData={this.state.rawProjectData} projectId={props.match.params.projectID} slideId={props.match.params.slideID} 
-                changeState={this.changeState} />} } />
-              </Switch>
-            </div>;
+    else {
+      console.log(this.state.menuPage);
+      if(this.state.menuPage === "work"){
+        return <div className="contentContainer">
+                <WorkRoutes menuPage={this.state.menuPage} rawData={this.state.rawProjectData} loadMore={this.state.loadMore} loadMoreHandler={this.loadMoreHandler} activeObj={this.state.activeObj} changeState={this.changeState}/>
+              </div>;
+      }
+      else if(this.state.menuPage === "about"){
+        return <div className="content">
+                <About1 />
+              </div>;    
+      }
+      else if(this.state.menuPage === "contact"){
+        return <div className="content">
+                <Contact1 />
+              </div>;
+      }
+      else{
+        return <div className="content">
+        There is a problem
+      </div>;
+      }
     }
   }
-  mobilePageHandler = (page) =>{
-    //and set the value of mobileMenuOpen to false
+  pageHandler = (page) =>{
     this.setState({
       mobileMenuOpen: false,
       clickCounter: 0,
-      mobileMenuPage: page,
+      menuPage: page,
       burgerMenuSelector: "hamburger hamburger--collapse",
       loadMore: false,
     });
-    //set state to the page value
-    //may need to then adjust the showOpenMenu function to evaluate 
-    //the mobile page value and load the 
   }
+
+// loadDesktopPage = (page) =>{
+//     this.setState({
+//       mobileMenuOpen: false,
+//       clickCounter: 0,
+//       mobileMenuPage: page,
+//       burgerMenuSelector: "hamburger hamburger--collapse",
+//       loadMore: false,
+//     });
+//   }
+
 
 
   render() {
@@ -152,25 +164,13 @@ class App extends Component {
             </div>
             <div className="navigation">
               <div className="navigation__menu">
-                <NavLink to="/work" activeClassName="current" className="notCurrent" 
-                onClick = {() => {this.setState({loadMore: false, });}}>Work</NavLink> 
-                <NavLink exact to="/about" activeClassName="current" className="notCurrent">About</NavLink>
-                <NavLink exact to="/contact" activeClassName="current" className="notCurrent">Contact</NavLink>
+                <NavLink to="/work" onClick ={() => this.pageHandler("work")} activeClassName="current" className="notCurrent">Work</NavLink> 
+                <NavLink exact to="/about" onClick ={() => this.pageHandler("about")} activeClassName="current" className="notCurrent">About</NavLink>
+                <NavLink exact to="/contact" onClick ={() => this.pageHandler("contact")} activeClassName="current" className="notCurrent">Contact</NavLink>
               </div>
             </div>
           </div>
           {this.showOpenMenu()}
-          {/* <div className="content">
-            <Switch>
-              <Route exact path="/" render={() =><Redirect to='/work'/>}/>
-              <Route path="/work" exact render={ () => { return <Work2 rawData={this.state.rawProjectData} resetLoadMoreValue={this.resetLoadMoreValue} loadMore={this.state.loadMore} loadMoreHandler={this.loadMoreHandler}/> }} />
-              <Route path="/about" component={About1}/>
-              <Route path="/contact" component={Contact1}/>
-              <Route path="/work/:projectID?/:slideID?" exact render={ (props) => { return <ProjectContainer activeObj={this.state.activeObj}
-              rawData={this.state.rawProjectData} projectId={props.match.params.projectID} slideId={props.match.params.slideID} 
-              changeState={this.changeState} />} } />
-            </Switch>
-          </div> */}
           <Footer />
         </div>
       </Router>
@@ -180,3 +180,5 @@ class App extends Component {
 }
 
 export default App;
+
+

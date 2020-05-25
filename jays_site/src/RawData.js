@@ -6,7 +6,8 @@ module.exports = [
       "name": "Sittris",
       "heading": "Healthcare Seating System",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "image": "../../stock_PlaceholderImage.png",
+      "image": "../../card_img.png",
+      "featureImage": "../../stock_PlaceholderImage.png",
       "displaySlide": {
         "slide": "../../slide1.png",
         "frameNum": "1",
@@ -31,7 +32,8 @@ module.exports = [
       "name": "Cuisipro",
       "heading": "Kitchen Collection",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "image": "../../stock_PlaceholderImage.png",
+      "image": "../../card_img.png",
+      "featureImage": "../../stock_PlaceholderImage.png",
       "displaySlide": {
         "slide": "../../slide1.png",
         "frameNum": "1",
@@ -56,7 +58,8 @@ module.exports = [
       "name": "Revo",
       "heading": "Performance Sunglasses",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "image": "../../stock_PlaceholderImage.png",
+      "image": "../../card_img.png",
+      "featureImage": "../../stock_PlaceholderImage.png",
       "displaySlide": {
         "slide": "../../slide1.png",
         "frameNum": "1",
@@ -81,7 +84,8 @@ module.exports = [
       "name": "Roka",
       "heading": "Performance Eyewear",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "image": "../../stock_PlaceholderImage.png",
+      "image": "../../card_img.png",
+      "featureImage": "../../stock_PlaceholderImage.png",
       "displaySlide": {
         "slide": "../../slide1.png",
         "frameNum": "1",
@@ -106,7 +110,8 @@ module.exports = [
       "name": "xd claymore",
       "heading": "Angled Barbell Exercise Unit",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "image": "../../stock_PlaceholderImage.png",
+      "image": "../../card_img.png",
+      "featureImage": "../../stock_PlaceholderImage.png",
       "displaySlide": {
         "slide": "../../slide1.png",
         "frameNum": "1",
@@ -131,7 +136,8 @@ module.exports = [
       "name": "Bangerz",
       "heading": "Women’s Field Sport Goggle",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "image": "../../stock_PlaceholderImage.png",
+      "image": "../../card_img.png",
+      "featureImage": "../../stock_PlaceholderImage.png",
       "displaySlide": {
         "slide": "../../slide1.png",
         "frameNum": "1",
@@ -156,7 +162,8 @@ module.exports = [
       "name": "gs",
       "heading": "Flatware Collection",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "image": "../../stock_PlaceholderImage.png",
+      "image": "../../card_img.png",
+      "featureImage": "../../stock_PlaceholderImage.png",
       "displaySlide": {
         "slide": "../../slide1.png",
         "frameNum": "1",
@@ -181,7 +188,8 @@ module.exports = [
       "name": "Switch Vision",
       "heading": "Magnetic Interchange Lens System",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "image": "../../stock_PlaceholderImage.png",
+      "image": "../../card_img.png",
+      "featureImage": "../../stock_PlaceholderImage.png",
       "displaySlide": {
         "slide": "../../slide1.png",
         "frameNum": "1",
@@ -206,7 +214,8 @@ module.exports = [
       "name": "+1",
       "heading": "Condom Case",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "image": "../../stock_PlaceholderImage.png",
+      "image": "../../card_img.png",
+      "featureImage": "../../stock_PlaceholderImage.png",
       "displaySlide": {
         "slide": "../../slide1.png",
         "frameNum": "1",
@@ -231,7 +240,8 @@ module.exports = [
       "name": "Thermos",
       "heading": "Cooler Bags",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "image": "../../stock_PlaceholderImage.png",
+      "image": "../../card_img.png",
+      "featureImage": "../../stock_PlaceholderImage.png",
       "displaySlide": {
         "slide": "../../slide1.png",
         "frameNum": "1",
@@ -256,7 +266,8 @@ module.exports = [
       "name": "Folding Lawn Chair",
       "heading": "specialty eyewear",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "image": "../../stock_PlaceholderImage.png",
+      "image": "../../card_img.png",
+      "featureImage": "../../stock_PlaceholderImage.png",
       "displaySlide": {
         "slide": "../../slide1.png",
         "frameNum": "1",

@@ -10,9 +10,11 @@ export default class Project extends React.Component {
 
 componentDidMount () {
     //console.log(this.props.activeObj);
+    
 }
 componentDidUpdate () {
     //console.log(this.props.activeObj);
+    
 }
 
 currentProject = (currentProjID) => {
@@ -78,7 +80,7 @@ nextProjID = (currentProjID) => {
                         </div>
                     </div>
                     <div className="projMain__Image">
-                        <img src={this.currentProject(this.props.currentId).image} alt="baseball players"/>
+                        <img src={this.currentProject(this.props.currentId).featureImage} alt="baseball players"/>
                     </div>
                 </div>
                 <div className="projDetailTab">

@@ -16,14 +16,16 @@ export default class ProjectContainer extends React.Component {
             const currentObj = rawData.find(obj => obj.projID === projectId);
             this.props.changeState(currentObj);
         }
+
+        
     }
     componentDidUpdate (){
-
+        
     }
 
     render() {
         return (
-            <Project activeObj={this.props.activeObj} rawData={this.props.rawData} currentId={this.props.projectId} slideId={this.props.slideId} />
+            <Project resetPage={this.props.resetPage} activeObj={this.props.activeObj} rawData={this.props.rawData} currentId={this.props.projectId} slideId={this.props.slideId} />
         );
     }
 }

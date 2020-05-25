@@ -9,8 +9,8 @@ export default class MobileMenu extends React.Component {
         console.log(this.props.projectId);
     }
 
-    loadMobilePage = (page) =>{
-        this.props.mobilePageHandler(page);
+    loadPage = (page) =>{
+        this.props.pageHandler(page);
     }
 
 
@@ -21,10 +21,9 @@ export default class MobileMenu extends React.Component {
                     <div className="navigation__menu">
                         {/* <NavLink to="/work" activeClassName="current" className="notCurrent" 
                         onClick = {() => {this.setState({loadMore: false, });}, () => this.loadMobilePage("work")}>Work</NavLink>  */}
-                        <NavLink to="/work" activeClassName="current" className="notCurrent" 
-                        onClick = {() => this.loadMobilePage("work")}>Work</NavLink> 
-                        <NavLink exact to="/about" onClick ={() => this.loadMobilePage("about")} activeClassName="current" className="notCurrent">About</NavLink>
-                        <NavLink exact to="/contact" onClick ={() => this.loadMobilePage("contact")} activeClassName="current" className="notCurrent">Contact</NavLink>
+                        <NavLink to="/work" onClick = {() => this.loadPage("work")} activeClassName="current" className="notCurrent">Work</NavLink> 
+                        <NavLink exact to="/about" onClick ={() => this.loadPage("about")} activeClassName="current" className="notCurrent">About</NavLink>
+                        <NavLink exact to="/contact" onClick ={() => this.loadPage("contact")} activeClassName="current" className="notCurrent">Contact</NavLink>
                     </div>
                 </div>
             </Router>
