@@ -1,13 +1,16 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, NavLink} from 'react-router-dom';
+// import { BrowserRouter as Router, NavLink} from 'react-router-dom';
+import { BrowserRouter as Router, NavLink, Route, Switch, Redirect} from 'react-router-dom';
+import Work2 from "./Work2";
+import ProjectContainer from "./ProjectContainer.js"
 import Branding from "./Branding.js";
 //import Work2 from "./Work2";
 import About1 from "./About1";
 import Contact1 from "./Contact1";
 //import ProjectContainer from "./ProjectContainer.js";
-import WorkRoutes from "./WorkRoutes";
+//import WorkRoutes from "./WorkRoutes";
 import Footer from "./Footer";
-import MobileMenu from './MobileMenu.js';
+//import MobileMenu from './MobileMenu.js';
 import "./App.css";
 var rawData = require('./RawData.js');
 
@@ -15,9 +18,13 @@ var rawData = require('./RawData.js');
 class App extends Component {
 
   state = {
+    headerSelector: "header",
+    footerSelector: "footer",
+    contentSelector: "content",
+    navMenuSelector: "navClosed",
     burgerMenuSelector: "hamburger hamburger--collapse",
     mobileMenuOpen: false,
-    menuPage: "work",
+    menuPage: "default",
     clickCounter: 0,
     loadMore: false,
     activeObj: {
@@ -53,7 +60,8 @@ class App extends Component {
   };
 
   componentDidUpdate () {
-    console.log(this.state.mobileMenuPage);
+    console.log(this.state.mobileMenuOpen);
+    console.log(this.state.navMenuSelector);
   }
 
   changeState = (obj) => {
@@ -79,6 +87,10 @@ class App extends Component {
         mobileMenuOpen: false,
         clickCounter: 0,
         burgerMenuSelector: "hamburger hamburger--collapse",
+        headerSelector: "header",
+        navMenuSelector: "navClosed",
+        contentSelector: "content",
+        footerSelector: "footer",
       });
     }
     else{
@@ -86,6 +98,11 @@ class App extends Component {
         mobileMenuOpen: true,
         clickCounter: clickCounter,
         burgerMenuSelector: "hamburger hamburger--collapse is-active",
+        headerSelector: "headerFull",
+        navMenuSelector: "navigation",
+        contentSelector: "contentHidden",
+        footerSelector: "footerHidden",
+        
       });
     }
   
@@ -99,30 +116,18 @@ class App extends Component {
     console.log(this.state.activeObj.projID);
 
     if(this.state.mobileMenuOpen === true){
-        return <div className="content"><MobileMenu pageHandler={this.pageHandler}/></div>
+        return <div className={this.state.contentSelector}></div>;
     }
     else {
-      console.log(this.state.menuPage);
-      if(this.state.menuPage === "work"){
-        return <div className="contentContainer">
-                <WorkRoutes menuPage={this.state.menuPage} rawData={this.state.rawProjectData} loadMore={this.state.loadMore} loadMoreHandler={this.loadMoreHandler} activeObj={this.state.activeObj} changeState={this.changeState}/>
-              </div>;
-      }
-      else if(this.state.menuPage === "about"){
-        return <div className="content">
-                <About1 />
-              </div>;    
-      }
-      else if(this.state.menuPage === "contact"){
-        return <div className="content">
-                <Contact1 />
-              </div>;
-      }
-      else{
-        return <div className="content">
-        There is a problem
-      </div>;
-      }
+      return <div className={this.state.contentSelector}>
+      <Switch>
+        <Route exact path="/" render={() =><Redirect to='/work'/>}/>
+        <Route path="/work" exact render={ () => { return <Work2 menuPage={this.state.menuPage} rawData={this.state.rawProjectData} loadMore={this.state.loadMore} loadMoreHandler={this.loadMoreHandler}/> }} />
+        <Route path="/about" component={About1}/>
+        <Route path="/contact" component={Contact1}/>
+        <Route path="/work/:projectID?/:slideID?" exact render={ (props) => { return <ProjectContainer activeObj={this.state.activeObj} rawData={this.state.rawProjectData} projectId={props.match.params.projectID} slideId={props.match.params.slideID} changeState={this.changeState} />} } />
+      </Switch>
+    </div>;
     }
   }
   pageHandler = (page) =>{
@@ -132,6 +137,10 @@ class App extends Component {
       menuPage: page,
       burgerMenuSelector: "hamburger hamburger--collapse",
       loadMore: false,
+      headerSelector: "header",
+      navMenuSelector: "navClosed",
+      contentSelector: "content",
+      footerSelector: "footer",
     });
   }
 
@@ -144,7 +153,23 @@ class App extends Component {
 //       loadMore: false,
 //     });
 //   }
+// displayNav = () => {
 
+//   if(this.state.mobileMenuOpen === true){
+//     return <div className="navigation__menu">
+//     <NavLink to="/work" onClick ={() => this.pageHandler("work")} activeClassName="current" className="notCurrent">Work</NavLink> 
+//     <NavLink exact to="/about" onClick ={() => this.pageHandler("about")} activeClassName="current" className="notCurrent">About</NavLink>
+//     <NavLink exact to="/contact" onClick ={() => this.pageHandler("contact")} activeClassName="current" className="notCurrent">Contact</NavLink>
+//   </div>
+//   }
+//   else{
+//     return <div className="navigation__menu">
+//     <NavLink to="/work" onClick ={() => this.pageHandler("work")} activeClassName="current" className="notCurrent">Work</NavLink> 
+//     <NavLink exact to="/about" onClick ={() => this.pageHandler("about")} activeClassName="current" className="notCurrent">About</NavLink>
+//     <NavLink exact to="/contact" onClick ={() => this.pageHandler("contact")} activeClassName="current" className="notCurrent">Contact</NavLink>
+//     </div>
+//   }
+// }
 
 
   render() {
@@ -152,17 +177,19 @@ class App extends Component {
 
       <Router>
         <div className="app">
-          <div className="header">
-            <Branding />
-            <div className="burgerMenu">
-                {/* <img src="../../burgerMenu.png" alt="burger-icon" onClick={this.burgerMenuClick}/> */}
-                  <button className={this.state.burgerMenuSelector} type="button" onClick={this.burgerMenuClick}>
-                    <span className="hamburger-box">
-                      <span className="hamburger-inner"></span>
-                    </span>
-                  </button>
+          <div className={this.state.headerSelector}>
+            <div className="mobileNavContainer">
+              <Branding />
+              <div className="burgerMenu">
+                    <button className={this.state.burgerMenuSelector} type="button" onClick={this.burgerMenuClick}>
+                      <span className="hamburger-box">
+                        <span className="hamburger-inner"></span>
+                      </span>
+                    </button>
+              </div>
             </div>
-            <div className="navigation">
+            <div className={this.state.navMenuSelector}>
+              {/* {this.displayNav()} */}
               <div className="navigation__menu">
                 <NavLink to="/work" onClick ={() => this.pageHandler("work")} activeClassName="current" className="notCurrent">Work</NavLink> 
                 <NavLink exact to="/about" onClick ={() => this.pageHandler("about")} activeClassName="current" className="notCurrent">About</NavLink>
@@ -170,8 +197,19 @@ class App extends Component {
               </div>
             </div>
           </div>
-          {this.showOpenMenu()}
+            {this.showOpenMenu()}
+            {/* <div className="content">
+              <Switch>
+                <Route exact path="/" render={() =><Redirect to='/work'/>}/>
+                <Route path="/work" exact render={ () => { return <Work2 menuPage={this.state.menuPage} rawData={this.state.rawProjectData} loadMore={this.state.loadMore} loadMoreHandler={this.loadMoreHandler}/> }} />
+                <Route path="/about" component={About1}/>
+                <Route path="/contact" component={Contact1}/>
+                <Route path="/work/:projectID?/:slideID?" exact render={ (props) => { return <ProjectContainer activeObj={this.state.activeObj} rawData={this.state.rawProjectData} projectId={props.match.params.projectID} slideId={props.match.params.slideID} changeState={this.changeState} />} } />
+              </Switch>
+            </div> */}
+          <div className={this.state.footerSelector}>
           <Footer />
+          </div>
         </div>
       </Router>
 

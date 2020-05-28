@@ -1440,7 +1440,22 @@ body .app .header {
   height: 230px;
 }
 
-body .app .header .branding {
+body .app .header .mobileNavContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 50%;
+  height: 100%;
+}
+
+body .app .header .mobileNavContainer .branding {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1454,7 +1469,7 @@ body .app .header .branding {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  width: 50%;
+  width: 100%;
   height: 100%;
   color: #010101;
   font-family: 'Sunflower-Medium';
@@ -1462,12 +1477,12 @@ body .app .header .branding {
           animation: transitionIn 1s;
 }
 
-body .app .header .branding .name {
+body .app .header .mobileNavContainer .branding .name {
   font-size: 48px;
   margin: 0px 0 13.5px 50px;
 }
 
-body .app .header .branding .industry {
+body .app .header .mobileNavContainer .branding .industry {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1483,23 +1498,43 @@ body .app .header .branding .industry {
   line-height: 20px;
 }
 
-body .app .header .branding .industry .line1 {
+body .app .header .mobileNavContainer .branding .industry .line1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body .app .header .branding .industry .line2 {
+body .app .header .mobileNavContainer .branding .industry .line2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body .app .header .burgerMenu {
+body .app .header .mobileNavContainer .burgerMenu {
   display: none;
 }
 
 body .app .header .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 50%;
+  background-color: #010101;
+  -webkit-animation: transitionIn 2s;
+          animation: transitionIn 2s;
+}
+
+body .app .header .navClosed {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1551,6 +1586,167 @@ body .app .header .navigation__menu .current {
   font-size: 1em;
 }
 
+body .app .headerFull {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  height: 230px;
+}
+
+body .app .headerFull .mobileNavContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 50%;
+  height: 100%;
+}
+
+body .app .headerFull .mobileNavContainer .branding {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  color: #010101;
+  font-family: 'Sunflower-Medium';
+  -webkit-animation: transitionIn 1s;
+          animation: transitionIn 1s;
+}
+
+body .app .headerFull .mobileNavContainer .branding .name {
+  font-size: 48px;
+  margin: 0px 0 13.5px 50px;
+}
+
+body .app .headerFull .mobileNavContainer .branding .industry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 20px;
+  margin: 0px 0 25px 19px;
+  line-height: 20px;
+}
+
+body .app .headerFull .mobileNavContainer .branding .industry .line1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .app .headerFull .mobileNavContainer .branding .industry .line2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .app .headerFull .mobileNavContainer .burgerMenu {
+  display: none;
+}
+
+body .app .headerFull .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 50%;
+  background-color: #010101;
+  -webkit-animation: transitionIn 2s;
+          animation: transitionIn 2s;
+}
+
+body .app .headerFull .navClosed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 50%;
+  background-color: #010101;
+  -webkit-animation: transitionIn 2s;
+          animation: transitionIn 2s;
+}
+
+body .app .headerFull .navigation__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 52%;
+  padding: 0 50px 23.5px 0;
+}
+
+body .app .headerFull .navigation__menu .notCurrent {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: 'IBMPlexSans';
+  font-size: 1em;
+}
+
+body .app .headerFull .navigation__menu .current {
+  text-decoration: underline;
+  text-underline-position: under;
+  -webkit-text-decoration-color: #FB8B24;
+          text-decoration-color: #FB8B24;
+  color: #FFFFFF;
+  font-family: 'IBMPlexSans';
+  font-size: 1em;
+}
+
 body .app .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1576,15 +1772,7 @@ body .app .footer__copyright {
   margin: 38px 50px 0px 0px;
 }
 
-body .app .contentContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: auto;
-}
-
-body .app .contentContainer .content {
+body .app .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1594,7 +1782,7 @@ body .app .contentContainer .content {
   height: auto;
 }
 
-body .app .contentContainer .content .homeGallery {
+body .app .content .homeGallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1612,7 +1800,7 @@ body .app .contentContainer .content .homeGallery {
           animation: transitionIn 2s;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__Main {
+body .app .content .homeGallery .homeGallery__Main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1629,22 +1817,22 @@ body .app .contentContainer .content .homeGallery .homeGallery__Main {
       flex-wrap: wrap;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-a {
+body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-a {
   margin-bottom: 10px;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-a .cardFull {
+body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-a .cardFull {
   width: 240px;
   height: 335px;
   background-color: lightgray;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-a .cardFull img {
+body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-a .cardFull img {
   width: 100%;
   height: 100%;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-b {
+body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-b {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1658,29 +1846,29 @@ body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGaller
   margin-bottom: 10px;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-b .cardTwoThirds {
+body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-b .cardTwoThirds {
   width: 240px;
   height: 220px;
   background-color: lightgray;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-b .cardTwoThirds img {
+body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-b .cardTwoThirds img {
   width: 100%;
   height: 100%;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-b .cardThird {
+body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-b .cardThird {
   width: 240px;
   height: 105px;
   background-color: lightgray;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-b .cardThird img {
+body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-b .cardThird img {
   width: 100%;
   height: 100%;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-c {
+body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-c {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1694,33 +1882,33 @@ body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGaller
   margin-bottom: 10px;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-c .cardHalf {
+body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-c .cardHalf {
   width: 240px;
   height: 162.5px;
   background-color: lightgray;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-c .cardHalf img {
+body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-c .cardHalf img {
   width: 100%;
   height: 100%;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-d {
+body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-d {
   margin-bottom: 10px;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-d .cardFull {
+body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-d .cardFull {
   width: 240px;
   height: 335px;
   background-color: lightgray;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-d .cardFull img {
+body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-d .cardFull img {
   width: 100%;
   height: 100%;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-e {
+body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-e {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1734,33 +1922,33 @@ body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGaller
   margin-bottom: 10px;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-e .cardHalf {
+body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-e .cardHalf {
   width: 240px;
   height: 162.5px;
   background-color: lightgray;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-e .cardHalf img {
+body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-e .cardHalf img {
   width: 100%;
   height: 100%;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-f {
+body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-f {
   margin-bottom: 10px;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-f .cardFull {
+body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-f .cardFull {
   width: 240px;
   height: 335px;
   background-color: lightgray;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-f .cardFull img {
+body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-f .cardFull img {
   width: 100%;
   height: 100%;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-g {
+body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-g {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1774,29 +1962,29 @@ body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGaller
   margin-bottom: 10px;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-g .cardTwoThirds {
+body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-g .cardTwoThirds {
   width: 240px;
   height: 220px;
   background-color: lightgray;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-g .cardTwoThirds img {
+body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-g .cardTwoThirds img {
   width: 100%;
   height: 100%;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-g .cardThird {
+body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-g .cardThird {
   width: 240px;
   height: 105px;
   background-color: lightgray;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-g .cardThird img {
+body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-g .cardThird img {
   width: 100%;
   height: 100%;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-h {
+body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-h {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1810,29 +1998,29 @@ body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGaller
   margin-bottom: 10px;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-h .cardTwoThirds {
+body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-h .cardTwoThirds {
   width: 240px;
   height: 220px;
   background-color: lightgray;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-h .cardTwoThirds img {
+body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-h .cardTwoThirds img {
   width: 100%;
   height: 100%;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-h .cardThird {
+body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-h .cardThird {
   width: 240px;
   height: 105px;
   background-color: lightgray;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-h .cardThird img {
+body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-h .cardThird img {
   width: 100%;
   height: 100%;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__More .loadMoreContent {
+body .app .content .homeGallery .homeGallery__More .loadMoreContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1851,25 +2039,25 @@ body .app .contentContainer .content .homeGallery .homeGallery__More .loadMoreCo
       flex-wrap: wrap;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__More .loadMoreContent .cardI {
+body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardI {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 10px;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__More .loadMoreContent .cardI .cardFull {
+body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardI .cardFull {
   width: 240px;
   height: 335px;
   background-color: lightgray;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__More .loadMoreContent .cardI .cardFull img {
+body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardI .cardFull img {
   width: 100%;
   height: 100%;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__More .loadMoreContent .cardJ {
+body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardJ {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1883,18 +2071,18 @@ body .app .contentContainer .content .homeGallery .homeGallery__More .loadMoreCo
   margin-bottom: 10px;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__More .loadMoreContent .cardJ .cardHalf {
+body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardJ .cardHalf {
   width: 240px;
   height: 162.5px;
   background-color: lightgray;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__More .loadMoreContent .cardJ .cardHalf img {
+body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardJ .cardHalf img {
   width: 100%;
   height: 100%;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__More .loadMoreContent .cardK {
+body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardK {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1908,42 +2096,42 @@ body .app .contentContainer .content .homeGallery .homeGallery__More .loadMoreCo
   margin-bottom: 10px;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__More .loadMoreContent .cardK .cardTwoThirds {
+body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardK .cardTwoThirds {
   width: 240px;
   height: 220px;
   background-color: lightgray;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__More .loadMoreContent .cardK .cardTwoThirds img {
+body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardK .cardTwoThirds img {
   width: 100%;
   height: 100%;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__More .loadMoreContent .cardK .cardThird {
+body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardK .cardThird {
   width: 240px;
   height: 105px;
   background-color: lightgray;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__More .loadMoreContent .cardK .cardThird img {
+body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardK .cardThird img {
   width: 100%;
   height: 100%;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__More .loadMoreContent .cardL {
+body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardL {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 10px;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__More .loadMoreContent .cardL .cardFull {
+body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardL .cardFull {
   width: 240px;
   height: 335px;
   background-color: lightgray;
 }
 
-body .app .contentContainer .content .homeGallery .homeGallery__More .loadMoreContent .cardL .cardFull img {
+body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardL .cardFull img {
   width: 100%;
   height: 100%;
 }
@@ -1974,7 +2162,7 @@ body .app .contentContainer .content .homeGallery .homeGallery__More .loadMoreCo
   }
 }
 
-body .app .contentContainer .content .homeGallery .loadMoreButton {
+body .app .content .homeGallery .loadMoreButton {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1996,7 +2184,7 @@ body .app .contentContainer .content .homeGallery .loadMoreButton {
   font-size: 16px;
 }
 
-body .app .contentContainer .content .projectContainer {
+body .app .content .projectContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2014,7 +2202,7 @@ body .app .contentContainer .content .projectContainer {
           animation: transitionIn 2s;
 }
 
-body .app .contentContainer .content .projectContainer .projMain {
+body .app .content .projectContainer .projMain {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2029,7 +2217,7 @@ body .app .contentContainer .content .projectContainer .projMain {
   height: auto;
 }
 
-body .app .contentContainer .content .projectContainer .projMain .projMain__Left {
+body .app .content .projectContainer .projMain .projMain__Left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2044,7 +2232,7 @@ body .app .contentContainer .content .projectContainer .projMain .projMain__Left
   height: auto;
 }
 
-body .app .contentContainer .content .projectContainer .projMain .projMain__Left-Nav {
+body .app .content .projectContainer .projMain .projMain__Left-Nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2062,11 +2250,11 @@ body .app .contentContainer .content .projectContainer .projMain .projMain__Left
   overflow: hidden;
 }
 
-body .app .contentContainer .content .projectContainer .projMain .projMain__Left-Nav .Prev {
+body .app .content .projectContainer .projMain .projMain__Left-Nav .Prev {
   padding: 36% 17% 12% 17%;
 }
 
-body .app .contentContainer .content .projectContainer .projMain .projMain__Left-Nav .Num {
+body .app .content .projectContainer .projMain .projMain__Left-Nav .Num {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2088,11 +2276,11 @@ body .app .contentContainer .content .projectContainer .projMain .projMain__Left
   line-height: 75%;
 }
 
-body .app .contentContainer .content .projectContainer .projMain .projMain__Left-Nav .Next {
+body .app .content .projectContainer .projMain .projMain__Left-Nav .Next {
   padding: 16% 17% 0% 17%;
 }
 
-body .app .contentContainer .content .projectContainer .projMain .projMain__Left-Info {
+body .app .content .projectContainer .projMain .projMain__Left-Info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2108,7 +2296,7 @@ body .app .contentContainer .content .projectContainer .projMain .projMain__Left
   background-color: #FAFBFA;
 }
 
-body .app .contentContainer .content .projectContainer .projMain .projMain__Left-Info .Name {
+body .app .content .projectContainer .projMain .projMain__Left-Info .Name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2125,7 +2313,7 @@ body .app .contentContainer .content .projectContainer .projMain .projMain__Left
   padding: 48px 0px 0px 29px;
 }
 
-body .app .contentContainer .content .projectContainer .projMain .projMain__Left-Info .Heading {
+body .app .content .projectContainer .projMain .projMain__Left-Info .Heading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2142,7 +2330,7 @@ body .app .contentContainer .content .projectContainer .projMain .projMain__Left
   padding: 13px 0px 0px 29px;
 }
 
-body .app .contentContainer .content .projectContainer .projMain .projMain__Left-Info .Description {
+body .app .content .projectContainer .projMain .projMain__Left-Info .Description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2160,7 +2348,7 @@ body .app .contentContainer .content .projectContainer .projMain .projMain__Left
   padding: 15px 50px 0px 29px;
 }
 
-body .app .contentContainer .content .projectContainer .projMain__Image {
+body .app .content .projectContainer .projMain__Image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2176,7 +2364,7 @@ body .app .contentContainer .content .projectContainer .projMain__Image {
   height: auto;
 }
 
-body .app .contentContainer .content .projectContainer .projMain__Image img {
+body .app .content .projectContainer .projMain__Image img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2184,7 +2372,7 @@ body .app .contentContainer .content .projectContainer .projMain__Image img {
   height: auto;
 }
 
-body .app .contentContainer .content .projectContainer .projDetailTab {
+body .app .content .projectContainer .projDetailTab {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2198,11 +2386,11 @@ body .app .contentContainer .content .projectContainer .projDetailTab {
   width: 100%;
 }
 
-body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible {
+body .app .content .projectContainer .projDetailTab .Collapsible {
   width: 89%;
 }
 
-body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible .carousel {
+body .app .content .projectContainer .projDetailTab .Collapsible .carousel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2220,13 +2408,13 @@ body .app .contentContainer .content .projectContainer .projDetailTab .Collapsib
   position: relative;
 }
 
-body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible .carousel:hover .carousel__controls {
+body .app .content .projectContainer .projDetailTab .Collapsible .carousel:hover .carousel__controls {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible .carousel__controls {
+body .app .content .projectContainer .projDetailTab .Collapsible .carousel__controls {
   display: none;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -2247,58 +2435,58 @@ body .app .contentContainer .content .projectContainer .projDetailTab .Collapsib
           animation: transitionIn 1s;
 }
 
-body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible .carousel__controls .prevSlide {
+body .app .content .projectContainer .projDetailTab .Collapsible .carousel__controls .prevSlide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-right: 40px;
 }
 
-body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible .carousel__controls .emptyDot {
+body .app .content .projectContainer .projDetailTab .Collapsible .carousel__controls .emptyDot {
   width: 7px;
   height: 7px;
   border: 1px solid #010101;
   background-color: #FFFFFF;
 }
 
-body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible .carousel__controls .filledDot {
+body .app .content .projectContainer .projDetailTab .Collapsible .carousel__controls .filledDot {
   width: 7px;
   height: 7px;
   background-color: #010101;
   border: 1px solid #010101;
 }
 
-body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible .carousel__controls .slideTwoDot {
+body .app .content .projectContainer .projDetailTab .Collapsible .carousel__controls .slideTwoDot {
   margin: 0px 7px;
 }
 
-body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible .carousel__controls .nextSlide {
+body .app .content .projectContainer .projDetailTab .Collapsible .carousel__controls .nextSlide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: 40px;
 }
 
-body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible .carousel__image {
+body .app .content .projectContainer .projDetailTab .Collapsible .carousel__image {
   width: 71%;
   height: 100%;
 }
 
-body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible .carousel__image img {
+body .app .content .projectContainer .projDetailTab .Collapsible .carousel__image img {
   width: 100%;
   height: auto;
 }
 
-body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible .carousel__blurb {
+body .app .content .projectContainer .projDetailTab .Collapsible .carousel__blurb {
   width: 29%;
   height: auto;
 }
 
-body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible .carousel__blurb-text {
+body .app .content .projectContainer .projDetailTab .Collapsible .carousel__blurb-text {
   padding: 0% 10% 0% 10%;
 }
 
-body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible span {
+body .app .content .projectContainer .projDetailTab .Collapsible span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2312,7 +2500,7 @@ body .app .contentContainer .content .projectContainer .projDetailTab .Collapsib
   height: 50px;
 }
 
-body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible__trigger {
+body .app .content .projectContainer .projDetailTab .Collapsible__trigger {
   display: block;
   font-weight: 400;
   text-decoration: none;
@@ -2324,7 +2512,7 @@ body .app .contentContainer .content .projectContainer .projDetailTab .Collapsib
   color: #010101;
 }
 
-body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible__trigger:after {
+body .app .content .projectContainer .projDetailTab .Collapsible__trigger:after {
   content: url("./Icons/expand.png");
   position: absolute;
   right: 58%;
@@ -2336,17 +2524,17 @@ body .app .contentContainer .content .projectContainer .projDetailTab .Collapsib
   transition: transform 2000ms, -webkit-transform 2000ms;
 }
 
-body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible__trigger.is-open:after {
+body .app .content .projectContainer .projDetailTab .Collapsible__trigger.is-open:after {
   -webkit-transform: rotateZ(45deg);
           transform: rotateZ(45deg);
 }
 
-body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible__trigger.is-disabled {
+body .app .content .projectContainer .projDetailTab .Collapsible__trigger.is-disabled {
   opacity: 0.5;
   background-color: grey;
 }
 
-body .app .contentContainer .content .projectContainer .projDetailTab__sideRect {
+body .app .content .projectContainer .projDetailTab__sideRect {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2362,18 +2550,18 @@ body .app .contentContainer .content .projectContainer .projDetailTab__sideRect 
   height: auto;
 }
 
-body .app .contentContainer .content .projectContainer .projDetailTab__sideRect-Top {
+body .app .content .projectContainer .projDetailTab__sideRect-Top {
   width: 100%;
   background-color: #FFFFFF;
   height: 72px;
 }
 
-body .app .contentContainer .content .contactPage {
+body .app .content .contactPage {
   -webkit-animation: transitionIn 2s;
           animation: transitionIn 2s;
 }
 
-body .app .contentContainer .content .contactPage .contactMain {
+body .app .content .contactPage .contactMain {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2388,7 +2576,7 @@ body .app .contentContainer .content .contactPage .contactMain {
   height: 435px;
 }
 
-body .app .contentContainer .content .contactPage .contactMain .contactImage {
+body .app .content .contactPage .contactMain .contactImage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2404,7 +2592,7 @@ body .app .contentContainer .content .contactPage .contactMain .contactImage {
   height: 100%;
 }
 
-body .app .contentContainer .content .contactPage .contactMain__Side {
+body .app .content .contactPage .contactMain__Side {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2420,7 +2608,7 @@ body .app .contentContainer .content .contactPage .contactMain__Side {
   background-color: #010101;
 }
 
-body .app .contentContainer .content .contactPage .contactMain__Info {
+body .app .content .contactPage .contactMain__Info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2436,7 +2624,7 @@ body .app .contentContainer .content .contactPage .contactMain__Info {
   background-color: #FAFBFA;
 }
 
-body .app .contentContainer .content .contactPage .contactMain__Info-Heading {
+body .app .content .contactPage .contactMain__Info-Heading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2453,7 +2641,7 @@ body .app .contentContainer .content .contactPage .contactMain__Info-Heading {
   padding: 48px 0px 0px 29px;
 }
 
-body .app .contentContainer .content .contactPage .contactMain__Info-Intro {
+body .app .content .contactPage .contactMain__Info-Intro {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2471,7 +2659,7 @@ body .app .contentContainer .content .contactPage .contactMain__Info-Intro {
   padding: 15px 50px 0px 29px;
 }
 
-body .app .contentContainer .content .contactPage .form {
+body .app .content .contactPage .form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2489,11 +2677,11 @@ body .app .contentContainer .content .contactPage .form {
   padding: 15px 50px 0px 29px;
 }
 
-body .app .contentContainer .content .contactPage .form textarea {
+body .app .content .contactPage .form textarea {
   height: 100px;
 }
 
-body .app .contentContainer .content .contactPage .submit {
+body .app .content .contactPage .submit {
   width: 100px;
   height: 40px;
   margin-top: 20px;
@@ -2538,25 +2726,25 @@ body .app .contentContainer .content .contactPage .submit {
   body .app .header .navigation .navigation__menu {
     padding-right: 50px;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-h {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-h {
     display: none;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-d {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-d {
     display: none;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__More .loadMoreContent .cardJ {
+  body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardJ {
     display: none;
   }
-  body .app .contentContainer .content .projectContainer .projMain .projMain__Left .projMain__Left-Nav .Num {
+  body .app .content .projectContainer .projMain .projMain__Left .projMain__Left-Nav .Num {
     font-size: 5.4em;
   }
-  body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible {
+  body .app .content .projectContainer .projDetailTab .Collapsible {
     width: 89%;
   }
-  body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible .carousel .carousel__blurb-bottom .prevSlide {
+  body .app .content .projectContainer .projDetailTab .Collapsible .carousel .carousel__blurb-bottom .prevSlide {
     margin-right: 15px;
   }
-  body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible .carousel .carousel__blurb-bottom .nextSlide {
+  body .app .content .projectContainer .projDetailTab .Collapsible .carousel .carousel__blurb-bottom .nextSlide {
     margin-left: 15px;
   }
 }
@@ -2597,28 +2785,28 @@ body .app .contentContainer .content .contactPage .submit {
     padding-right: 30px;
     width: 64%;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-h {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-h {
     display: none;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-d {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-d {
     display: none;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__More .loadMoreContent .cardJ {
+  body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardJ {
     display: none;
   }
-  body .app .contentContainer .content .projectContainer .projMain .projMain__Left .projMain__Left-Nav .Num {
+  body .app .content .projectContainer .projMain .projMain__Left .projMain__Left-Nav .Num {
     font-size: 5.4em;
   }
-  body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible {
+  body .app .content .projectContainer .projDetailTab .Collapsible {
     width: 89%;
   }
-  body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible .carousel .carousel__blurb-bottom .prevSlide {
+  body .app .content .projectContainer .projDetailTab .Collapsible .carousel .carousel__blurb-bottom .prevSlide {
     margin-right: 15px;
   }
-  body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible .carousel .carousel__blurb-bottom .nextSlide {
+  body .app .content .projectContainer .projDetailTab .Collapsible .carousel .carousel__blurb-bottom .nextSlide {
     margin-left: 15px;
   }
-  body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible span {
+  body .app .content .projectContainer .projDetailTab .Collapsible span {
     padding-right: 65%;
   }
   body .app .footer__copyright {
@@ -2662,28 +2850,28 @@ body .app .contentContainer .content .contactPage .submit {
     padding-right: 30px;
     width: 64%;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-h {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-h {
     display: none;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-d {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-d {
     display: none;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__More .loadMoreContent .cardJ {
+  body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardJ {
     display: none;
   }
-  body .app .contentContainer .content .projectContainer .projMain .projMain__Left .projMain__Left-Nav .Num {
+  body .app .content .projectContainer .projMain .projMain__Left .projMain__Left-Nav .Num {
     font-size: 5.4em;
   }
-  body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible {
+  body .app .content .projectContainer .projDetailTab .Collapsible {
     width: 89%;
   }
-  body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible .carousel .carousel__blurb-bottom .prevSlide {
+  body .app .content .projectContainer .projDetailTab .Collapsible .carousel .carousel__blurb-bottom .prevSlide {
     margin-right: 15px;
   }
-  body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible .carousel .carousel__blurb-bottom .nextSlide {
+  body .app .content .projectContainer .projDetailTab .Collapsible .carousel .carousel__blurb-bottom .nextSlide {
     margin-left: 15px;
   }
-  body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible span {
+  body .app .content .projectContainer .projDetailTab .Collapsible span {
     padding-right: 65%;
   }
   body .app .footer__copyright {
@@ -2692,16 +2880,28 @@ body .app .contentContainer .content .contactPage .submit {
 }
 
 @media (min-width: 328px) and (max-width: 399px) {
-  body .app {
+  body #root {
     width: 100%;
   }
-  body .app .header {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    height: 125.39px;
+  body .app {
+    width: 100%;
+    height: 100%;
   }
-  body .app .header .branding {
+  body .app .headerFull {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: 100%;
+  }
+  body .app .headerFull .mobileNavContainer {
+    width: 100%;
+    height: 125px;
+  }
+  body .app .headerFull .mobileNavContainer .branding {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2718,11 +2918,11 @@ body .app .contentContainer .content .contactPage .submit {
     width: auto;
     margin-right: 7%;
   }
-  body .app .header .branding .name {
+  body .app .headerFull .mobileNavContainer .branding .name {
     font-size: 42px;
     margin: 0px 0px 0px 0px;
   }
-  body .app .header .branding .industry {
+  body .app .headerFull .mobileNavContainer .branding .industry {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -2730,10 +2930,10 @@ body .app .contentContainer .content .contactPage .submit {
     margin: -7px 0px 13px 0px;
     font-size: 21px;
   }
-  body .app .header .branding .industry .line1 {
+  body .app .headerFull .mobileNavContainer .branding .industry .line1 {
     margin-right: 5px;
   }
-  body .app .header .burgerMenu {
+  body .app .headerFull .mobileNavContainer .burgerMenu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2747,26 +2947,151 @@ body .app .contentContainer .content .contactPage .submit {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    padding: 0 0 20.25px 0;
+    padding: 0;
     width: 84.38px;
+    height: 125px;
+    background-color: #010101;
+  }
+  body .app .headerFull .navigation {
+    width: 100%;
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+    padding: 0;
+    -webkit-animation: transitionIn 2s;
+            animation: transitionIn 2s;
+  }
+  body .app .headerFull .navigation .navigation__menu {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+  body .app .headerFull .navClosed {
+    display: none;
+  }
+  body .app .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: auto;
+  }
+  body .app .header .mobileNavContainer {
+    width: 100%;
+    height: 125px;
+  }
+  body .app .header .mobileNavContainer .branding {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: auto;
+    margin-right: 7%;
+  }
+  body .app .header .mobileNavContainer .branding .name {
+    font-size: 42px;
+    margin: 0px 0px 0px 0px;
+  }
+  body .app .header .mobileNavContainer .branding .industry {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: -7px 0px 13px 0px;
+    font-size: 21px;
+  }
+  body .app .header .mobileNavContainer .branding .industry .line1 {
+    margin-right: 5px;
+  }
+  body .app .header .mobileNavContainer .burgerMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding: 0;
+    width: 84.38px;
+    height: 125px;
     background-color: #010101;
   }
   body .app .header .navigation {
+    width: 100%;
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+    padding: 0;
+    z-index: 10000;
+  }
+  body .app .header .navigation .navigation__menu {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+  body .app .header .navClosed {
     display: none;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-a {
+  body .app .contentHidden {
+    display: none;
+  }
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-a {
     margin-bottom: 10px;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-a .cardFull {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-a .cardFull {
     width: 100%;
     height: 139.583%;
     background-color: lightgray;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-a .cardFull img {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-a .cardFull img {
     width: 100%;
     height: 100%;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-b {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-b {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2779,25 +3104,25 @@ body .app .contentContainer .content .contactPage .submit {
             justify-content: space-between;
     margin-bottom: 10px;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-b .cardTwoThirds {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-b .cardTwoThirds {
     width: 100%;
     height: auto;
     background-color: lightgray;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-b .cardTwoThirds img {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-b .cardTwoThirds img {
     width: 100%;
     height: 100%;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-b .cardThird {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-b .cardThird {
     width: 100%;
     height: auto;
     background-color: lightgray;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-b .cardThird img {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-b .cardThird img {
     width: 100%;
     height: 100%;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-c {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-c {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2810,28 +3135,28 @@ body .app .contentContainer .content .contactPage .submit {
             justify-content: space-between;
     margin-bottom: 10px;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-c .cardHalf {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-c .cardHalf {
     width: 100%;
     height: auto;
     background-color: lightgray;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-c .cardHalf img {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-c .cardHalf img {
     width: 100%;
     height: 100%;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-d {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-d {
     margin-bottom: 10px;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-d .cardFull {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-d .cardFull {
     width: 100%;
     height: auto;
     background-color: lightgray;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-d .cardFull img {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-d .cardFull img {
     width: 100%;
     height: 100%;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-e {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-e {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2844,28 +3169,28 @@ body .app .contentContainer .content .contactPage .submit {
             justify-content: space-between;
     margin-bottom: 10px;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-e .cardHalf {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-e .cardHalf {
     width: 100%;
     height: auto;
     background-color: lightgray;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-e .cardHalf img {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-e .cardHalf img {
     width: 100%;
     height: 100%;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-f {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-f {
     margin-bottom: 10px;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-f .cardFull {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-f .cardFull {
     width: 100%;
     height: auto;
     background-color: lightgray;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-f .cardFull img {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-f .cardFull img {
     width: 100%;
     height: 100%;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-g {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-g {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2878,25 +3203,25 @@ body .app .contentContainer .content .contactPage .submit {
             justify-content: space-between;
     margin-bottom: 10px;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-g .cardTwoThirds {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-g .cardTwoThirds {
     width: 100%;
     height: auto;
     background-color: lightgray;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-g .cardTwoThirds img {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-g .cardTwoThirds img {
     width: 100%;
     height: 100%;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-g .cardThird {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-g .cardThird {
     width: 100%;
     height: auto;
     background-color: lightgray;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-g .cardThird img {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-g .cardThird img {
     width: 100%;
     height: 100%;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-h {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-h {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2909,96 +3234,96 @@ body .app .contentContainer .content .contactPage .submit {
             justify-content: space-between;
     margin-bottom: 10px;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-h .cardTwoThirds {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-h .cardTwoThirds {
     width: 100%;
     height: auto;
     background-color: lightgray;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-h .cardTwoThirds img {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-h .cardTwoThirds img {
     width: 100%;
     height: 100%;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-h .cardThird {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-h .cardThird {
     width: 100%;
     height: auto;
     background-color: lightgray;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__Main .homeGallery__MainCard-h .cardThird img {
+  body .app .content .homeGallery .homeGallery__Main .homeGallery__MainCard-h .cardThird img {
     width: 100%;
     height: 100%;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__More .loadMoreContent .cardI {
+  body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardI {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__More .loadMoreContent .cardI .cardFull {
+  body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardI .cardFull {
     width: 100%;
     height: auto;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__More .loadMoreContent .cardJ {
+  body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardJ {
     display: none;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__More .loadMoreContent .cardK {
+  body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardK {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__More .loadMoreContent .cardK .cardTwoThirds {
+  body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardK .cardTwoThirds {
     width: 100%;
     height: auto;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__More .loadMoreContent .cardK .cardThird {
+  body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardK .cardThird {
     width: 100%;
     height: auto;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__More .loadMoreContent .cardL {
+  body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardL {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  body .app .contentContainer .content .homeGallery .homeGallery__More .loadMoreContent .cardL .cardFull {
+  body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardL .cardFull {
     width: 100%;
     height: auto;
   }
-  body .app .contentContainer .content .projectContainer .projMain {
+  body .app .content .projectContainer .projMain {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  body .app .contentContainer .content .projectContainer .projMain .projMain__Left {
+  body .app .content .projectContainer .projMain .projMain__Left {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
     width: 100%;
   }
-  body .app .contentContainer .content .projectContainer .projMain .projMain__Left .projMain__Left-Nav {
+  body .app .content .projectContainer .projMain .projMain__Left .projMain__Left-Nav {
     width: 22.8%;
     white-space: nowrap;
     overflow: hidden;
   }
-  body .app .contentContainer .content .projectContainer .projMain .projMain__Left .projMain__Left-Nav .Num {
+  body .app .content .projectContainer .projMain .projMain__Left .projMain__Left-Nav .Num {
     font-size: 5.4em;
     margin: 0% 0% 0% 0%;
   }
-  body .app .contentContainer .content .projectContainer .projMain .projMain__Left .projMain__Left-Nav .Prev {
+  body .app .content .projectContainer .projMain .projMain__Left .projMain__Left-Nav .Prev {
     padding: 0% 0% 0% 0%;
   }
-  body .app .contentContainer .content .projectContainer .projMain .projMain__Left .projMain__Left-Nav .Next {
+  body .app .content .projectContainer .projMain .projMain__Left .projMain__Left-Nav .Next {
     padding: 0% 0% 0% 0%;
   }
-  body .app .contentContainer .content .projectContainer .projMain .projMain__Left .projMain__Left-Info {
+  body .app .content .projectContainer .projMain .projMain__Left .projMain__Left-Info {
     width: 90%;
   }
-  body .app .contentContainer .content .projectContainer .projMain .projMain__Image {
+  body .app .content .projectContainer .projMain .projMain__Image {
     width: 100%;
   }
-  body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible {
+  body .app .content .projectContainer .projDetailTab .Collapsible {
     width: 100%;
   }
-  body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible .carousel__controls {
+  body .app .content .projectContainer .projDetailTab .Collapsible .carousel__controls {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3007,42 +3332,50 @@ body .app .contentContainer .content .contactPage .submit {
     -webkit-animation: none;
             animation: none;
   }
-  body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible .carousel {
+  body .app .content .projectContainer .projDetailTab .Collapsible .carousel {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible .carousel__image {
+  body .app .content .projectContainer .projDetailTab .Collapsible .carousel__image {
     width: 100%;
   }
-  body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible .carousel__blurb {
+  body .app .content .projectContainer .projDetailTab .Collapsible .carousel__blurb {
     width: 100%;
     height: auto;
     margin: 0% 0% 0% 0%;
   }
-  body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible .carousel__blurb .carousel__blurb-text {
+  body .app .content .projectContainer .projDetailTab .Collapsible .carousel__blurb .carousel__blurb-text {
     padding: 0% 10% 8% 10%;
   }
-  body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible__trigger:after {
+  body .app .content .projectContainer .projDetailTab .Collapsible__trigger:after {
     right: 8%;
   }
-  body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible__trigger.is-open:after {
+  body .app .content .projectContainer .projDetailTab .Collapsible__trigger.is-open:after {
     -webkit-transform: rotateZ(45deg);
             transform: rotateZ(45deg);
   }
-  body .app .contentContainer .content .projectContainer .projDetailTab .Collapsible__trigger.is-disabled {
+  body .app .content .projectContainer .projDetailTab .Collapsible__trigger.is-disabled {
     opacity: 0.5;
     background-color: grey;
   }
-  body .app .contentContainer .content .projectContainer .projDetailTab .projDetailTab__sideRect {
+  body .app .content .projectContainer .projDetailTab .projDetailTab__sideRect {
     display: none;
   }
-  body .app .contentContainer .content .contactPage {
+  body .app .content .contactPage {
     -webkit-animation: transitionIn 2s;
             animation: transitionIn 2s;
   }
-  body .app .footer__copyright {
+  body .app .footerHidden {
+    display: none;
+  }
+  body .app .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .app .footer .footer__copyright {
     margin: 7% 11% 3% 18%;
     text-align: end;
   }
