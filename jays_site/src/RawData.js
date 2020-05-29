@@ -5,8 +5,8 @@ module.exports = [
       "number": "01",
       "name": "Sittris",
       "heading": "Healthcare Seating System",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "image": "../../card_img.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volup.",
+      "image": "../../feature_samplechair_cardFull.png",
       "featureImage": "../../stock_PlaceholderImage.png",
       "displaySlide": {
         "slide": "../../slide1.png",
@@ -14,15 +14,15 @@ module.exports = [
       },
       "carousel": [{
         "slide": "../../slide1.png",
-        "blurb":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "blurb":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.",
       },
       {
         "slide": "../../slide2.png",
-        "blurb":"Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "blurb":"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh.",
       },
       {
         "slide": "../../slide3.png",
-        "blurb":"Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "blurb":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no.",
       }],
     },
     {
@@ -32,7 +32,7 @@ module.exports = [
       "name": "Cuisipro",
       "heading": "Kitchen Collection",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "image": "../../card_img.png",
+      "image": "../../feature_samplecarafe_cardTwoThirds.png",
       "featureImage": "../../stock_PlaceholderImage.png",
       "displaySlide": {
         "slide": "../../slide1.png",
@@ -40,15 +40,15 @@ module.exports = [
       },
       "carousel": [{
         "slide": "../../slide1.png",
-        "blurb":"",
+        "blurb":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.",
       },
       {
         "slide": "../../slide2.png",
-        "blurb":"",
+        "blurb":"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh.",
       },
       {
         "slide": "../../slide3.png",
-        "blurb":"",
+        "blurb":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no.",
       }],
     },
     {
@@ -58,7 +58,7 @@ module.exports = [
       "name": "Revo",
       "heading": "Performance Sunglasses",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "image": "../../card_img.png",
+      "image": "../../feature_samplebench_cardThird.png",
       "featureImage": "../../stock_PlaceholderImage.png",
       "displaySlide": {
         "slide": "../../slide1.png",
@@ -66,15 +66,15 @@ module.exports = [
       },
       "carousel": [{
         "slide": "../../slide1.png",
-        "blurb":"",
+        "blurb":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.",
       },
       {
         "slide": "../../slide2.png",
-        "blurb":"",
+        "blurb":"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh.",
       },
       {
         "slide": "../../slide3.png",
-        "blurb":"",
+        "blurb":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no.",
       }],
     },
     {
@@ -84,7 +84,7 @@ module.exports = [
       "name": "Roka",
       "heading": "Performance Eyewear",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "image": "../../card_img.png",
+      "image": "../../feature_samplebowl_cardHalf.png",
       "featureImage": "../../stock_PlaceholderImage.png",
       "displaySlide": {
         "slide": "../../slide1.png",
@@ -92,15 +92,15 @@ module.exports = [
       },
       "carousel": [{
         "slide": "../../slide1.png",
-        "blurb":"",
+        "blurb":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.",
       },
       {
         "slide": "../../slide2.png",
-        "blurb":"",
+        "blurb":"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh.",
       },
       {
         "slide": "../../slide3.png",
-        "blurb":"",
+        "blurb":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no.",
       }],
     },
     {
@@ -110,7 +110,7 @@ module.exports = [
       "name": "xd claymore",
       "heading": "Angled Barbell Exercise Unit",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "image": "../../card_img.png",
+      "image": "../../feature_samplecutlery_cardHalf.png",
       "featureImage": "../../stock_PlaceholderImage.png",
       "displaySlide": {
         "slide": "../../slide1.png",
@@ -118,15 +118,15 @@ module.exports = [
       },
       "carousel": [{
         "slide": "../../slide1.png",
-        "blurb":"",
+        "blurb":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.",
       },
       {
         "slide": "../../slide2.png",
-        "blurb":"",
+        "blurb":"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh.",
       },
       {
         "slide": "../../slide3.png",
-        "blurb":"",
+        "blurb":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no.",
       }],
     },
     {
@@ -136,7 +136,7 @@ module.exports = [
       "name": "Bangerz",
       "heading": "Women’s Field Sport Goggle",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "image": "../../card_img.png",
+      "image": "../../feature_samplelamp_cardFull.png",
       "featureImage": "../../stock_PlaceholderImage.png",
       "displaySlide": {
         "slide": "../../slide1.png",
@@ -144,15 +144,15 @@ module.exports = [
       },
       "carousel": [{
         "slide": "../../slide1.png",
-        "blurb":"",
+        "blurb":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.",
       },
       {
         "slide": "../../slide2.png",
-        "blurb":"",
+        "blurb":"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh.",
       },
       {
         "slide": "../../slide3.png",
-        "blurb":"",
+        "blurb":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no.",
       }],
     },
     {
@@ -162,7 +162,7 @@ module.exports = [
       "name": "gs",
       "heading": "Flatware Collection",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "image": "../../card_img.png",
+      "image": "../../feature_samplewhitechair_cardHalf.png",
       "featureImage": "../../stock_PlaceholderImage.png",
       "displaySlide": {
         "slide": "../../slide1.png",
@@ -170,15 +170,15 @@ module.exports = [
       },
       "carousel": [{
         "slide": "../../slide1.png",
-        "blurb":"",
+        "blurb":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.",
       },
       {
         "slide": "../../slide2.png",
-        "blurb":"",
+        "blurb":"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh.",
       },
       {
         "slide": "../../slide3.png",
-        "blurb":"",
+        "blurb":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no.",
       }],
     },
     {
@@ -188,7 +188,7 @@ module.exports = [
       "name": "Switch Vision",
       "heading": "Magnetic Interchange Lens System",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "image": "../../card_img.png",
+      "image": "../../feature_samplebowl_cardHalf.png",
       "featureImage": "../../stock_PlaceholderImage.png",
       "displaySlide": {
         "slide": "../../slide1.png",
@@ -196,15 +196,15 @@ module.exports = [
       },
       "carousel": [{
         "slide": "../../slide1.png",
-        "blurb":"",
+        "blurb":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.",
       },
       {
         "slide": "../../slide2.png",
-        "blurb":"",
+        "blurb":"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh.",
       },
       {
         "slide": "../../slide3.png",
-        "blurb":"",
+        "blurb":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no.",
       }],
     },
     {
@@ -214,7 +214,7 @@ module.exports = [
       "name": "+1",
       "heading": "Condom Case",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "image": "../../card_img.png",
+      "image": "../../feature_samplejug_cardFull.png",
       "featureImage": "../../stock_PlaceholderImage.png",
       "displaySlide": {
         "slide": "../../slide1.png",
@@ -222,15 +222,15 @@ module.exports = [
       },
       "carousel": [{
         "slide": "../../slide1.png",
-        "blurb":"",
+        "blurb":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.",
       },
       {
         "slide": "../../slide2.png",
-        "blurb":"",
+        "blurb":"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh.",
       },
       {
         "slide": "../../slide3.png",
-        "blurb":"",
+        "blurb":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no.",
       }],
     },
     {
@@ -240,7 +240,7 @@ module.exports = [
       "name": "Thermos",
       "heading": "Cooler Bags",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "image": "../../card_img.png",
+      "image": "../../feature_samplebench_cardThird.png",
       "featureImage": "../../stock_PlaceholderImage.png",
       "displaySlide": {
         "slide": "../../slide1.png",
@@ -248,15 +248,15 @@ module.exports = [
       },
       "carousel": [{
         "slide": "../../slide1.png",
-        "blurb":"",
+        "blurb":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.",
       },
       {
         "slide": "../../slide2.png",
-        "blurb":"",
+        "blurb":"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh.",
       },
       {
         "slide": "../../slide3.png",
-        "blurb":"",
+        "blurb":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no.",
       }],
     },
     {
@@ -266,7 +266,7 @@ module.exports = [
       "name": "Folding Lawn Chair",
       "heading": "specialty eyewear",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "image": "../../card_img.png",
+      "image": "../../feature_samplelamp_cardTwoThirds.png",
       "featureImage": "../../stock_PlaceholderImage.png",
       "displaySlide": {
         "slide": "../../slide1.png",
@@ -274,15 +274,15 @@ module.exports = [
       },
       "carousel": [{
         "slide": "../../slide1.png",
-        "blurb":"",
+        "blurb":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.",
       },
       {
         "slide": "../../slide2.png",
-        "blurb":"",
+        "blurb":"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh.",
       },
       {
         "slide": "../../slide3.png",
-        "blurb":"",
+        "blurb":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no.",
       }],
     },
 ]

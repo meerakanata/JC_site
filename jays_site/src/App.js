@@ -12,6 +12,9 @@ import Contact1 from "./Contact1";
 import Footer from "./Footer";
 //import MobileMenu from './MobileMenu.js';
 import "./App.css";
+import "../node_modules/slick-carousel/slick/slick.css"; 
+import "../node_modules/slick-carousel/slick/slick-theme.css";
+
 var rawData = require('./RawData.js');
 
 

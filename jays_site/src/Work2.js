@@ -64,9 +64,8 @@ export default class Work2 extends React.Component {
                         <Link to="/work/foldinglawnchair/1"><CardTwoThirds rawDataImg={this.props.rawData[10].image}/></Link>
                     </div>
                     <div className="homeGallery__MainCard-h">
-                        <Link to="/work/sittris/1"><CardTwoThirds rawDataImg={this.props.rawData[0].image}/></Link>
-                        <Link to="/work/sittris/1"><CardThird rawDataImg={this.props.rawData[0].image}/></Link>
-                    </div>
+                        <Link to="/work/cuisipro/1"><CardTwoThirds rawDataImg={this.props.rawData[1].image}/></Link>
+                        <Link to="/work/revo/1"><CardThird rawDataImg={this.props.rawData[2].image}/></Link></div>
                 </div>
                 <div className="homeGallery__More">
                     {this.moreProjects()}

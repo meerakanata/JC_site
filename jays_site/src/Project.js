@@ -1,5 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import Fade from "./Fade.js";
 import Collapsible from "./Collapsible.js";
 import MyCarousel2 from "./MyCarousel2.js";
 
@@ -89,7 +90,8 @@ nextProjID = (currentProjID) => {
                         </div>
                     </div>
                     <Collapsible trigger="Development &amp; Production">
-                        <MyCarousel2 activeObj={this.props.activeObj} rawData={this.props.rawData} currentObj={this.currentProject(this.props.currentId)} currentId={this.props.currentId} slideId={this.props.slideId} />
+                        <Fade activeObj={this.props.activeObj} rawData={this.props.rawData} currentObj={this.currentProject(this.props.currentId)} currentId={this.props.currentId} slideId={this.props.slideId}/>
+                        {/* <MyCarousel2 activeObj={this.props.activeObj} rawData={this.props.rawData} currentObj={this.currentProject(this.props.currentId)} currentId={this.props.currentId} slideId={this.props.slideId} /> */}
                     </Collapsible>
                 </div>
             </div>
