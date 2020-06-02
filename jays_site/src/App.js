@@ -16,6 +16,7 @@ import "../node_modules/slick-carousel/slick/slick.css";
 import "../node_modules/slick-carousel/slick/slick-theme.css";
 
 var rawData = require('./RawData.js');
+var aboutData = require('./AboutData.js');
 
 
 class App extends Component {
@@ -60,6 +61,7 @@ class App extends Component {
       }],
     },
     rawProjectData: rawData,
+    aboutData: aboutData,
   };
 
   componentDidUpdate () {
@@ -126,7 +128,7 @@ class App extends Component {
       <Switch>
         <Route exact path="/" render={() =><Redirect to='/work'/>}/>
         <Route path="/work" exact render={ () => { return <Work2 menuPage={this.state.menuPage} rawData={this.state.rawProjectData} loadMore={this.state.loadMore} loadMoreHandler={this.loadMoreHandler}/> }} />
-        <Route path="/about" component={About1}/>
+        <Route path="/about" exact render={ () => { return <About1 aboutData={this.state.aboutData}/> }} />
         <Route path="/contact" component={Contact1}/>
         <Route path="/work/:projectID?/:slideID?" exact render={ (props) => { return <ProjectContainer activeObj={this.state.activeObj} rawData={this.state.rawProjectData} projectId={props.match.params.projectID} slideId={props.match.params.slideID} changeState={this.changeState} />} } />
       </Switch>

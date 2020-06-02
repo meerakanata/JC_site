@@ -31,7 +31,7 @@ module.exports = [
       "number": "02",
       "name": "Cuisipro",
       "heading": "Kitchen Collection",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volup.",
       "image": "../../feature_samplecarafe_cardTwoThirds.png",
       "featureImage": "../../stock_PlaceholderImage.png",
       "displaySlide": {
@@ -57,7 +57,7 @@ module.exports = [
       "number": "03",
       "name": "Revo",
       "heading": "Performance Sunglasses",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volup.",
       "image": "../../feature_samplebench_cardThird.png",
       "featureImage": "../../stock_PlaceholderImage.png",
       "displaySlide": {
@@ -83,7 +83,7 @@ module.exports = [
       "number": "04",
       "name": "Roka",
       "heading": "Performance Eyewear",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volup.",
       "image": "../../feature_samplebowl_cardHalf.png",
       "featureImage": "../../stock_PlaceholderImage.png",
       "displaySlide": {
@@ -109,7 +109,7 @@ module.exports = [
       "number": "05",
       "name": "xd claymore",
       "heading": "Angled Barbell Exercise Unit",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volup.",
       "image": "../../feature_samplecutlery_cardHalf.png",
       "featureImage": "../../stock_PlaceholderImage.png",
       "displaySlide": {
@@ -135,7 +135,7 @@ module.exports = [
       "number": "06",
       "name": "Bangerz",
       "heading": "Women’s Field Sport Goggle",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volup.",
       "image": "../../feature_samplelamp_cardFull.png",
       "featureImage": "../../stock_PlaceholderImage.png",
       "displaySlide": {
@@ -161,7 +161,7 @@ module.exports = [
       "number": "07",
       "name": "gs",
       "heading": "Flatware Collection",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volup.",
       "image": "../../feature_samplewhitechair_cardHalf.png",
       "featureImage": "../../stock_PlaceholderImage.png",
       "displaySlide": {
@@ -187,7 +187,7 @@ module.exports = [
       "number": "08",
       "name": "Switch Vision",
       "heading": "Magnetic Interchange Lens System",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volup.",
       "image": "../../feature_samplebowl_cardHalf.png",
       "featureImage": "../../stock_PlaceholderImage.png",
       "displaySlide": {
@@ -213,7 +213,7 @@ module.exports = [
       "number": "09",
       "name": "+1",
       "heading": "Condom Case",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volup.",
       "image": "../../feature_samplejug_cardFull.png",
       "featureImage": "../../stock_PlaceholderImage.png",
       "displaySlide": {
@@ -239,7 +239,7 @@ module.exports = [
       "number": "10",
       "name": "Thermos",
       "heading": "Cooler Bags",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volup.",
       "image": "../../feature_samplebench_cardThird.png",
       "featureImage": "../../stock_PlaceholderImage.png",
       "displaySlide": {
@@ -265,7 +265,7 @@ module.exports = [
       "number": "11",
       "name": "Folding Lawn Chair",
       "heading": "specialty eyewear",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volup.",
       "image": "../../feature_samplelamp_cardTwoThirds.png",
       "featureImage": "../../stock_PlaceholderImage.png",
       "displaySlide": {

@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from "react-router-dom";
 import Fade from "./Fade.js";
 import Collapsible from "./Collapsible.js";
-import MyCarousel2 from "./MyCarousel2.js";
+// import MyCarousel2 from "./MyCarousel2.js";
 
 
 
