@@ -1,6 +1,8 @@
 
 /*REPLACED COMPONENT WITH THE "FADE" SLICK-CAROUSEL COMPONENT BECAUSE IT HAD TOUCH/SWIPE CAPABILITIES BAKED IN.
-THIS COMPONENT HAS A CAROUSEL BUT DOESN'T INCLUDE TOUCH/SWIPE CAPABILITIES FOR TOUCH SCREEN DEVICES.*/
+THIS COMPONENT HAS A CAROUSEL BUT DOESN'T INCLUDE TOUCH/SWIPE CAPABILITIES FOR TOUCH SCREEN DEVICES.
+
+STYLING FOR THIS COMPONENT HAS BEEN INCLUDED BELOW*/
 
 // import React from "react";
 // import {Link} from "react-router-dom";
@@ -113,6 +115,74 @@ THIS COMPONENT HAS A CAROUSEL BUT DOESN'T INCLUDE TOUCH/SWIPE CAPABILITIES FOR T
 //         );
 //     }
 // }
+
+//*********** STYLING ***********
+                        // .carousel{
+                        //     @include fr;
+                        //     justify-content: center;
+                        //     align-items: flex-start;
+                        //     height: auto;
+                        //     position: relative;
+                        // }
+                        // .carousel:hover .carousel__controls{
+                        //     display: flex;
+                        // }
+                        // .carousel__controls{
+                        //     display: none;
+                        //     flex-direction: row;
+                        //     justify-content: center;
+                        //     align-items: center;
+                        //     position: absolute;
+                        //     background-color: rgba(255,255,255,0.7);
+                        //     padding: 0.5%;
+                        //     top: 84%;
+                        //     left: 45%;
+                            
+                            
+                        //     .prevSlide {
+                        //         display: flex;
+                        //         margin-right: 40px;
+                        //     }
+                        //     .emptyDot{
+                        //         width: 7px;
+                        //         height: 7px;
+                        //         border: 1px solid $color-01;
+                        //         background-color: $color-06;
+
+                        //     }
+                        //     .filledDot{
+                        //         width: 7px;
+                        //         height: 7px;
+                        //         background-color: $color-01;
+                        //         border: 1px solid $color-01;
+                        //     }
+                        //     .slideTwoDot{
+                        //         margin: 0px 7px;
+                        //     }
+                        //     .nextSlide {
+                        //         display: flex;
+                        //         margin-left: 40px;
+                        //     }
+                        // }
+                        // .carousel__image{
+                        //     width: 71%;
+                        //     height: 100%;
+                        //     img {
+                        //         width: 100%;
+                        //         height: auto;
+                        //     }
+                        // }
+                        // .carousel__blurb{
+                        //     @include fc;
+                        //     justify-content: flex-start;
+                        //     width: 29%;
+                        //     height: auto;
+                        // }
+                        // .carousel__blurb-text{
+                        //     padding: 0% 10% 0% 10%;
+                        //     line-height: 33px;
+
+                        // }
 
 
 
