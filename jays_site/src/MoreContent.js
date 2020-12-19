@@ -1,9 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import CardThird from "./CardThird";
-import CardTwoThirds from "./CardTwoThirds";
-import CardFull from "./CardFull";
-import CardHalf from "./CardHalf";
+
 
 export default class MoreContent extends React.Component {
 
@@ -11,7 +8,7 @@ export default class MoreContent extends React.Component {
 
         return (
             <div className="loadMoreContent">
-                <div className="cardI">
+                {/* <div className="cardI">
                     <Link to="/work/sittris/1"><CardFull rawDataImg={this.props.rawData[0].image}/></Link>
                 </div>
                 <div className="cardJ">
@@ -24,7 +21,7 @@ export default class MoreContent extends React.Component {
                 </div>
                 <div className="cardL">
                     <Link to="/work/bangerz/1"><CardFull rawDataImg={this.props.rawData[5].image}/></Link>
-                </div>
+                </div> */}
             </div>
         );
     }

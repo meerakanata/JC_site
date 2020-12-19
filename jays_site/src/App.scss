@@ -196,7 +196,7 @@ body {
                 @include fc;
                 @include endend;
                 width: 49.5%;
-                background-color: $color-01;
+                background-color: $color-06;
 
             }
             .navigation__menu{
@@ -205,7 +205,7 @@ body {
                 width: 52%;
                 padding: 0 50px 23.5px 0;
                 .notCurrent{
-                    color: $color-06;
+                    color: $color-01;
                     text-decoration: none;
                     font-family: 'IBMPlexSans';
                     font-size: 1em;
@@ -214,7 +214,7 @@ body {
                     text-decoration: underline;
                     text-underline-position: under;
                     text-decoration-color: $color-07;
-                    color: $color-06;
+                    color: $color-01;
                     font-family: 'IBMPlexSans';
                     font-size: 1em;
                 }
@@ -310,7 +310,7 @@ body {
             color: $color-01;
             font-family: 'IBMPlexSans';
             font-size: 0.75em;
-            margin-top: 1%;
+            //margin-top: 1%;
             
         }
         .footer__copyright{
@@ -334,205 +334,44 @@ body {
 
                 .homeGallery__Main{
                     @include fr;
-                    justify-content: space-between;
+                    //justify-content: space-between;
+                    justify-content: center;
                     height: auto;
                     width: 100%;
                     flex-wrap: wrap;
                     
-                    
-                    .homeGallery__MainCard-a{
-                        margin-bottom: 10px;
-                        .cardFull{
-                            width: 240px;
-                            height: 335px;
-                            
-                            img{
-                                @include hundo;
-                            }
-                        }
-                    }
-                    .homeGallery__MainCard-b{
-                        @include fc;
-                        justify-content: space-between;
-                        margin-bottom: 10px;
-                        .cardTwoThirds{
-                            width: 240px;
-                            height: 220px;
-                            
-                            img{
-                                @include hundo;
-                            }
-                        }
-                        .cardThird{
-                            width: 240px;
-                            height: 105px;
-                            
-                            img{
-                                @include hundo;
-                            }
-                        }
-                    }
-                    .homeGallery__MainCard-c{
-                        @include fc;
-                        justify-content: space-between;
-                        margin-bottom: 10px;
-                        .cardHalf{
-                            width: 240px;
-                            height: 162.5px;
-                            
-                            img{
-                                @include hundo;
-                            }
-                        }
-                    }
-                    .homeGallery__MainCard-d{
-                        margin-bottom: 10px;
-                        .cardFull{
-                            width: 240px;
-                            height: 335px;
-                            
-                            img{
-                                @include hundo;
-                            }
-                        }
-                    }
-                    .homeGallery__MainCard-e{
-                        @include fc;
-                        justify-content: space-between;
-                        margin-bottom: 10px;
-                        .cardHalf{
-                            width: 240px;
-                            height: 162.5px;
-                            
-                            img{
-                                @include hundo;
-                            }
-                        }
-
-                    }
-                    .homeGallery__MainCard-f{
-                        margin-bottom: 10px;
-                        .cardFull{
-                            width: 240px;
-                            height: 335px;
-                            
-                            img{
-                                @include hundo;
-                            }
-                        }
-                    }
-                    .homeGallery__MainCard-g{
-                        @include fc;
-                        justify-content: space-between;
-                        margin-bottom: 10px;
-                        .cardTwoThirds{
-                            width: 240px;
-                            height: 220px;
-                            
-                            img{
-                                @include hundo;
-                            }
-                        }
-                        .cardThird{
-                            width: 240px;
-                            height: 105px;
-                            
-                            img{
-                                @include hundo;
-                            }
-                        }
-                    }
-                    .homeGallery__MainCard-h{
-                        @include fc;
-                        justify-content: space-between;
-                        margin-bottom: 10px;
-                        .cardTwoThirds{
-                            width: 240px;
-                            height: 220px;
-                            
-                            img{
-                                @include hundo;
-                            }
-                        }
-                        .cardThird{
-                            width: 240px;
-                            height: 105px;
-                            
-                            img{
-                                @include hundo;
-                            }
-                        }
-                    }
-                }
-                .homeGallery__More {
-                    .loadMoreContent{
-                        @include fr;
-                        justify-content: space-between;
-                        width: 100%;
+                    .cardContainer{
+                        width: 990px;
                         height: auto;
-                        
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
                         flex-wrap: wrap;
-                        
-                        .cardI{
+
+                        .individualCardContainer{
                             display: flex;
                             margin-bottom: 10px;
-                            .cardFull{
-                                width: 240px;
-                                height: 335px;
-                                
-                                img{
-                                    @include hundo;
-                                }
-                            }
+                            //newly added width for the 6 images on single row layout
+                            width: 16%;
                         }
-                        .cardJ{
-                            @include fc;
-                            justify-content: space-between;
-                            margin-bottom: 10px;
-                            .cardHalf{
-                                width: 240px;
-                                height: 162.5px;
-                                
-                                img{
-                                    @include hundo;
-                                }
-                            }
-                        }
-                        .cardK{
-                            @include fc;
-                            justify-content: space-between;
-                            margin-bottom: 10px;
-                            .cardTwoThirds{
-                                width: 240px;
-                                height: 220px;
-                                
-                                img{
-                                    @include hundo;
-                                }
-                            }
-                            .cardThird{
-                                width: 240px;
-                                height: 105px;
-                                
-                                img{
-                                    @include hundo;
-                                }
-                            }
-                        }
-                        .cardL{
+                        .card{
                             display: flex;
-                            margin-bottom: 10px;
-                            .cardFull{
-                                width: 240px;
-                                height: 335px;
-                                
-                                img{
-                                    @include hundo;
-                                }
+                            flex-direction: column;
+                            justify-content: space-between;
+                            //newly added width for the 6 images on single row layout
+                            width: 100%;
+                            img{
+                                filter: brightness(88%);
+                                filter: opacity(20%);
+                                width: 100%;
+                            }
+                            img:hover{
+                                filter: none;
                             }
                         }
+                
                     }
-                }
+                    
                 @keyframes transitionIn {
                     from {
                         opacity: 0;
@@ -554,6 +393,7 @@ body {
                     font-size: 1em;
                 }
             }
+        }
             .projectContainer{
                 @include fc;
                 @include anim2s;
@@ -800,22 +640,23 @@ body {
                     font-size: 1em;
                 }
             }
-        }
+        
         
 
+        }
     }
-
 
     //************** MAIN STYLING ENDS **************
     //************** MEDIA QUERIES STARTS **************
 
 
-    @media (min-width: 760px)
-    and (max-width: 1099px){
+    @media (max-width: 993px) 
+    and (min-width: 760px){
         
         .app{
             width: 750px;
             .header{
+                width: 99%;
                 .mobileNavContainer{
                     .branding{ 
                         .name{
@@ -833,11 +674,13 @@ body {
             .content{
                 .homeGallery{
                     .homeGallery__Main{
-                        .homeGallery__MainCard-h {
-                            display: none;
-                        }
-                        .homeGallery__MainCard-d {
-                            display: none;
+                        .cardContainer{
+                            justify-content: space-around;
+                            img{
+                                width: 50%;
+                                height: auto;
+                            }
+                            
                         }
                     }
                 
@@ -886,199 +729,31 @@ body {
 
         }
     }
-    @media  (min-width: 660px)
-    and (max-width: 759px) {
+    @media  (max-width: 759px) 
+    and (min-width: 491px){
         .app{
             width: 650px;
-            // .header{
-            //     .branding{
-            //         @include fc;
-            //         justify-content: flex-end;
-            //         align-items: flex-start;
-                    
-            //         .name{
-            //             margin: 0px 0px 0px 30px;
-            //         }
-            //         .industry{
-            //             flex-direction: row;
-            //             margin: -8px 0px 25px 107px;
-            //             .line1{
-            //                 margin-right: 5px;
-            //             }
-            //         }
-            //     }
-            //     // .burgerMenu{
-                    
-            //     // }
-            //     .navigation{
-            //         .navigation__menu{
-            //             padding-right: 30px;
-            //             width: 64%;
-            //         }
-            //     }
-            // }
-            // .content{
-            //     .homeGallery{
-            //         .homeGallery__Main{
-            //             .homeGallery__MainCard-h {
-            //                 display: none;
-            //             }
-            //             .homeGallery__MainCard-d {
-            //                 display: none;
-            //             }
-            //         }
-                
-            //         .homeGallery__More {
-            //             .loadMoreContent{
-            //                 // .cardI{
-            //                 //     display: flex;
-            //                 // }
-            //                 .cardJ{
-            //                     display: none;
-            //                 }
-            //                 // .cardK{
-            //                 //     display: flex;
-            //                 // }
-            //                 // .cardL{
-            //                 //     display: flex;
-            //                 // }
-            //             }
-            //         }
-            //     }
-            //     .projectContainer{
-            //         .projMain{
-            //             .projMain__Left{
-            //                 .projMain__Left-Nav{
 
-            //                     .Num{
-            //                         font-size: 5.4em;   
-            //                     }
-            //                     // .Prev{
-                                    
-            //                     // }
-            //                     // .Next{
-                                    
-            //                     // }
-            //                 }
-            //             }
-            //         }
-            //         .projDetailTab{
-            //             .Collapsible {
-            //                 width: 89%;
-            //                 .carousel{
-            //                     .carousel__blurb-bottom{
-            //                         .prevSlide {
-            //                             margin-right: 15px;
-            //                         }
-            //                         .nextSlide {
-            //                             margin-left: 15px;
-            //                         }
-            //                     }
-            //                 }
-            //                 span{
-            //                     padding-right: 65%;
-            //                 }
-            //             }
-            //         }
-            //     }
-            // }
-            // .footer__copyright {
-            //     margin: 38px 30px 0px 0px;
-            // }
-        }
-    }
-    @media (min-width: 400px)
-    and (max-width: 659px){
-        .app{
-            width: 650px;
-            .header{
-                .branding{
-                    @include fc;
-                    justify-content: flex-end;
-                    align-items: flex-start;
-                    
-                    .name{
-                        margin: 0px 0px 0px 30px;
-                    }
-                    .industry{
-                        @include fr;
-                        margin: -8px 0px 25px 107px;
-                        .line1{
-                            margin-right: 5px;
+            .cardContainer{
+                justify-content: space-between;
+                .individualCardContainer{
+                    width: 33%;
+                    height: auto;
+                    .card{
+                        width: 100%;
+                        img{
+                            width: 100%;
+                            height: auto;
                         }
                     }
                 }
-                .navigation{
-                    .navigation__menu{
-                        padding-right: 30px;
-                        width: 64%;
-                    }
-                }
-            }
-            .content{
-                .homeGallery{
-                    .homeGallery__Main{
-                        .homeGallery__MainCard-h {
-                            display: none;
-                        }
-                        .homeGallery__MainCard-d {
-                            display: none;
-                        }
-                    }
                 
-                    .homeGallery__More {
-                        .loadMoreContent{
-                            .cardJ{
-                                display: none;
-                            }
-                        }
-                    }
-                }
-                .projectContainer{
-                    .projMain{
-                        .projMain__Left{
-                            .projMain__Left-Nav{
-
-                                .Num{
-                                    font-size: 5.4em;   
-                                }
-                            }
-                            .projMain__Left-Info{
-                                .Description{
-                                    font-size: 0.85em;
-                                    line-height: 23px;
-                                }
-                            }
-                        }
-                    }
-                    .projDetailTab{
-                        .Collapsible {
-                            width: 89%;
-                            .carousel{
-                                .carousel__blurb{
-                                    .carousel__blurb-text{
-                                        font-size: 0.85em;
-                                        line-height: 23px;
-                                    }
-                                }
-                            }
-                            span{
-                                padding-right: 65%;
-                            }
-                        }
-                    }
-                }
             }
             
-
-        
-            .footer__copyright {
-                margin: 38px 30px 0px 0px;
-            }
         }
     }
-    @media (min-width: 328px)
-    and (max-width: 399px){
+    @media (max-width: 490px) 
+    and (min-width: 0px){
         #root{
             width: 100%;
         }
@@ -1217,133 +892,7 @@ body {
                     margin: 3% 3% 0 3%;
                     .homeGallery{
                         margin-top: 3%;
-                        .homeGallery__Main{
-                            .homeGallery__MainCard-a{
-                                width: 100%;
-                                margin-bottom: 0;
-                                .cardFull{
-                                    @include mobCardfull;
-                                }
-                            }
-                            .homeGallery__MainCard-b{
-                                display: none;
-                                // width: 100%;
-                                // flex-direction: column;
-                                // justify-content: space-between;
-                                // margin-bottom: 0;
-                                // .cardTwoThirds{
-                                //     width: 100%;
-                                //     height: auto;
-                                //     margin-bottom: 3%;
-                                //     img{
-                                //         width: 100%;
-                                //         height: 100%;
-                                //     }
-                                // }
-                                // .cardThird{
-                                //     width: 100%;
-                                //     height: auto;
-                                //     margin-bottom: 3%;
-                                //     img{
-                                //         width: 100%;
-                                //         height: 100%;
-                                //     }
-                                // }
-                            }
-                            .homeGallery__MainCard-c{
-                                display: none;
-                                // width: 100%;
-                                // flex-direction: column;
-                                // justify-content: space-between;
-                                // margin-bottom: 0;
-                                // .cardHalf{
-                                //     width: 100%;
-                                //     height: auto;
-                                //     margin-bottom: 3%;
-                                //     img{
-                                //         width: 100%;
-                                //         height: 100%;
-                                //     }
-                                // }
-                            }
-                            .homeGallery__MainCard-d{
-                                display: none;
-                                // width: 100%;
-                                // margin-bottom: 0;
-                                // .cardFull{
-                                //     @include mobCardfull;
-                                // }
-                            }
-                            .homeGallery__MainCard-e{
-                                width: 100%;
-                                @include fc;
-                                justify-content: space-between;
-                                margin-bottom: 0;
-                                .cardHalf{
-                                    width: 100%;
-                                    height: auto;
-                                    margin-bottom: 3%;
-                                    
-                                    img{
-                                        @include hundo;
-                                    }
-                                }
-        
-                            }
-                            .homeGallery__MainCard-f{
-                                width: 100%;
-                                margin-bottom: 0;
-                                .cardFull{
-                                    @include mobCardfull;
-                                }
-                            }
-                            .homeGallery__MainCard-g{
-                                width: 100%;
-                                @include fc;
-                                justify-content: space-between;
-                                margin-bottom: 0;
-                                .cardTwoThirds{
-                                    width: 100%;
-                                    height: auto;
-                                    margin-bottom: 3%;
-                                    img{
-                                        @include hundo;
-                                    }
-                                }
-                                .cardThird{
-                                    width: 100%;
-                                    height: auto;
-                                    margin-bottom: 3%;
-                                    img{
-                                        @include hundo;
-                                    }
-                                }
-                            }
-                            .homeGallery__MainCard-h{
-                                width: 100%;
-                                @include fc;
-                                justify-content: space-between;
-                                margin-bottom: 0;
-                                .cardTwoThirds{
-                                    width: 100%;
-                                    height: auto;
-                                    margin-bottom: 3%;
-                                    img{
-                                        @include hundo;
-                                    }
-                                }
-                                .cardThird{
-                                    display: none;
-                                    // width: 100%;
-                                    // height: auto;
-                                    // margin-bottom: 3%;
-                                    // img{
-                                    //     @include hundo;
-                                    // }
-                                }
-                            }
-                        }
-                    
+                        
                         .homeGallery__More {
                             width: 100%;
                             .loadMoreContent{
@@ -1569,15 +1118,6 @@ body {
                 }
 
             }
-        
-        
     }
-    // @media (min-width: 0px)
-    // and (max-width: 327px){}
-
-
     //************** MEDIA QUERIES ENDS **************
-
 }
-
-

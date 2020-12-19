@@ -1,10 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import MoreContent from "./MoreContent";
-import CardThird from "./CardThird";
-import CardTwoThirds from "./CardTwoThirds";
-import CardFull from "./CardFull";
-import CardHalf from "./CardHalf";
+import Card from "./Card";
 // var rawData = require('./RawData.js');
 
 
@@ -38,38 +35,37 @@ export default class Work2 extends React.Component {
         return (
             <div className="homeGallery">
                 <div className="homeGallery__Main">
-                    <div className="homeGallery__MainCard-a">
-                        <Link to="/work/sittris/1"><CardFull rawDataImg={this.props.rawData[0].image}/></Link>
+                    <div className="cardContainer">
+                            <Card rawDataImgTop={this.props.rawData[0].image}/>
+                            <Card rawDataImgTop={this.props.rawData[1].image}/>
+                            <Card rawDataImgTop={this.props.rawData[2].image}/>
+                            <Card rawDataImgTop={this.props.rawData[3].image}/>
+                            <Card rawDataImgTop={this.props.rawData[4].image}/>
+                            <Card rawDataImgTop={this.props.rawData[5].image} rawDataImgBtm={this.props.rawData[6].image}/>
+                            <Card rawDataImgTop={this.props.rawData[7].image}/>
+                            <Card rawDataImgTop={this.props.rawData[8].image} rawDataImgBtm={this.props.rawData[9].image}/>
+                            <Card rawDataImgTop={this.props.rawData[10].image} rawDataImgBtm={this.props.rawData[11].image}/>
+                            <Card rawDataImgTop={this.props.rawData[12].image}/>
+                            <Card rawDataImgTop={this.props.rawData[13].image} rawDataImgBtm={this.props.rawData[14].image}/>
+                            <Card rawDataImgTop={this.props.rawData[15].image}/>
+                            <Card rawDataImgTop={this.props.rawData[16].image}/>
+                            <Card rawDataImgTop={this.props.rawData[17].image}/>
+                            <Card rawDataImgTop={this.props.rawData[18].image}/>
+                            <Card rawDataImgTop={this.props.rawData[19].image}/>
+                            <Card rawDataImgTop={this.props.rawData[20].image} rawDataImgBtm={this.props.rawData[21].image}/>
+                            <Card rawDataImgTop={this.props.rawData[22].image}/>
+                            <Card rawDataImgTop={this.props.rawData[23].image}/>
+                            <Card rawDataImgTop={this.props.rawData[24].image}/>
+                            <Card rawDataImgTop={this.props.rawData[25].image}/>
+                            <Card rawDataImgTop={this.props.rawData[26].image} rawDataImgBtm={this.props.rawData[27].image}/>
+                            <Card rawDataImgTop={this.props.rawData[28].image}/>
+                            <Card rawDataImgTop={this.props.rawData[29].image}/>
                     </div>
-                    <div className="homeGallery__MainCard-b">
-                        <Link to="/work/cuisipro/1"><CardTwoThirds rawDataImg={this.props.rawData[1].image}/></Link>
-                        <Link to="/work/revo/1"><CardThird rawDataImg={this.props.rawData[2].image}/></Link>
-                    </div>
-                    <div className="homeGallery__MainCard-c">
-                        <Link to="/work/roka/1"><CardHalf rawDataImg={this.props.rawData[3].image}/></Link>
-                        <Link to="/work/xdclaymore/1"><CardHalf rawDataImg={this.props.rawData[4].image}/></Link>
-                    </div>
-                    <div className="homeGallery__MainCard-d">
-                        <Link to="/work/bangerz/1"><CardFull rawDataImg={this.props.rawData[5].image}/></Link>
-                    </div>
-                    <div className="homeGallery__MainCard-e">
-                        <Link to="/work/gs/1"><CardHalf rawDataImg={this.props.rawData[6].image}/></Link>
-                        <Link to="/work/switch-vision/1"><CardHalf rawDataImg={this.props.rawData[7].image}/></Link>
-                    </div>
-                    <div className="homeGallery__MainCard-f">
-                        <Link to="/work/+1/1"><CardFull rawDataImg={this.props.rawData[8].image}/></Link>
-                    </div>
-                    <div className="homeGallery__MainCard-g">
-                        <Link to="/work/thermos/1"><CardThird rawDataImg={this.props.rawData[9].image}/></Link>
-                        <Link to="/work/foldinglawnchair/1"><CardTwoThirds rawDataImg={this.props.rawData[10].image}/></Link>
-                    </div>
-                    <div className="homeGallery__MainCard-h">
-                        <Link to="/work/cuisipro/1"><CardTwoThirds rawDataImg={this.props.rawData[1].image}/></Link>
-                        <Link to="/work/revo/1"><CardThird rawDataImg={this.props.rawData[2].image}/></Link></div>
+                    
                 </div>
-                <div className="homeGallery__More">
+                {/* <div className="homeGallery__More">
                     {this.moreProjects()}
-                </div>
+                </div> */}
             </div>
         );
     }

@@ -14,8 +14,8 @@ import Footer from "./Footer";
 import "./App.css";
 import "../node_modules/slick-carousel/slick/slick.css"; 
 import "../node_modules/slick-carousel/slick/slick-theme.css";
-
-var rawData = require('./RawData.js');
+//var rawData = require('./RawData.js');
+var rawData = require('./RawData-1.js');
 var aboutData = require('./AboutData.js');
 
 
