@@ -103,12 +103,12 @@ $color-08: #4EA9B9;
     width: 100%;
     height: 100%;
 }
-@mixin anim2s {
-    animation: transitionIn;
-    animation-timing-function: ease-out;
-    animation-duration: 2s;
-    backface-visibility: hidden;
-}
+// @mixin anim2s {
+//     animation: transitionIn;
+//     animation-timing-function: ease-out;
+//     animation-duration: 2s;
+//     backface-visibility: hidden;
+// }
 @mixin mobCardfull {
     width: 100%;
     height: auto;
@@ -149,7 +149,7 @@ body {
             
             .mobileNavContainer{
                 @include fr;
-                @include anim2s;
+                // @include anim2s;
                 justify-content: flex-end;
                 width: 50.5%;
                 height: 100%;
@@ -186,7 +186,7 @@ body {
             }
             .navigation{
                 @include fc;
-                @include anim2s;
+                // @include anim2s;
                 @include endend;
                 width: 50%;
                 background-color: $color-01;
@@ -229,7 +229,7 @@ body {
             
             .mobileNavContainer{
                 @include fr;
-                @include anim2s;
+                // @include anim2s;
                 justify-content: flex-end;
                 width: 50%;
                 height: 100%;
@@ -267,7 +267,7 @@ body {
             }
             .navigation{
                 @include fc;
-                @include anim2s;
+                // @include anim2s;
                 @include endend;
                 width: 50%;
                 background-color: $color-01;
@@ -326,7 +326,7 @@ body {
             
             .homeGallery{
                 @include fc;
-                @include anim2s;
+                // @include anim2s;
                 justify-content: space-around;
                 height: auto;
                 width: 100%;
@@ -341,45 +341,60 @@ body {
                     flex-wrap: wrap;
                     
                     .cardContainer{
-                        width: 990px;
+                        width: 992px;
                         height: auto;
                         display: flex;
                         flex-direction: row;
                         justify-content: space-between;
                         flex-wrap: wrap;
+                        img{
+                            margin-bottom: 10px;;
+                        }
 
-                        .individualCardContainer{
-                            display: flex;
-                            margin-bottom: 10px;
+                        //.individualCardContainer{
+                            //display: flex;
+                            //margin-bottom: 10px;
                             //newly added width for the 6 images on single row layout
-                            width: 16%;
-                        }
-                        .card{
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: space-between;
+                            //width: 16%;
+                            // img{
+                            //     filter: brightness(88%);
+                            //     filter: opacity(20%);
+                            //     height: 215px;
+                            //     // width: 100%;
+                            // }
+                            // img:hover{
+                            //     filter: none;
+                            // }
+                        //}
+                        // .card{
+                            // display: flex;
+                            // flex-direction: column;
+                            // justify-content: space-between;
+                            // margin-bottom: 10px;
+                            //width: 100%;
+
                             //newly added width for the 6 images on single row layout
-                            width: 100%;
-                            img{
-                                filter: brightness(88%);
-                                filter: opacity(20%);
-                                width: 100%;
-                            }
-                            img:hover{
-                                filter: none;
-                            }
-                        }
+                            
+                            // img{
+                            //     filter: brightness(88%);
+                            //     filter: opacity(20%);
+                            //     width: 100%;
+                            // }
+                            // img:hover{
+                            //     filter: none;
+                            // }
+                        //}
                 
                     }
                     
-                @keyframes transitionIn {
-                    from {
-                        opacity: 0;
-                    }
-                    to {
-                        opacity: 1;
-                    }
-                }
+                // @keyframes transitionIn {
+                //     from {
+                //         opacity: 0;
+                //     }
+                //     to {
+                //         opacity: 1;
+                //     }
+                // }
                 
                 .loadMoreButton{
                     @include fc;
@@ -396,7 +411,7 @@ body {
         }
             .projectContainer{
                 @include fc;
-                @include anim2s;
+                // @include anim2s;
                 justify-content: flex-start;
                 width: 100%;
                 height: auto;
@@ -541,7 +556,7 @@ body {
                             right: 58%;
                             top: 40%;
                             display: block;
-                            transition: transform 2000ms;
+                            // transition: transform 2000ms;
                             backface-visibility: hidden;
                         }
                         
@@ -572,7 +587,7 @@ body {
 
             }
             .contactPage{
-                @include anim2s;
+                // @include anim2s;
                 
                 .contactMain{
                     @include fr;
@@ -650,13 +665,13 @@ body {
     //************** MEDIA QUERIES STARTS **************
 
 
-    @media (max-width: 993px) 
-    and (min-width: 760px){
+    @media (max-width: 1010px) 
+    and (min-width: 730px){
         
         .app{
-            width: 750px;
+            width: 658px;
             .header{
-                width: 99%;
+                //width: 99%;
                 .mobileNavContainer{
                     .branding{ 
                         .name{
@@ -675,20 +690,10 @@ body {
                 .homeGallery{
                     .homeGallery__Main{
                         .cardContainer{
-                            justify-content: space-around;
-                            img{
-                                width: 50%;
-                                height: auto;
-                            }
-                            
-                        }
-                    }
-                
-                    .homeGallery__More {
-                        .loadMoreContent{
-                            .cardJ{
-                                display: none;
-                            }
+                            //width: 658px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
                         }
                     }
                 }
@@ -729,30 +734,29 @@ body {
 
         }
     }
-    @media  (max-width: 759px) 
-    and (min-width: 491px){
+    @media  (max-width: 729px) 
+    and (min-width: 510px){
         .app{
-            width: 650px;
+            width: 491px;
+            // .homeGallery{
+            //     .homeGallery__Main{
+            //         .cardContainer{
+            //             img#\36 {
+            //                 display: none;
+            //             }
+            //             img#\31 0 {
+            //                 display: none;
+            //             }
+            //             img#\31 6 {
+            //                 display: none;
+            //             }
+            //         }
+            //     }
+            // }
 
-            .cardContainer{
-                justify-content: space-between;
-                .individualCardContainer{
-                    width: 33%;
-                    height: auto;
-                    .card{
-                        width: 100%;
-                        img{
-                            width: 100%;
-                            height: auto;
-                        }
-                    }
-                }
-                
-            }
-            
         }
     }
-    @media (max-width: 490px) 
+    @media (max-width: 509px) 
     and (min-width: 0px){
         #root{
             width: 100%;
@@ -826,13 +830,13 @@ body {
                 .header{
                     @include fc;
                     justify-content: flex-start;
+                    align-items: center;
                     height: auto;
                     width: 100%;
 
                     .mobileNavContainer{
                         height: 125px;
-                        width: 94%;
-                        margin: 0 3% 0 3%;
+                        width: 324px;
                         .branding{
                             @include fc;
                             @include endend;
@@ -888,79 +892,20 @@ body {
                     display: none;
                 }
                 .content{
-                    width: 94%;
-                    margin: 3% 3% 0 3%;
+                    //width: 94%;
+                    margin-top: 3%;
                     .homeGallery{
-                        margin-top: 3%;
-                        
-                        .homeGallery__More {
-                            width: 100%;
-                            .loadMoreContent{
-                                width: 100%;
-                                .cardI{
-                                    width: 100%;
-                                    display: flex;
-                                    margin-bottom: 0;
-                                    a{
-                                        @include hundo;
-                                        .cardFull{
-                                            @include mobCardfull; 
-                                        }
-                                    }
-                                }
-                                .cardJ{
-                                    display: flex;
-                                    width: 100%;
-                                    margin-bottom: 0;
-                                    a{
-                                        @include hundo;
-                                        .cardHalf{
-                                            width: 100%;
-                                            height: auto;
-                                            margin-bottom: 3%;
-                                            
-                                            img{
-                                                @include hundo;
-                                            }
-                                        }
-                                    }
-                                }
-                                .cardK{
+                        .homeGallery__Main{
+                            .cardContainer{
+                                width: 324px;
+                                align-items: center;
+                                
+                                img#\39 {
                                     display: none;
-                                    // width: 100%;
-                                    // margin-bottom: 0;
-                                    // .cardTwoThirds{
-                                    //     width: 100%;
-                                    //     height: auto;
-                                    //     margin-bottom: 3%;
-                                    //     img{
-                                    //         @include hundo;
-                                    //     }
-                                    // }
-                                    // .cardThird{
-                                    //     width: 100%;
-                                    //     height: auto;
-                                    //     margin-bottom: 3%;
-                                    //     img{
-                                    //         @include hundo;
-                                    //     }
-                                    // }
                                 }
-                                .cardL{
-                                    width: 100%;
-                                    display: flex;
-                                    margin-bottom: 0;
-                                    a{
-                                        @include hundo;
-                                        .cardFull{
-                                            width: 100%;
-                                            height: auto;
-                                            img{
-                                                @include hundo;
-                                            }  
-                                        }
-                                    }
-                                }
+                                img#\31 1 {
+                                    display: none;
+                                }           
                             }
                         }
                     }

@@ -1,22 +1,42 @@
 import React from "react";
-import {Link} from "react-router-dom";
+//import {Link} from "react-router-dom";
 import MoreContent from "./MoreContent";
-import Card from "./Card";
+import sr from './scrollReveal.js';
+//import Card from "./Card";
 // var rawData = require('./RawData.js');
 
 
 export default class Work2 extends React.Component {
-
-    componentDidMount(){
-        console.log(this.props.rawData);
-        
-    }
-
+    
     loadMore = (e) => {
         e.preventDefault();
         const buttonClicked = true;
         this.props.loadMoreHandler(buttonClicked);
     }
+    // checkBounding = () => {
+    //     var boundingArr = [];
+
+    //     for(var i=1; i<17; i++){
+    //         boundingArr.push(document.getElementById(i).getBoundingClientRect());
+    //         boundingArr.forEach(element => element.isVisible = false);
+    //     }
+    //     console.log(boundingArr);
+    //     console.log(window.innerHeight);
+    //     console.log(window.innerWidth);
+    //     boundingArr.forEach(element => {
+    //         // if (element.top === element.bottom){
+    //         //     return element.isVisible = false;
+    //         // } 
+    //         // else 
+    //         if (element.top >= 0 && element.left >= 0 && element.bottom <= (window.innerHeight || document.documentElement.clientHeight) && element.right <= (window.innerWidth || document.documentElement.clientWidth)){
+    //             return element.isVisible = true;
+    //         }});
+    // }
+    // componentDidMount () {
+    //     setTimeout(this.checkBounding(), 3000);
+    // }
+
+    
 
     moreProjects = () => {
         
@@ -29,37 +49,32 @@ export default class Work2 extends React.Component {
         }
     }
 
+    displayImages = () => { 
+        const rawDataArr = this.props.rawData;
+        //return rawDataArr.map((obj) => <Card src={obj.image} alt={obj.alt} key={obj.projNUM} id={obj.projNUM} />);  
+        return rawDataArr.map((obj) => <img src={obj.image} alt={obj.alt} id={obj.projNUM}/>);      
+    }
 
+        componentDidMount = () => {
+        const config = {
+            duration: 2500,
+        }
+        sr.reveal('img', config)
+      }
+      componentDidUpdate = () => {
+        const config = {
+            duration: 2500,
+        }
+    
+        sr.reveal('img', config)
+      }
     render() {
-        
+        //window.addEventListener('resize', this.checkBounding);
         return (
             <div className="homeGallery">
                 <div className="homeGallery__Main">
                     <div className="cardContainer">
-                            <Card rawDataImgTop={this.props.rawData[0].image}/>
-                            <Card rawDataImgTop={this.props.rawData[1].image}/>
-                            <Card rawDataImgTop={this.props.rawData[2].image}/>
-                            <Card rawDataImgTop={this.props.rawData[3].image}/>
-                            <Card rawDataImgTop={this.props.rawData[4].image}/>
-                            <Card rawDataImgTop={this.props.rawData[5].image} rawDataImgBtm={this.props.rawData[6].image}/>
-                            <Card rawDataImgTop={this.props.rawData[7].image}/>
-                            <Card rawDataImgTop={this.props.rawData[8].image} rawDataImgBtm={this.props.rawData[9].image}/>
-                            <Card rawDataImgTop={this.props.rawData[10].image} rawDataImgBtm={this.props.rawData[11].image}/>
-                            <Card rawDataImgTop={this.props.rawData[12].image}/>
-                            <Card rawDataImgTop={this.props.rawData[13].image} rawDataImgBtm={this.props.rawData[14].image}/>
-                            <Card rawDataImgTop={this.props.rawData[15].image}/>
-                            <Card rawDataImgTop={this.props.rawData[16].image}/>
-                            <Card rawDataImgTop={this.props.rawData[17].image}/>
-                            <Card rawDataImgTop={this.props.rawData[18].image}/>
-                            <Card rawDataImgTop={this.props.rawData[19].image}/>
-                            <Card rawDataImgTop={this.props.rawData[20].image} rawDataImgBtm={this.props.rawData[21].image}/>
-                            <Card rawDataImgTop={this.props.rawData[22].image}/>
-                            <Card rawDataImgTop={this.props.rawData[23].image}/>
-                            <Card rawDataImgTop={this.props.rawData[24].image}/>
-                            <Card rawDataImgTop={this.props.rawData[25].image}/>
-                            <Card rawDataImgTop={this.props.rawData[26].image} rawDataImgBtm={this.props.rawData[27].image}/>
-                            <Card rawDataImgTop={this.props.rawData[28].image}/>
-                            <Card rawDataImgTop={this.props.rawData[29].image}/>
+                        {this.displayImages()}
                     </div>
                     
                 </div>
@@ -70,4 +85,5 @@ export default class Work2 extends React.Component {
         );
     }
 }
+
 

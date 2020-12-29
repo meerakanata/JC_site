@@ -1448,14 +1448,6 @@ body .app .header .mobileNavContainer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-animation: transitionIn;
-          animation: transitionIn;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -1528,14 +1520,6 @@ body .app .header .navigation {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-animation: transitionIn;
-          animation: transitionIn;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -1619,14 +1603,6 @@ body .app .headerFull .mobileNavContainer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-animation: transitionIn;
-          animation: transitionIn;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -1699,14 +1675,6 @@ body .app .headerFull .navigation {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-animation: transitionIn;
-          animation: transitionIn;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -1808,14 +1776,6 @@ body .app .content .homeGallery {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-animation: transitionIn;
-          animation: transitionIn;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: auto;
@@ -1841,7 +1801,7 @@ body .app .content .homeGallery .homeGallery__Main {
 }
 
 body .app .content .homeGallery .homeGallery__Main .cardContainer {
-  width: 990px;
+  width: 992px;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1857,57 +1817,8 @@ body .app .content .homeGallery .homeGallery__Main .cardContainer {
       flex-wrap: wrap;
 }
 
-body .app .content .homeGallery .homeGallery__Main .cardContainer .individualCardContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+body .app .content .homeGallery .homeGallery__Main .cardContainer img {
   margin-bottom: 10px;
-  width: 16%;
-}
-
-body .app .content .homeGallery .homeGallery__Main .cardContainer .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-}
-
-body .app .content .homeGallery .homeGallery__Main .cardContainer .card img {
-  -webkit-filter: brightness(88%);
-          filter: brightness(88%);
-  -webkit-filter: opacity(20%);
-          filter: opacity(20%);
-  width: 100%;
-}
-
-body .app .content .homeGallery .homeGallery__Main .cardContainer .card img:hover {
-  -webkit-filter: none;
-          filter: none;
-}
-
-@-webkit-keyframes transitionIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes transitionIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 body .app .content .homeGallery .homeGallery__Main .loadMoreButton {
@@ -1940,14 +1851,6 @@ body .app .content .projectContainer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-animation: transitionIn;
-          animation: transitionIn;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -2212,10 +2115,6 @@ body .app .content .projectContainer .projDetailTab .Collapsible__trigger:after 
   right: 58%;
   top: 40%;
   display: block;
-  -webkit-transition: -webkit-transform 2000ms;
-  transition: -webkit-transform 2000ms;
-  transition: transform 2000ms;
-  transition: transform 2000ms, -webkit-transform 2000ms;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
@@ -2250,17 +2149,6 @@ body .app .content .projectContainer .projDetailTab__sideRect-Top {
   width: 100%;
   background-color: #FFFFFF;
   height: 72px;
-}
-
-body .app .content .contactPage {
-  -webkit-animation: transitionIn;
-          animation: transitionIn;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
 }
 
 body .app .content .contactPage .contactMain {
@@ -2393,12 +2281,9 @@ body .app .content .contactPage .submit {
   font-size: 1em;
 }
 
-@media (max-width: 993px) and (min-width: 760px) {
+@media (max-width: 1010px) and (min-width: 730px) {
   body .app {
-    width: 750px;
-  }
-  body .app .header {
-    width: 99%;
+    width: 658px;
   }
   body .app .header .mobileNavContainer .branding .name {
     margin: 0px 0 13.5px 25px;
@@ -2407,15 +2292,15 @@ body .app .content .contactPage .submit {
     padding: 0 25px 23.5px 0;
   }
   body .app .content .homeGallery .homeGallery__Main .cardContainer {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  body .app .content .homeGallery .homeGallery__Main .cardContainer img {
-    width: 50%;
-    height: auto;
-  }
-  body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardJ {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   body .app .content .projectContainer .projMain .projMain__Left .projMain__Left-Nav .Num {
     font-size: 5.4em;
@@ -2434,29 +2319,13 @@ body .app .content .contactPage .submit {
   }
 }
 
-@media (max-width: 759px) and (min-width: 491px) {
+@media (max-width: 729px) and (min-width: 510px) {
   body .app {
-    width: 650px;
-  }
-  body .app .cardContainer {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  body .app .cardContainer .individualCardContainer {
-    width: 33%;
-    height: auto;
-  }
-  body .app .cardContainer .individualCardContainer .card {
-    width: 100%;
-  }
-  body .app .cardContainer .individualCardContainer .card img {
-    width: 100%;
-    height: auto;
+    width: 491px;
   }
 }
 
-@media (max-width: 490px) and (min-width: 0px) {
+@media (max-width: 509px) and (min-width: 0px) {
   body #root {
     width: 100%;
   }
@@ -2582,13 +2451,15 @@ body .app .content .contactPage .submit {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: auto;
     width: 100%;
   }
   body .app .header .mobileNavContainer {
     height: 125px;
-    width: 94%;
-    margin: 0 3% 0 3%;
+    width: 324px;
   }
   body .app .header .mobileNavContainer .branding {
     display: -webkit-box;
@@ -2680,79 +2551,19 @@ body .app .content .contactPage .submit {
     display: none;
   }
   body .app .content {
-    width: 94%;
-    margin: 3% 3% 0 3%;
-  }
-  body .app .content .homeGallery {
     margin-top: 3%;
   }
-  body .app .content .homeGallery .homeGallery__More {
-    width: 100%;
+  body .app .content .homeGallery .homeGallery__Main .cardContainer {
+    width: 324px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  body .app .content .homeGallery .homeGallery__More .loadMoreContent {
-    width: 100%;
-  }
-  body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardI {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 0;
-  }
-  body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardI a {
-    width: 100%;
-    height: 100%;
-  }
-  body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardI a .cardFull {
-    width: 100%;
-    height: auto;
-    margin-bottom: 3%;
-  }
-  body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardI a .cardFull img {
-    width: 100%;
-    height: 100%;
-  }
-  body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardJ {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    margin-bottom: 0;
-  }
-  body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardJ a {
-    width: 100%;
-    height: 100%;
-  }
-  body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardJ a .cardHalf {
-    width: 100%;
-    height: auto;
-    margin-bottom: 3%;
-  }
-  body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardJ a .cardHalf img {
-    width: 100%;
-    height: 100%;
-  }
-  body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardK {
+  body .app .content .homeGallery .homeGallery__Main .cardContainer img#\39 {
     display: none;
   }
-  body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardL {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 0;
-  }
-  body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardL a {
-    width: 100%;
-    height: 100%;
-  }
-  body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardL a .cardFull {
-    width: 100%;
-    height: auto;
-  }
-  body .app .content .homeGallery .homeGallery__More .loadMoreContent .cardL a .cardFull img {
-    width: 100%;
-    height: 100%;
+  body .app .content .homeGallery .homeGallery__Main .cardContainer img#\31 1 {
+    display: none;
   }
   body .app .content .projectContainer .projMain {
     -webkit-box-orient: vertical;
