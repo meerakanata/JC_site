@@ -49,34 +49,68 @@ export default class Work2 extends React.Component {
         }
     }
 
-    displayImages = () => { 
+    displayImagesDesk = () => { 
         const rawDataArr = this.props.rawData;
+        //1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
         //return rawDataArr.map((obj) => <Card src={obj.image} alt={obj.alt} key={obj.projNUM} id={obj.projNUM} />);  
-        return rawDataArr.map((obj) => <img src={obj.image} alt={obj.alt} id={obj.projNUM}/>);      
+        return rawDataArr.map((obj) => <span><img src={obj.image} alt={obj.alt} key={obj.projNUM} id={obj.projNUM}/></span>);      
+    }
+    displayImagesTab = () => { 
+    //Tablet image desired array sequence: 1, 2, 3, 4, 5, 7, 6, 8, 9, 10, 12, 11, 13, 15, 14, 16
+        const rawDataArr = this.props.rawData; 
+        const newTabArr = [...rawDataArr];
+        newTabArr.splice(5, 1);
+        newTabArr.splice(9,1)
+        newTabArr.splice(11,1)
+        newTabArr.splice(6, 0, rawDataArr[5]);
+        newTabArr.splice(11, 0, rawDataArr[10]);
+        newTabArr.splice(14, 0, rawDataArr[13]);
+        return newTabArr.map((obj) => <img src={obj.image} alt={obj.alt} key={obj.projNUM} id={obj.projNUM}/>);  
+    }
+    displayImagesMob = () => { 
+    //1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
+    //Mobile image projNUM arrray sequence: 1, 2, 3, 4, 6, 5, 7, 8, 10, 9, 11, 12, 15, 13, 14, 16
+        const rawDataArr = this.props.rawData;
+        const newMobArr = [...rawDataArr];
+        newMobArr.splice(4, 1);
+        newMobArr.splice(7, 1);
+        newMobArr.splice(10, 2);
+        newMobArr.splice(5, 0, rawDataArr[4]);
+        newMobArr.splice(9, 0, rawDataArr[8]);
+        newMobArr.splice(13, 0, rawDataArr[12]);
+        newMobArr.splice(14, 0, rawDataArr[13]);
+        console.log(newMobArr);
+        return newMobArr.map((obj) => <img src={obj.image} alt={obj.alt} key={obj.projNUM} id={obj.projNUM}/>);        
     }
 
-        componentDidMount = () => {
+    componentDidMount = () => {
         const config = {
             duration: 2500,
+            delay: 400,
         }
         sr.reveal('img', config)
       }
       componentDidUpdate = () => {
         const config = {
             duration: 2500,
+            delay: 400,
         }
     
         sr.reveal('img', config)
       }
     render() {
-        //window.addEventListener('resize', this.checkBounding);
         return (
             <div className="homeGallery">
                 <div className="homeGallery__Main">
-                    <div className="cardContainer">
-                        {this.displayImages()}
+                    <div className="cardContainerDesk">
+                        {this.displayImagesDesk()}
                     </div>
-                    
+                    <div className="cardContainerTab">
+                            {this.displayImagesTab()}
+                    </div>
+                    <div className="cardContainerMob">
+                        {this.displayImagesMob()}
+                    </div> 
                 </div>
                 {/* <div className="homeGallery__More">
                     {this.moreProjects()}

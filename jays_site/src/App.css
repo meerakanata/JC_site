@@ -29,7 +29,7 @@
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
-  background-color: #FFFFFF;
+  background-color: #010101;
 }
 
 .hamburger-box {
@@ -48,7 +48,7 @@
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
   width: 27px;
   height: 3px;
-  background-color: #FFFFFF;
+  background-color: #010101;
   border-radius: 0;
   position: absolute;
   -webkit-transition-property: -webkit-transform;
@@ -1682,7 +1682,7 @@ body .app .headerFull .navigation {
       -ms-flex-align: end;
           align-items: flex-end;
   width: 50%;
-  background-color: #010101;
+  background-color: #FFFFFF;
 }
 
 body .app .headerFull .navClosed {
@@ -1719,7 +1719,7 @@ body .app .headerFull .navigation__menu {
 }
 
 body .app .headerFull .navigation__menu .notCurrent {
-  color: #FFFFFF;
+  color: #010101;
   text-decoration: none;
   font-family: 'IBMPlexSans';
   font-size: 1em;
@@ -1730,7 +1730,7 @@ body .app .headerFull .navigation__menu .current {
   text-underline-position: under;
   -webkit-text-decoration-color: #FB8B24;
           text-decoration-color: #FB8B24;
-  color: #FFFFFF;
+  color: #010101;
   font-family: 'IBMPlexSans';
   font-size: 1em;
 }
@@ -1800,7 +1800,7 @@ body .app .content .homeGallery .homeGallery__Main {
       flex-wrap: wrap;
 }
 
-body .app .content .homeGallery .homeGallery__Main .cardContainer {
+body .app .content .homeGallery .homeGallery__Main .cardContainerDesk {
   width: 992px;
   height: auto;
   display: -webkit-box;
@@ -1817,30 +1817,26 @@ body .app .content .homeGallery .homeGallery__Main .cardContainer {
       flex-wrap: wrap;
 }
 
-body .app .content .homeGallery .homeGallery__Main .cardContainer img {
+body .app .content .homeGallery .homeGallery__Main .cardContainerDesk img {
   margin-bottom: 10px;
 }
 
-body .app .content .homeGallery .homeGallery__Main .loadMoreButton {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 120px;
-  background-color: #010101;
-  color: #FFFFFF;
-  font-family: 'IBMPlexSans';
-  font-size: 1em;
+body .app .content .homeGallery .homeGallery__Main .cardContainerDesk span {
+  opacity: 0.1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .app .content .homeGallery .homeGallery__Main .cardContainerDesk span:hover {
+  opacity: 1;
+}
+
+body .app .content .homeGallery .homeGallery__Main .cardContainerTab {
+  display: none;
+}
+
+body .app .content .homeGallery .homeGallery__Main .cardContainerMob {
+  display: none;
 }
 
 body .app .content .projectContainer {
@@ -2281,7 +2277,7 @@ body .app .content .contactPage .submit {
   font-size: 1em;
 }
 
-@media (max-width: 1010px) and (min-width: 730px) {
+@media (max-width: 1010px) and (min-width: 771px) {
   body .app {
     width: 658px;
   }
@@ -2291,16 +2287,55 @@ body .app .content .contactPage .submit {
   body .app .header .navClosed .navigation__menu {
     padding: 0 25px 23.5px 0;
   }
-  body .app .content .homeGallery .homeGallery__Main .cardContainer {
+  body .app .content .projectContainer .projMain .projMain__Left .projMain__Left-Nav .Num {
+    font-size: 5.4em;
+  }
+  body .app .content .projectContainer .projMain .projMain__Left .projMain__Left-Info .Description {
+    font-size: 0.85em;
+    line-height: 23px;
+    padding: 15px 20px 0px 29px;
+  }
+  body .app .content .projectContainer .projDetailTab .Collapsible {
+    width: 89%;
+  }
+  body .app .content .projectContainer .projDetailTab .Collapsible .carousel .carousel__blurb .carousel__blurb-text {
+    font-size: 0.85em;
+    line-height: 23px;
+  }
+}
+
+@media (max-width: 770px) and (min-width: 730px) {
+  body .app {
+    width: 658px;
+  }
+  body .app .header .mobileNavContainer .branding .name {
+    margin: 0px 0 13.5px 25px;
+  }
+  body .app .header .navClosed .navigation__menu {
+    padding: 0 25px 23.5px 0;
+  }
+  body .app .content .homeGallery .homeGallery__Main .cardContainerDesk {
+    display: none;
+  }
+  body .app .content .homeGallery .homeGallery__Main .cardContainerTab {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body .app .content .homeGallery .homeGallery__Main .cardContainerTab img {
+    margin-bottom: 10px;
+  }
+  body .app .content .homeGallery .homeGallery__Main .cardContainerMob {
+    display: none;
   }
   body .app .content .projectContainer .projMain .projMain__Left .projMain__Left-Nav .Num {
     font-size: 5.4em;
@@ -2322,6 +2357,37 @@ body .app .content .contactPage .submit {
 @media (max-width: 729px) and (min-width: 510px) {
   body .app {
     width: 491px;
+  }
+  body .app .content .homeGallery .homeGallery__Main .cardContainerDesk {
+    display: none;
+  }
+  body .app .content .homeGallery .homeGallery__Main .cardContainerTab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body .app .content .homeGallery .homeGallery__Main .cardContainerTab img {
+    margin-bottom: 10px;
+  }
+  body .app .content .homeGallery .homeGallery__Main .cardContainerMob {
+    display: none;
+  }
+  body .app .cardContainerDesk {
+    display: none;
+  }
+  body .app .cardContainerTab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -2403,7 +2469,7 @@ body .app .content .contactPage .submit {
     padding: 0;
     width: 84.38px;
     height: 125px;
-    background-color: #010101;
+    background-color: #FFFFFF;
   }
   body .app .headerFull .navigation {
     height: 100%;
@@ -2513,7 +2579,7 @@ body .app .content .contactPage .submit {
     padding: 0;
     width: 84.38px;
     height: 125px;
-    background-color: #010101;
+    background-color: #FFFFFF;
   }
   body .app .header .navigation {
     width: 100%;
@@ -2551,19 +2617,43 @@ body .app .content .contactPage .submit {
     display: none;
   }
   body .app .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 3%;
   }
-  body .app .content .homeGallery .homeGallery__Main .cardContainer {
+  body .app .content .homeGallery {
     width: 324px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
-  body .app .content .homeGallery .homeGallery__Main .cardContainer img#\39 {
+  body .app .content .homeGallery .homeGallery__Main .cardContainerDesk {
     display: none;
   }
-  body .app .content .homeGallery .homeGallery__Main .cardContainer img#\31 1 {
+  body .app .content .homeGallery .homeGallery__Main .cardContainerTab {
     display: none;
+  }
+  body .app .content .homeGallery .homeGallery__Main .cardContainerMob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body .app .content .homeGallery .homeGallery__Main .cardContainerMob img {
+    margin-bottom: 10px;
   }
   body .app .content .projectContainer .projMain {
     -webkit-box-orient: vertical;
