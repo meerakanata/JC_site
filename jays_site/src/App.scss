@@ -140,7 +140,7 @@ body {
         justify-content: flex-start;
         align-items: center;
         width: 994px;
-        height: 107vh;
+        //height: 107vh;
         
         .header{
             @include fr;
@@ -626,16 +626,40 @@ body {
             .header{
                 //width: 99%;
                 .mobileNavContainer{
+                    height: 230px;
+                    //width: 658px;
                     .branding{ 
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        align-items: flex-end;
+                        width: auto;
+                        margin-right: 24%;
                         .name{
-                            margin: 0px 0 13.5px 25px;
+                            // font-size: 3em;
+                            // margin: 0px 0 13.5px 50px;
+                            margin: 0px 0px 0px 0px;
+                        }
+                        .industry{
+                            display: flex;
+                            flex-direction: row;
+                            margin: -7px 0px 13px 0px;
+
+                            .line1{
+                                display: flex;
+                                margin-right: 5px;
+                            }
+                            .line2{
+                                display: flex;
+                            }
                         }
                     }
 
                 }
                 .navClosed{
                     .navigation__menu{
-                        padding: 0 25px 23.5px 0;
+                        width: 70%;
+                        padding: 0 30px 23.5px 0;
                     }
                 }
             }
@@ -684,16 +708,40 @@ body {
             .header{
                 //width: 99%;
                 .mobileNavContainer{
+                    height: 230px;
+                    //width: 658px;
                     .branding{ 
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        align-items: flex-end;
+                        width: auto;
+                        margin-right: 24%;
                         .name{
-                            margin: 0px 0 13.5px 25px;
+                            // font-size: 3em;
+                            // margin: 0px 0 13.5px 50px;
+                            margin: 0px 0px 0px 0px;
+                        }
+                        .industry{
+                            display: flex;
+                            flex-direction: row;
+                            margin: -7px 0px 13px 0px;
+
+                            .line1{
+                                display: flex;
+                                margin-right: 5px;
+                            }
+                            .line2{
+                                display: flex;
+                            }
                         }
                     }
 
                 }
                 .navClosed{
                     .navigation__menu{
-                        padding: 0 25px 23.5px 0;
+                        width: 70%;
+                        padding: 0 30px 23.5px 0;
                     }
                 }
             }
@@ -749,6 +797,130 @@ body {
     and (min-width: 510px){
         .app{
             width: 491px; 
+            .headerFull{
+                @include fc;
+                justify-content: flex-start;
+                height: 100%;
+                .mobileNavContainer{
+                    height: 125px;
+                    width: 94%;
+                    margin: 0 3% 0 3%;
+                    .branding{
+                        @include fc;
+                        @include endend;
+                        width: auto;
+                        margin-right: 7%;
+                        
+                        
+                        .name{
+                            font-size: 2.625em;
+                            margin: 0px 0px 0px 0px
+                        }
+                        .industry{
+                            @include fr;
+                            margin: -7px 0px 13px 0px;
+                            font-size: 1.3125em;
+                            .line1{
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                    .burgerMenu{
+                        @include fr;
+                        justify-content: center;
+                        align-items: flex-end;
+                        padding: 0; 
+                        width: 84.38px;
+                        height: 125px;
+                        background-color: $color-06;
+                        
+                    }
+                }
+                .navigation{
+                    height: 100%;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    padding: 0;
+                    width: 94%;
+                    margin: 7% 3% 0 3%;
+                    
+                    
+                    .navigation__menu{
+                        width: 100%;
+                        @include fc;
+                        justify-content: flex-start;
+                        align-items: center;
+                        padding: 0;
+                        a{
+                            margin: 7% 0;
+                            
+                        }
+                    }
+                }
+                .navClosed{
+                    display: none;
+                }
+            }
+            .header{
+                @include fc;
+                justify-content: flex-start;
+                align-items: center;
+                height: auto;
+                width: 100%;
+
+                .mobileNavContainer{
+                    height: 160px;
+                    width: 491px;
+                    .branding{
+                        @include fc;
+                        @include endend;
+                        width: auto;
+                        margin-right: 37%;
+                        .name{
+                            font-size: 2.625em;
+                            margin: 0px 0px 0px 0px
+                        }
+                        .industry{
+                            @include fr;
+                            margin: -7px 0px 13px 0px;
+                            font-size: 1.3125em;
+                            .line1{
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                    .burgerMenu{
+                        @include fr;
+                        justify-content: center;
+                        align-items: flex-end;
+                        padding: 0; 
+                        width: 84.38px;
+                        height: 158px;
+                        background-color: $color-06;
+                        
+                    }
+                }
+                .navigation{
+                    width: 100%;
+                    height: 100%;
+                    justify-content: center;
+                    align-items: normal;
+                    padding: 0;
+                    z-index: 10000;
+                    .navigation__menu{
+                        width: 100%;
+                        @include fc;
+                        justify-content: flex-start;
+                        align-items: center;
+                        padding: 0;
+                    }
+                }
+                .navClosed{
+                    display: none;
+                }
+            }
+
             .content{
                 .homeGallery{
                     .homeGallery__Main{

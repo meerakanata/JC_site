@@ -1422,7 +1422,6 @@ body .app {
       -ms-flex-align: center;
           align-items: center;
   width: 994px;
-  height: 107vh;
 }
 
 body .app .header {
@@ -2274,11 +2273,53 @@ body .app .content .contactPage .submit {
   body .app {
     width: 658px;
   }
+  body .app .header .mobileNavContainer {
+    height: 230px;
+  }
+  body .app .header .mobileNavContainer .branding {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: auto;
+    margin-right: 24%;
+  }
   body .app .header .mobileNavContainer .branding .name {
-    margin: 0px 0 13.5px 25px;
+    margin: 0px 0px 0px 0px;
+  }
+  body .app .header .mobileNavContainer .branding .industry {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: -7px 0px 13px 0px;
+  }
+  body .app .header .mobileNavContainer .branding .industry .line1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 5px;
+  }
+  body .app .header .mobileNavContainer .branding .industry .line2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   body .app .header .navClosed .navigation__menu {
-    padding: 0 25px 23.5px 0;
+    width: 70%;
+    padding: 0 30px 23.5px 0;
   }
   body .app .content .projectContainer .projMain .projMain__Left .projMain__Left-Nav .Num {
     font-size: 5.4em;
@@ -2301,11 +2342,53 @@ body .app .content .contactPage .submit {
   body .app {
     width: 658px;
   }
+  body .app .header .mobileNavContainer {
+    height: 230px;
+  }
+  body .app .header .mobileNavContainer .branding {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: auto;
+    margin-right: 24%;
+  }
   body .app .header .mobileNavContainer .branding .name {
-    margin: 0px 0 13.5px 25px;
+    margin: 0px 0px 0px 0px;
+  }
+  body .app .header .mobileNavContainer .branding .industry {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: -7px 0px 13px 0px;
+  }
+  body .app .header .mobileNavContainer .branding .industry .line1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 5px;
+  }
+  body .app .header .mobileNavContainer .branding .industry .line2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   body .app .header .navClosed .navigation__menu {
-    padding: 0 25px 23.5px 0;
+    width: 70%;
+    padding: 0 30px 23.5px 0;
   }
   body .app .content .projectContainer .projMain .projMain__Left .projMain__Left-Nav .Num {
     font-size: 5.4em;
@@ -2327,6 +2410,224 @@ body .app .content .contactPage .submit {
 @media (max-width: 729px) and (min-width: 510px) {
   body .app {
     width: 491px;
+  }
+  body .app .headerFull {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: 100%;
+  }
+  body .app .headerFull .mobileNavContainer {
+    height: 125px;
+    width: 94%;
+    margin: 0 3% 0 3%;
+  }
+  body .app .headerFull .mobileNavContainer .branding {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: auto;
+    margin-right: 7%;
+  }
+  body .app .headerFull .mobileNavContainer .branding .name {
+    font-size: 2.625em;
+    margin: 0px 0px 0px 0px;
+  }
+  body .app .headerFull .mobileNavContainer .branding .industry {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: -7px 0px 13px 0px;
+    font-size: 1.3125em;
+  }
+  body .app .headerFull .mobileNavContainer .branding .industry .line1 {
+    margin-right: 5px;
+  }
+  body .app .headerFull .mobileNavContainer .burgerMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding: 0;
+    width: 84.38px;
+    height: 125px;
+    background-color: #FFFFFF;
+  }
+  body .app .headerFull .navigation {
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    width: 94%;
+    margin: 7% 3% 0 3%;
+  }
+  body .app .headerFull .navigation .navigation__menu {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+  body .app .headerFull .navigation .navigation__menu a {
+    margin: 7% 0;
+  }
+  body .app .headerFull .navClosed {
+    display: none;
+  }
+  body .app .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+    width: 100%;
+  }
+  body .app .header .mobileNavContainer {
+    height: 160px;
+    width: 491px;
+  }
+  body .app .header .mobileNavContainer .branding {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: auto;
+    margin-right: 37%;
+  }
+  body .app .header .mobileNavContainer .branding .name {
+    font-size: 2.625em;
+    margin: 0px 0px 0px 0px;
+  }
+  body .app .header .mobileNavContainer .branding .industry {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: -7px 0px 13px 0px;
+    font-size: 1.3125em;
+  }
+  body .app .header .mobileNavContainer .branding .industry .line1 {
+    margin-right: 5px;
+  }
+  body .app .header .mobileNavContainer .burgerMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding: 0;
+    width: 84.38px;
+    height: 158px;
+    background-color: #FFFFFF;
+  }
+  body .app .header .navigation {
+    width: 100%;
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+    padding: 0;
+    z-index: 10000;
+  }
+  body .app .header .navigation .navigation__menu {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+  body .app .header .navClosed {
+    display: none;
   }
   body .app .content .homeGallery .homeGallery__Main .cardContainerDesk {
     display: none;
