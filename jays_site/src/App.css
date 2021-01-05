@@ -2616,10 +2616,12 @@ body .app .content .contactPage .submit {
     margin-bottom: 7px;
   }
   body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\31, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\34, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\35, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\36, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\31 0, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\31 2, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\31 5, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\31 6 {
-    width: 66%;
+    width: 213.83px;
+    height: 141.97px;
   }
   body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\33, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\37, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\38, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\39, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\31 1, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\31 3, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\31 4 {
-    width: 32%;
+    width: 103.67px;
+    height: 141.97px;
   }
   body .app .content .projectContainer .projMain {
     -webkit-box-orient: vertical;
