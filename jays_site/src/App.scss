@@ -352,20 +352,14 @@ body {
                         img{
                             margin-bottom: 10px;
                         }
-                        span{
-                            opacity: 0.1;
-                            transition: 0.3s
-                        }
                         span:hover{
-                            opacity: 1;
+                            transform: scale(0.9);
+                            transition: all .4s ease;
                         }
-                    }
-                    .cardContainerTab{
-                        display: none;
                     }
                     .cardContainerMob{
                         display: none;
-                    } 
+                    }
             }
         }
             .projectContainer{
@@ -704,25 +698,16 @@ body {
                 }
             }
             .content{
-                .homeGallery{
-                    .homeGallery__Main{
-                        .cardContainerDesk{
-                            display: none;
-                        }
-                        .cardContainerTab{
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: space-between;
-                            flex-wrap: wrap;
-                            img{
-                                margin-bottom: 10px;
-                            }
-                        } 
-                        .cardContainerMob{
-                            display: none;
-                        } 
-                    }
-                }
+                // .homeGallery{
+                //     .homeGallery__Main{
+                //         .cardContainerDesk{
+                //             span{
+                //                 opacity: 1;
+                                
+                //             }
+                //         }
+                //      }
+                // }
                 .projectContainer{
                     .projMain{
                         .projMain__Left{
@@ -770,7 +755,7 @@ body {
                         .cardContainerDesk{
                             display: none;
                         }
-                        .cardContainerTab{
+                        .cardContainerMob{
                             display: flex;
                             flex-direction: row;
                             justify-content: space-between;
@@ -779,18 +764,10 @@ body {
                                 margin-bottom: 10px;
                             }
                         } 
-                        .cardContainerMob{
-                            display: none;
-                        } 
                     }
                 }
             }
-            .cardContainerDesk{
-                display: none;
-            }
-            .cardContainerTab{
-                display: flex;
-            }           
+
         }
     }
     @media (max-width: 509px) 
@@ -799,7 +776,8 @@ body {
             width: 100%;
         }
             .app{
-                @include hundo;
+                width: 100%;
+                height: 100vh;
                 .headerFull{
                     @include fc;
                     justify-content: flex-start;
@@ -841,11 +819,12 @@ body {
                     }
                     .navigation{
                         height: 100%;
-                        justify-content: center;
-                        align-items: normal;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: center;
                         padding: 0;
                         width: 94%;
-                        margin: 3% 3% 0 3%;
+                        margin: 7% 3% 0 3%;
                         
                         
                         .navigation__menu{
@@ -940,18 +919,21 @@ body {
                             .cardContainerDesk{
                                 display: none;
                             }
-                            .cardContainerTab{
-                                display: none;
-                            }
                             .cardContainerMob{
                                 display: flex;
                                 flex-direction: row;
                                 justify-content: space-between;
                                 flex-wrap: wrap;
                                 img{
-                                    margin-bottom: 10px;
+                                    margin-bottom: 7px;
                                 }
-                            }
+                                #\31, #\34, #\35, #\36, #\31 0, #\31 2, #\31 5, #\31 6{
+                                    width: 66%;
+                                }
+                                #\32, #\33, #\37, #\38, #\39, #\31 1, #\31 3, #\31 4 {
+                                    width: 32%;
+                                }
+                            } 
                         }
                     }
                     .projectContainer{
