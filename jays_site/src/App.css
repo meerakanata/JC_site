@@ -2356,7 +2356,7 @@ body .app .content .contactPage .submit {
   }
   body .app {
     width: 100%;
-    height: 100vh;
+    height: 100%;
   }
   body .app .headerFull {
     display: -webkit-box;

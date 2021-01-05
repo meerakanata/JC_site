@@ -776,8 +776,9 @@ body {
             width: 100%;
         }
             .app{
-                width: 100%;
-                height: 100vh;
+                @include hundo;
+                // width: 100%;
+                // height: 100vh;
                 .headerFull{
                     @include fc;
                     justify-content: flex-start;
