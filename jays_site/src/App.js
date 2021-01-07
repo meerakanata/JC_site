@@ -33,6 +33,7 @@ class App extends Component {
     menuPage: "default",
     clickCounter: 0,
     loadMore: false,
+    featImagePosition: 0,
     activeObj: {
       projID: "",
       projNUM: "",
@@ -41,7 +42,18 @@ class App extends Component {
       heading: "",
       description: "",
       image: "",
-      featureImage: "",
+      featureImage: [{
+        image: " ",
+        id: " ",
+      },
+      {
+        image: " ",
+        id: " ",
+      },
+      {
+        image: " ",
+        id: " ",
+      }],
       displaySlide: {
         slide: "",
         frameNum: "",
@@ -81,6 +93,12 @@ class App extends Component {
   loadMoreHandler = (buttonClicked) => {
     this.setState({
       loadMore: buttonClicked,
+    });
+  }
+
+  thumbHandler = (thumbClickedID) => {
+    this.setState({
+      featImagePosition: thumbClickedID,
     });
   }
 
@@ -133,7 +151,7 @@ class App extends Component {
         <Route path="/work" exact render={ () => { return <Work2 menuPage={this.state.menuPage} rawData={this.state.rawProjectData} loadMore={this.state.loadMore} loadMoreHandler={this.loadMoreHandler}/> }} />
         <Route path="/about" exact render={ () => { return <About1 aboutData={this.state.aboutData}/> }} />
         <Route path="/contact" component={Contact1}/>
-        <Route path="/work/:projectID?/:slideID?" exact render={ (props) => { return <ProjectContainer activeObj={this.state.activeObj} rawData={this.state.rawProjectData} projectId={props.match.params.projectID} slideId={props.match.params.slideID} changeState={this.changeState} />} } />
+        <Route path="/work/:projectID?/:slideID?" exact render={ (props) => { return <ProjectContainer activeObj={this.state.activeObj} rawData={this.state.rawProjectData} projectId={props.match.params.projectID} slideId={props.match.params.slideID} featImagePosition={this.state.featImagePosition} changeState={this.changeState} thumbHandler={this.thumbHandler}/>} } />
       </Switch>
     </div>;
     }

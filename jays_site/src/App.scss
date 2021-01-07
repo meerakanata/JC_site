@@ -386,7 +386,7 @@ body {
                         justify-content: flex-start;
                         width: 22%;
                         height: auto;
-                        background-color: $color-01;
+                        background-color: $color-06;
                         white-space: nowrap;
                         overflow: hidden;
                         .Prev{
@@ -397,7 +397,7 @@ body {
                             justify-content: center;
                             width: auto;
                             height: auto;
-                            color: #FFFFFF;
+                            color: $color-01;
                             font-size: 8.1em;
                             font-family: 'IBMPlexSans';
                             transform: rotate(90deg);
@@ -448,10 +448,29 @@ body {
                     background-color: $color-06;
                     width: 50%;
                     height: auto;
+                    position: relative;
                     img{
                         display: flex;
                         width: 100%;
                         height: auto;
+                    }
+                    .thumbContainer{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-end;
+                        width: auto;
+                        height: 50px;
+                        position: absolute;
+                        bottom: 10px;
+                        right: 10px;
+                    }
+                    .thumbContainer__thumb{
+                        display: flex;
+                        border: solid 1px $color-03;
+                        // background-color: $color-03;
+                        width: 50px;
+                        height: 50px;
+                        margin-left: 10px;  
                     }
                 }
                 .projDetailTab{
@@ -474,6 +493,11 @@ body {
                                 justify-content: flex-start;
                             }
                             .eachSlide__blurb{
+                                color: #010101;
+                                font-family: 'IBMPlexSans';
+                                font-size: 1em;
+                                line-height: 33px;
+                                padding: 0px 10px;
                                 width: 100%;
                             }
                             .slick-next:before {

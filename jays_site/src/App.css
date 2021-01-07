@@ -1890,7 +1890,7 @@ body .app .content .projectContainer .projMain .projMain__Left-Nav {
           justify-content: flex-start;
   width: 22%;
   height: auto;
-  background-color: #010101;
+  background-color: #FFFFFF;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -1912,7 +1912,7 @@ body .app .content .projectContainer .projMain .projMain__Left-Nav .Num {
           justify-content: center;
   width: auto;
   height: auto;
-  color: #FFFFFF;
+  color: #010101;
   font-size: 8.1em;
   font-family: 'IBMPlexSans';
   -webkit-transform: rotate(90deg);
@@ -2007,6 +2007,7 @@ body .app .content .projectContainer .projMain__Image {
   background-color: #FFFFFF;
   width: 50%;
   height: auto;
+  position: relative;
 }
 
 body .app .content .projectContainer .projMain__Image img {
@@ -2015,6 +2016,34 @@ body .app .content .projectContainer .projMain__Image img {
   display: flex;
   width: 100%;
   height: auto;
+}
+
+body .app .content .projectContainer .projMain__Image .thumbContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: auto;
+  height: 50px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+body .app .content .projectContainer .projMain__Image .thumbContainer__thumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: solid 1px #CDCDCD;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
 }
 
 body .app .content .projectContainer .projDetailTab {
@@ -2061,6 +2090,11 @@ body .app .content .projectContainer .projDetailTab .carouselHolder .slick-slide
 }
 
 body .app .content .projectContainer .projDetailTab .carouselHolder .slick-slider.slick-initialized .eachSlide__blurb {
+  color: #010101;
+  font-family: 'IBMPlexSans';
+  font-size: 1em;
+  line-height: 33px;
+  padding: 0px 10px;
   width: 100%;
 }
 
