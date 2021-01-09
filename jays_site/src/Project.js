@@ -110,8 +110,7 @@ resetThumbs = () => {
                         </div>
                     </div>
                     <Collapsible trigger="Development &amp; Production">
-                        <Fade activeObj={this.props.activeObj} rawData={this.props.rawData} 
-                        currentObj={this.currentProject(this.props.currentId)} 
+                        <Fade rawData={this.props.rawData} currentObj={this.currentProject(this.props.currentId)} 
                         currentId={this.props.currentId} slideId={this.props.slideId}/>
                     </Collapsible>
                 </div>

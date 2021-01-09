@@ -16,11 +16,8 @@ export default class ProjectContainer extends React.Component {
     }
     render() {
         return (
-            <Project resetPage={this.props.resetPage} 
-            activeObj={this.props.activeObj} rawData={this.props.rawData} 
-            currentId={this.props.projectId} slideId={this.props.slideId} 
-            featImagePosition={this.props.featImagePosition} 
-            thumbHandler={this.props.thumbHandler}/>
+            <Project rawData={this.props.rawData} currentId={this.props.projectId} slideId={this.props.slideId} featImagePosition={this.props.featImagePosition} thumbHandler={this.props.thumbHandler}/>
         );
     }
 }
+

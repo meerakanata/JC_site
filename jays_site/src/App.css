@@ -2459,9 +2459,8 @@ body .app .content .contactPage .submit {
     height: 100%;
   }
   body .app .headerFull .mobileNavContainer {
-    height: 125px;
-    width: 94%;
-    margin: 0 3% 0 3%;
+    height: 160px;
+    width: 491px;
   }
   body .app .headerFull .mobileNavContainer .branding {
     display: -webkit-box;
@@ -2478,7 +2477,7 @@ body .app .content .contactPage .submit {
         -ms-flex-align: end;
             align-items: flex-end;
     width: auto;
-    margin-right: 7%;
+    margin-right: 37%;
   }
   body .app .headerFull .mobileNavContainer .branding .name {
     font-size: 2.625em;
@@ -2514,7 +2513,7 @@ body .app .content .contactPage .submit {
             align-items: flex-end;
     padding: 0;
     width: 84.38px;
-    height: 125px;
+    height: 158px;
     background-color: #FFFFFF;
   }
   body .app .headerFull .navigation {
@@ -2683,6 +2682,9 @@ body .app .content .contactPage .submit {
   body .app .content .homeGallery .homeGallery__Main .cardContainerMob img {
     margin-bottom: 10px;
   }
+  body .app .footerHidden {
+    display: none;
+  }
 }
 
 @media (max-width: 509px) and (min-width: 0px) {
@@ -2704,12 +2706,14 @@ body .app .content .contactPage .submit {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 100%;
   }
   body .app .headerFull .mobileNavContainer {
     height: 125px;
-    width: 94%;
-    margin: 0 3% 0 3%;
+    width: 324px;
   }
   body .app .headerFull .mobileNavContainer .branding {
     display: -webkit-box;
@@ -2950,11 +2954,11 @@ body .app .content .contactPage .submit {
   body .app .content .homeGallery .homeGallery__Main .cardContainerMob img {
     margin-bottom: 7px;
   }
-  body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\31, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\34, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\35, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\36, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\31 0, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\31 2, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\31 5, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\31 6 {
+  body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 00, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 03, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 04, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 05, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 09, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 11, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 14, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 15 {
     width: 213.83px;
     height: 141.97px;
   }
-  body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\33, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\37, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\38, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\39, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\31 1, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\31 3, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\31 4 {
+  body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 01, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 02, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 06, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 07, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 08, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 10, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 12, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 13 {
     width: 103.67px;
     height: 141.97px;
   }

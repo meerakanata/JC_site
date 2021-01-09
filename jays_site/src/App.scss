@@ -826,14 +826,16 @@ body {
                 justify-content: flex-start;
                 height: 100%;
                 .mobileNavContainer{
-                    height: 125px;
-                    width: 94%;
-                    margin: 0 3% 0 3%;
+                    // height: 125px;
+                    // width: 94%;
+                    // margin: 0 3% 0 3%;
+                    height: 160px;
+                    width: 491px;
                     .branding{
                         @include fc;
                         @include endend;
                         width: auto;
-                        margin-right: 7%;
+                        margin-right: 37%;
                         
                         
                         .name{
@@ -855,7 +857,7 @@ body {
                         align-items: flex-end;
                         padding: 0; 
                         width: 84.38px;
-                        height: 125px;
+                        height: 158px;
                         background-color: $color-06;
                         
                     }
@@ -963,6 +965,9 @@ body {
                     }
                 }
             }
+            .footerHidden {
+                display: none;
+            }
 
         }
     }
@@ -978,11 +983,14 @@ body {
                 .headerFull{
                     @include fc;
                     justify-content: flex-start;
+                    align-items: center;
                     height: 100%;
                     .mobileNavContainer{
+                        // height: 125px;
+                        // width: 94%;
+                        // margin: 0 3% 0 3%;
                         height: 125px;
-                        width: 94%;
-                        margin: 0 3% 0 3%;
+                        width: 324px;
                         .branding{
                             @include fc;
                             @include endend;
@@ -1124,13 +1132,12 @@ body {
                                 img{
                                     margin-bottom: 7px;
                                 }
-                                #\31, #\34, #\35, #\36, #\31 0, #\31 2, #\31 5, #\31 6{
+                                #\32 00, #\32 03, #\32 04, #\32 05, #\32 09, #\32 11, #\32 14, #\32 15{
                                     //width: 66%;
                                     width: 213.83px;
                                     height: 141.97px;
-                                    
                                 }
-                                #\32, #\33, #\37, #\38, #\39, #\31 1, #\31 3, #\31 4 {
+                                #\32 01, #\32 02, #\32 06, #\32 07, #\32 08, #\32 10, #\32 12, #\32 13 {
                                     //width: 32%;
                                     width: 103.67px;
                                     height: 141.97px;
