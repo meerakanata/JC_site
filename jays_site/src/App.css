@@ -1896,7 +1896,7 @@ body .app .content .projectContainer .projMain .projMain__Left-Nav {
 }
 
 body .app .content .projectContainer .projMain .projMain__Left-Nav .Prev {
-  padding: 36% 17% 12% 17%;
+  padding: 36% 17% 23% 17%;
 }
 
 body .app .content .projectContainer .projMain .projMain__Left-Nav .Num {
@@ -1917,12 +1917,12 @@ body .app .content .projectContainer .projMain .projMain__Left-Nav .Num {
   font-family: 'IBMPlexSans';
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  padding: 12% 0% 0% 0%;
+  padding: 6% 0% 0% 0%;
   line-height: 75%;
 }
 
 body .app .content .projectContainer .projMain .projMain__Left-Nav .Next {
-  padding: 16% 17% 0% 17%;
+  padding: 25% 17% 0% 17%;
 }
 
 body .app .content .projectContainer .projMain .projMain__Left-Info {
@@ -2988,7 +2988,8 @@ body .app .content .contactPage .submit {
     padding-top: 10%;
   }
   body .app .content .projectContainer .projMain .projMain__Left .projMain__Left-Nav .Num {
-    font-size: 5.4em;
+    font-size: 4.4em;
+    padding: 30% 0% 4% 0%;
     margin: 0%;
   }
   body .app .content .projectContainer .projMain .projMain__Left .projMain__Left-Nav .Prev {
@@ -3006,6 +3007,9 @@ body .app .content .contactPage .submit {
   }
   body .app .content .projectContainer .projMain .projMain__Image {
     width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   body .app .content .projectContainer .projDetailTab {
     margin-top: 3%;

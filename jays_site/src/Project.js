@@ -14,13 +14,14 @@ currentProject = (currentProjID) => {
 backProjID = (currentProjID) => {
     const rawData = this.props.rawData;
     const currentObj = rawData.find(obj => obj.projID === currentProjID);
-
+    console.log(currentObj.projNUM)
+    console.log(currentProjID)
     if (currentObj.projNUM === 1){
         const prevProjNum = 13;
         const prevObj = rawData.find(obj => obj.projNUM === prevProjNum);
         return prevObj.projID;
     }
-    else if (currentObj.projNUM >1 && currentObj.projNUM < 12){
+    else if (currentObj.projNUM >1 && currentObj.projNUM <= 13){
         const prevProjNum = currentObj.projNUM-1;
         const prevObj = rawData.find(obj => obj.projNUM === prevProjNum);
         return prevObj.projID;

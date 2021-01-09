@@ -390,7 +390,7 @@ body {
                         white-space: nowrap;
                         overflow: hidden;
                         .Prev{
-                            padding: 36% 17% 12% 17%;
+                            padding: 36% 17% 23% 17%;
                         }
                         .Num{
                             @include fr;
@@ -401,12 +401,12 @@ body {
                             font-size: 8.1em;
                             font-family: 'IBMPlexSans';
                             transform: rotate(90deg);
-                            padding: 12% 0% 0% 0%;
+                            padding: 6% 0% 0% 0%;
                             line-height: 75%;
 
                         }
                         .Next{
-                            padding: 16% 17% 0% 17%;
+                            padding: 25% 17% 0% 17%;
                         }
                     }
                     .projMain__Left-Info{
@@ -1162,7 +1162,8 @@ body {
                                     overflow: hidden;
                                     padding-top: 10%;
                                     .Num{
-                                        font-size: 5.4em;
+                                        font-size: 4.4em;
+                                        padding: 30% 0% 4% 0%;
                                         margin: 0%;
                                     }
                                     .Prev{
@@ -1182,6 +1183,7 @@ body {
                             }
                             .projMain__Image{
                                 width: 100%;
+                                align-items: flex-start;
                             }
                         }
                         .projDetailTab{
