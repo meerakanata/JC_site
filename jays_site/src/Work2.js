@@ -9,7 +9,7 @@ export default class Work2 extends React.Component {
 
     displayImagesDesk = () => { 
         const gridImagesArr = this.props.grid_images;
-        return gridImagesArr.map((obj) => <span><Link to={"/work/"+obj.projID+"/1"}><img src={obj.image} alt={obj.alt} key={obj.projNUM} id={obj.id}/></Link></span>);      
+        return gridImagesArr.map((obj) => <span><Link to={"/work/"+obj.projID+"/1"}><img src={obj.image}  key={obj.projNUM} alt={obj.alt} id={obj.id}/></Link></span>);      
     }
     displayImagesMob = () => { 
         const gridImagesArr = this.props.grid_images; 

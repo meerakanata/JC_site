@@ -824,7 +824,9 @@ body {
             .headerFull{
                 @include fc;
                 justify-content: flex-start;
-                height: 100%;
+                align-items: center;
+                height: auto;
+                width: 100%;
                 .mobileNavContainer{
                     // height: 125px;
                     // width: 94%;
@@ -984,7 +986,8 @@ body {
                     @include fc;
                     justify-content: flex-start;
                     align-items: center;
-                    height: 100%;
+                    height: auto;
+                    width: 100%;
                     .mobileNavContainer{
                         // height: 125px;
                         // width: 94%;
@@ -992,11 +995,12 @@ body {
                         height: 125px;
                         width: 324px;
                         .branding{
-                            @include fc;
-                            @include endend;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-end;
+                            align-items: flex-end;
                             width: auto;
                             margin-right: 7%;
-                            
                             
                             .name{
                                 font-size: 2.625em;
