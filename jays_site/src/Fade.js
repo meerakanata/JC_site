@@ -1,7 +1,5 @@
 import React from 'react';
 import Slider from "react-slick";
-//import { baseUrl } from "./config";
-//var rawData = require('./RawData.js');
 
 
 export default class Fade extends React.Component {

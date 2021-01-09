@@ -1,22 +1,18 @@
 import React, { Component } from "react";
-// import { BrowserRouter as Router, NavLink} from 'react-router-dom';
 import { BrowserRouter as Router, NavLink, Route, Switch, Redirect} from 'react-router-dom';
 import Work2 from "./Work2";
 import ProjectContainer from "./ProjectContainer.js"
 import Branding from "./Branding.js";
-//import Work2 from "./Work2";
 import About1 from "./About1";
 import Contact1 from "./Contact1";
-//import ProjectContainer from "./ProjectContainer.js";
-//import WorkRoutes from "./WorkRoutes";
 import Footer from "./Footer";
-//import MobileMenu from './MobileMenu.js';
+
 import "./App.css";
 import "../node_modules/slick-carousel/slick/slick.css"; 
 import "../node_modules/slick-carousel/slick/slick-theme.css";
 
-//var rawData = require('./RawData.js');
 var rawData = require('./RawData-1.js');
+var grid_images = require('./RawData_grid_images.js');
 var aboutData = require('./AboutData.js');
 
 
@@ -75,6 +71,7 @@ class App extends Component {
       }],
     },
     rawProjectData: rawData,
+    grid_images: grid_images,
     aboutData: aboutData,
     imgViz: false,
   };
@@ -90,18 +87,11 @@ class App extends Component {
     });
   };
 
-  loadMoreHandler = (buttonClicked) => {
-    this.setState({
-      loadMore: buttonClicked,
-    });
-  }
-
   thumbHandler = (thumbClickedID) => {
     this.setState({
       featImagePosition: thumbClickedID,
     });
   }
-
 
   burgerMenuClick = () =>{
     
@@ -148,7 +138,7 @@ class App extends Component {
       return <div className={this.state.contentSelector}>
       <Switch>
         <Route exact path="/" render={() =><Redirect to='/work'/>}/>
-        <Route path="/work" exact render={ () => { return <Work2 menuPage={this.state.menuPage} rawData={this.state.rawProjectData} loadMore={this.state.loadMore} loadMoreHandler={this.loadMoreHandler}/> }} />
+        <Route path="/work" exact render={ () => { return <Work2 menuPage={this.state.menuPage} grid_images={this.state.grid_images} /> }} />
         <Route path="/about" exact render={ () => { return <About1 aboutData={this.state.aboutData}/> }} />
         <Route path="/contact" component={Contact1}/>
         <Route path="/work/:projectID?/:slideID?" exact render={ (props) => { return <ProjectContainer activeObj={this.state.activeObj} rawData={this.state.rawProjectData} projectId={props.match.params.projectID} slideId={props.match.params.slideID} featImagePosition={this.state.featImagePosition} changeState={this.changeState} thumbHandler={this.thumbHandler}/>} } />
@@ -170,34 +160,6 @@ class App extends Component {
     });
   }
 
-// loadDesktopPage = (page) =>{
-//     this.setState({
-//       mobileMenuOpen: false,
-//       clickCounter: 0,
-//       mobileMenuPage: page,
-//       burgerMenuSelector: "hamburger hamburger--collapse",
-//       loadMore: false,
-//     });
-//   }
-// displayNav = () => {
-
-//   if(this.state.mobileMenuOpen === true){
-//     return <div className="navigation__menu">
-//     <NavLink to="/work" onClick ={() => this.pageHandler("work")} activeClassName="current" className="notCurrent">Work</NavLink> 
-//     <NavLink exact to="/about" onClick ={() => this.pageHandler("about")} activeClassName="current" className="notCurrent">About</NavLink>
-//     <NavLink exact to="/contact" onClick ={() => this.pageHandler("contact")} activeClassName="current" className="notCurrent">Contact</NavLink>
-//   </div>
-//   }
-//   else{
-//     return <div className="navigation__menu">
-//     <NavLink to="/work" onClick ={() => this.pageHandler("work")} activeClassName="current" className="notCurrent">Work</NavLink> 
-//     <NavLink exact to="/about" onClick ={() => this.pageHandler("about")} activeClassName="current" className="notCurrent">About</NavLink>
-//     <NavLink exact to="/contact" onClick ={() => this.pageHandler("contact")} activeClassName="current" className="notCurrent">Contact</NavLink>
-//     </div>
-//   }
-// }
-
-
   render() {
 
     return (
@@ -216,7 +178,6 @@ class App extends Component {
               </div>
             </div>
             <div className={this.state.navMenuSelector}>
-              {/* {this.displayNav()} */}
               <div className="navigation__menu">
                 <NavLink to="/work" onClick ={() => this.pageHandler("work")} activeClassName="current" className="notCurrent">Work</NavLink> 
                 <NavLink exact to="/about" onClick ={() => this.pageHandler("about")} activeClassName="current" className="notCurrent">About</NavLink>
@@ -225,15 +186,6 @@ class App extends Component {
             </div>
           </div>
             {this.showOpenMenu()}
-            {/* <div className="content">
-              <Switch>
-                <Route exact path="/" render={() =><Redirect to='/work'/>}/>
-                <Route path="/work" exact render={ () => { return <Work2 menuPage={this.state.menuPage} rawData={this.state.rawProjectData} loadMore={this.state.loadMore} loadMoreHandler={this.loadMoreHandler}/> }} />
-                <Route path="/about" component={About1}/>
-                <Route path="/contact" component={Contact1}/>
-                <Route path="/work/:projectID?/:slideID?" exact render={ (props) => { return <ProjectContainer activeObj={this.state.activeObj} rawData={this.state.rawProjectData} projectId={props.match.params.projectID} slideId={props.match.params.slideID} changeState={this.changeState} />} } />
-              </Switch>
-            </div> */}
           <div className={this.state.footerSelector}>
           <Footer />
           </div>
