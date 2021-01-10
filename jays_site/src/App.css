@@ -2107,7 +2107,7 @@ body .app .content .projectContainer .projDetailTab .Collapsible {
   width: 89%;
 }
 
-body .app .content .projectContainer .projDetailTab .Collapsible span {
+body .app .content .projectContainer .projDetailTab .Collapsible > span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

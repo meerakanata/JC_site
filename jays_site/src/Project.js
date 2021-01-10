@@ -1,7 +1,8 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import Fade from "./Fade.js";
+//import Fade from "./Fade.js";
 import Collapsible from "./Collapsible.js";
+import SlideShow from "../SlideShow.js";
 
 export default class Project extends React.Component {
 
@@ -111,8 +112,9 @@ resetThumbs = () => {
                         </div>
                     </div>
                     <Collapsible trigger="Development &amp; Production">
-                        <Fade rawData={this.props.rawData} currentObj={this.currentProject(this.props.currentId)} 
-                        currentId={this.props.currentId} slideId={this.props.slideId}/>
+                        <SlideShow currentObj={this.currentProject(this.props.currentId)}/>
+                        {/* <Fade rawData={this.props.rawData} currentObj={this.currentProject(this.props.currentId)} 
+                        currentId={this.props.currentId} slideId={this.props.slideId}/> */}
                     </Collapsible>
                 </div>
             </div>

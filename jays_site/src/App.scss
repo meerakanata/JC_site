@@ -509,12 +509,11 @@ body {
                     }
                     .Collapsible {
                         width: 89%;
-                        span{
-                            @include fr;
-                            align-items: center;
-                            height: 50px;
-                            
-                        }
+                    }
+                    .Collapsible>span{
+                        @include fr;
+                        align-items: center;
+                        height: 50px;
                     }
                     .Collapsible__trigger {
                         font-weight: 400;
