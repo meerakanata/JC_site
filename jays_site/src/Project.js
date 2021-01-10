@@ -2,7 +2,11 @@ import React from "react";
 import {Link} from "react-router-dom";
 //import Fade from "./Fade.js";
 import Collapsible from "./Collapsible.js";
+<<<<<<< HEAD
 import NewCarousel from "./NewCarousel.js";
+=======
+import MyCarousel2 from "./MyCarousel2.js";
+>>>>>>> 5bd3eaaa7f8758861d3f9e9d5c672de1509b3e53
 
 export default class Project extends React.Component {
 
@@ -112,7 +116,11 @@ resetThumbs = () => {
                         </div>
                     </div>
                     <Collapsible trigger="Development &amp; Production">
+<<<<<<< HEAD
                         <NewCarousel currentObj={this.currentProject(this.props.currentId)}/>
+=======
+                        <MyCarousel2 currentObj={this.currentProject(this.props.currentId)}/>
+>>>>>>> 5bd3eaaa7f8758861d3f9e9d5c672de1509b3e53
                         {/* <Fade rawData={this.props.rawData} currentObj={this.currentProject(this.props.currentId)} 
                         currentId={this.props.currentId} slideId={this.props.slideId}/> */}
                     </Collapsible>
