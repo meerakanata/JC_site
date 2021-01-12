@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 import Collapsible from "./Collapsible.js";
 import NewCarousel from "./NewCarousel.js";
 
+
 export default class Project extends React.Component {
 
 currentProject = (currentProjID) => {
@@ -15,8 +16,7 @@ currentProject = (currentProjID) => {
 backProjID = (currentProjID) => {
     const rawData = this.props.rawData;
     const currentObj = rawData.find(obj => obj.projID === currentProjID);
-    console.log(currentObj.projNUM)
-    console.log(currentProjID)
+
     if (currentObj.projNUM === 1){
         const prevProjNum = 13;
         const prevObj = rawData.find(obj => obj.projNUM === prevProjNum);
@@ -30,6 +30,7 @@ backProjID = (currentProjID) => {
 }
 
 nextProjID = (currentProjID) => {
+
     const rawData = this.props.rawData;
     const currentObj = rawData.find(obj => obj.projID === currentProjID);
 
@@ -43,7 +44,6 @@ nextProjID = (currentProjID) => {
         const nextObj = rawData.find(obj => obj.projNUM === nextProjNum);
         return nextObj.projID;
     }
-
 }
 
 displayThumbs = (currentProjID) => {
@@ -80,7 +80,7 @@ resetThumbs = () => {
                     <div className="projMain__Left">
                         <div className="projMain__Left-Nav">
                             <div className="Prev">
-                                <Link to={"/work/"+ this.backProjID(this.props.currentId)+"/1"} 
+                                <Link to={"/work/"+ this.backProjID(this.props.currentId)} 
                                 onClick={this.resetThumbs}><img src={"../../Icon/Icon w Text/Previous_Dark.png"} 
                                 alt="back arrow"/></Link>
                             </div>
@@ -88,7 +88,7 @@ resetThumbs = () => {
                                 {this.currentProject(this.props.currentId).number}
                             </div>
                             <div className="Next">
-                                <Link to={"/work/"+ this.nextProjID(this.props.currentId)+"/1"} 
+                                <Link to={"/work/"+ this.nextProjID(this.props.currentId)} 
                                 onClick={this.resetThumbs}><img src={"../../Icon/Icon w Text/Next_Dark.png"} 
                                 alt="forward arrow"/></Link>
                             </div>
@@ -112,7 +112,7 @@ resetThumbs = () => {
                         </div>
                     </div>
                     <Collapsible trigger="Development &amp; Production">
-                        <NewCarousel currentObj={this.currentProject(this.props.currentId)}/>
+                        <NewCarousel currentObj={this.currentProject(this.props.currentId)} />
                         {/* <Fade rawData={this.props.rawData} currentObj={this.currentProject(this.props.currentId)} 
                         currentId={this.props.currentId} slideId={this.props.slideId}/> */}
                     </Collapsible>
@@ -121,3 +121,6 @@ resetThumbs = () => {
         );
     }
 }
+//consider rendering the carousel based on the object, so when the object changes the carousel changes too... hopefully forcing a new render???
+//so for example if the object is banana, then render the carousel component for banana, if the object is apple, then render the carousel for apple.
+

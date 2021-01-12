@@ -2,6 +2,7 @@ import React from "react";
 import Project from "./Project.js";
 
 
+
 export default class ProjectContainer extends React.Component {
 
     componentDidMount () {
@@ -16,7 +17,7 @@ export default class ProjectContainer extends React.Component {
     }
     render() {
         return (
-            <Project rawData={this.props.rawData} currentId={this.props.projectId} slideId={this.props.slideId} featImagePosition={this.props.featImagePosition} thumbHandler={this.props.thumbHandler}/>
+            <Project rawData={this.props.rawData} currentId={this.props.projectId} featImagePosition={this.props.featImagePosition} slidesHandler={this.props.slidesHandler} thumbHandler={this.props.thumbHandler} />
         );
     }
 }

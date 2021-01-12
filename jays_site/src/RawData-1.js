@@ -27,14 +27,17 @@ module.exports = [
       "carousel": [{
         "slide": "../../slide1.png",
         "blurb":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.",
+        "key":"C101",
       },
       {
         "slide": "../../slide2.png",
         "blurb":"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh.",
+        "key":"C102",
       },
       {
         "slide": "../../slide3.png",
         "blurb":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no.",
+        "key":"C103",
       }],
     },
     {
@@ -65,14 +68,17 @@ module.exports = [
       "carousel": [{
         "slide": "../../slide1.png",
         "blurb":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.",
+        "key":"C201",
       },
       {
         "slide": "../../slide2.png",
         "blurb":"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh.",
+        "key":"C202",
       },
       {
         "slide": "../../slide3.png",
         "blurb":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no.",
+        "key":"C203",
       }],
     },
     {
@@ -103,14 +109,17 @@ module.exports = [
       "carousel": [{
         "slide": "../../slide1.png",
         "blurb":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.",
+        "key":"C301",
       },
       {
         "slide": "../../slide2.png",
         "blurb":"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh.",
+        "key":"C302",
       },
       {
         "slide": "../../slide3.png",
         "blurb":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no.",
+        "key":"C303",
       }],
     },
     {
@@ -141,14 +150,17 @@ module.exports = [
       "carousel": [{
         "slide": "../../slide1.png",
         "blurb":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.",
+        "key":"C401",
       },
       {
         "slide": "../../slide2.png",
         "blurb":"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh.",
+        "key":"C402",
       },
       {
         "slide": "../../slide3.png",
         "blurb":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no.",
+        "key":"C403",
       }],
     },
     {
@@ -179,14 +191,17 @@ module.exports = [
       "carousel": [{
         "slide": "../../slide1.png",
         "blurb":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.",
+        "key":"C501",
       },
       {
         "slide": "../../slide2.png",
         "blurb":"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh.",
+        "key":"C502",
       },
       {
         "slide": "../../slide3.png",
         "blurb":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no.",
+        "key":"C503",
       }],
     },
     {
@@ -217,14 +232,17 @@ module.exports = [
       "carousel": [{
         "slide": "../../slide1.png",
         "blurb":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.",
+        "key":"C601",
       },
       {
         "slide": "../../slide2.png",
         "blurb":"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh.",
+        "key":"C602",
       },
       {
         "slide": "../../slide3.png",
         "blurb":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no.",
+        "key":"C603",
       }],
     },
     {
@@ -255,14 +273,17 @@ module.exports = [
       "carousel": [{
         "slide": "../../slide1.png",
         "blurb":"Inspired by the silhouette and edge banding of the Gibson Les Paul guitar, a new injection process was utilized to achieve this unique look.",
+        "key":"C701",
       },
       {
         "slide": "../../slide2.png",
         "blurb":"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh.",
+        "key":"C702",
       },
       {
         "slide": "../../slide3.png",
         "blurb":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no.",
+        "key":"C703",
       }],
     },
     {
@@ -293,14 +314,17 @@ module.exports = [
       "carousel": [{
         "slide": "../../slide1.png",
         "blurb":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.",
+        "key":"C801",
       },
       {
         "slide": "../../slide2.png",
         "blurb":"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh.",
+        "key":"C802",
       },
       {
         "slide": "../../slide3.png",
         "blurb":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no.",
+        "key":"C803",
       }],
     },
     {
@@ -331,14 +355,17 @@ module.exports = [
       "carousel": [{
         "slide": "../../slide1.png",
         "blurb":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.",
+        "key":"C901",
       },
       {
         "slide": "../../slide2.png",
         "blurb":"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh.",
+        "key":"C902",
       },
       {
         "slide": "../../slide3.png",
         "blurb":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no.",
+        "key":"C903",
       }],
     },
     {
@@ -369,14 +396,17 @@ module.exports = [
       "carousel": [{
         "slide": "../../slide1.png",
         "blurb":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.",
+        "key":"C1001",
       },
       {
         "slide": "../../slide2.png",
         "blurb":"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh.",
+        "key":"C1002",
       },
       {
         "slide": "../../slide3.png",
         "blurb":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no.",
+        "key":"C1003",
       }],
     },
     {
@@ -407,14 +437,17 @@ module.exports = [
       "carousel": [{
         "slide": "../../slide1.png",
         "blurb":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.",
+        "key":"C1101",
       },
       {
         "slide": "../../slide2.png",
         "blurb":"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh.",
+        "key":"C1102",
       },
       {
         "slide": "../../slide3.png",
         "blurb":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no.",
+        "key":"C1103",
       }],
     },
     {
@@ -445,14 +478,17 @@ module.exports = [
       "carousel": [{
         "slide": "../../slide1.png",
         "blurb":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.",
+        "key":"C1201",
       },
       {
         "slide": "../../slide2.png",
         "blurb":"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh.",
+        "key":"C1202",
       },
       {
         "slide": "../../slide3.png",
         "blurb":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no.",
+        "key":"C1203",
       }],
     },
     {
@@ -483,14 +519,17 @@ module.exports = [
       "carousel": [{
         "slide": "../../slide1.png",
         "blurb":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.",
+        "key":"C1301",
       },
       {
         "slide": "../../slide2.png",
         "blurb":"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh.",
+        "key":"C1302",
       },
       {
         "slide": "../../slide3.png",
         "blurb":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no.",
+        "key":"C1303",
       }],
     },
 ]

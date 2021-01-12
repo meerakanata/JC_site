@@ -16,7 +16,6 @@ var grid_images = require('./RawData_grid_images.js');
 var aboutData = require('./AboutData.js');
 
 
-
 class App extends Component {
 
   state = {
@@ -58,16 +57,19 @@ class App extends Component {
         position: "",
         slide: "../slide1.png",
         blurb:"",
+        key: " ",
       },
       {
         position: "",
         slide: "../slide2.png",
         blurb:"",
+        key: " ",
       },
       {
         position: "",
         slide: "../slide3.png",
         blurb:"",
+        key: " ",
       }],
     },
     rawProjectData: rawData,
@@ -76,10 +78,10 @@ class App extends Component {
     imgViz: false,
   };
 
-  componentDidUpdate () {
-    console.log(this.state.mobileMenuOpen);
-    console.log(this.state.navMenuSelector);
-  }
+  // componentDidUpdate () {
+  //   console.log(this.state.mobileMenuOpen);
+  //   console.log(this.state.navMenuSelector);
+  // }
 
   changeState = (obj) => {
     this.setState({
@@ -129,7 +131,6 @@ class App extends Component {
   }
 
   showOpenMenu = () => {
-    console.log(this.state.activeObj.projID);
 
     if(this.state.mobileMenuOpen === true){
         return <div className={this.state.contentSelector}></div>;
@@ -138,10 +139,10 @@ class App extends Component {
       return <div className={this.state.contentSelector}>
       <Switch>
         <Route exact path="/" render={() =><Redirect to='/work'/>}/>
-        <Route path="/work" exact render={ () => { return <Work2 menuPage={this.state.menuPage} grid_images={this.state.grid_images} /> }} />
+        <Route path="/work" exact render={ () => { return <Work2 grid_images={this.state.grid_images} /> }} />
         <Route path="/about" exact render={ () => { return <About1 aboutData={this.state.aboutData}/> }} />
         <Route path="/contact" component={Contact1}/>
-        <Route path="/work/:projectID?/:slideID?" exact render={ (props) => { return <ProjectContainer activeObj={this.state.activeObj} rawData={this.state.rawProjectData} projectId={props.match.params.projectID} slideId={props.match.params.slideID} featImagePosition={this.state.featImagePosition} changeState={this.changeState} thumbHandler={this.thumbHandler}/>} } />
+        <Route path="/work/:projectID?" exact render={ (props) => { return <ProjectContainer activeObj={this.state.activeObj} rawData={this.state.rawProjectData} projectId={props.match.params.projectID}  featImagePosition={this.state.featImagePosition} changeState={this.changeState} thumbHandler={this.thumbHandler} />} } />
       </Switch>
     </div>;
     }
@@ -161,7 +162,7 @@ class App extends Component {
   }
 
   render() {
-
+  
     return (
 
       <Router>
@@ -199,3 +200,4 @@ class App extends Component {
 export default App;
 
 
+//slideId={props.match.params.slideID}
