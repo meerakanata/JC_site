@@ -4,7 +4,7 @@ $hamburger-layer-width         : 27px !default;
 $hamburger-layer-height        : 3px !default;
 $hamburger-layer-spacing       : 5px !default;
 //$hamburger-layer-color         : #000 !default;
-$hamburger-layer-color         : #FFF !default;
+$hamburger-layer-color         : #010101 !default;
 $hamburger-layer-border-radius : 0px !default;
 $hamburger-hover-opacity       : 0.7 !default;
 $hamburger-active-layer-color  : $hamburger-layer-color !default;
@@ -1135,12 +1135,12 @@ body {
                                 img{
                                     margin-bottom: 7px;
                                 }
-                                #\32 00, #\32 03, #\32 04, #\32 05, #\32 09, #\32 11, #\32 14, #\32 15{
+                                #\32 00, #\32 03, #\32 04, #\32 05, #\32 08, #\32 11, #\32 14, #\32 15{
                                     //width: 66%;
                                     width: 213.83px;
                                     height: 141.97px;
                                 }
-                                #\32 01, #\32 02, #\32 06, #\32 07, #\32 08, #\32 10, #\32 12, #\32 13 {
+                                #\32 01, #\32 02, #\32 06, #\32 07, #\32 09, #\32 10, #\32 12, #\32 13 {
                                     //width: 32%;
                                     width: 103.67px;
                                     height: 141.97px;

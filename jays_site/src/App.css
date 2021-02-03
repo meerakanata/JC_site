@@ -37,7 +37,7 @@
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
-  background-color: #FFF;
+  background-color: #010101;
 }
 
 .hamburger-box {
@@ -56,7 +56,7 @@
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
   width: 27px;
   height: 3px;
-  background-color: #FFF;
+  background-color: #010101;
   border-radius: 0px;
   position: absolute;
   -webkit-transition-property: -webkit-transform;
@@ -2958,11 +2958,11 @@ body .app .content .contactPage .submit {
   body .app .content .homeGallery .homeGallery__Main .cardContainerMob img {
     margin-bottom: 7px;
   }
-  body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 00, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 03, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 04, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 05, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 09, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 11, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 14, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 15 {
+  body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 00, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 03, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 04, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 05, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 08, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 11, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 14, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 15 {
     width: 213.83px;
     height: 141.97px;
   }
-  body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 01, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 02, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 06, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 07, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 08, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 10, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 12, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 13 {
+  body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 01, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 02, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 06, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 07, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 09, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 10, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 12, body .app .content .homeGallery .homeGallery__Main .cardContainerMob #\32 13 {
     width: 103.67px;
     height: 141.97px;
   }
